@@ -1,44 +1,24 @@
 # Qwen AI Build Day Wiki
 
-Wiki nay tong hop phan tich cuoc thi `Qwen AI Build Day` va cac idea co kha nang thang cao, tap trung vao huong giai phap doanh nghiep co the demo ro rang trong thoi gian ngan.
+Chi muc tai lieu goc, ghi am, webinar va ban phien dich.
 
-## Muc tieu cua wiki
+## Tai lieu
 
-- Chot nhanh mot huong build co kha nang vao chung ket.
-- Tranh cac idea chat bot chung chung, kho demo, kho do ROI.
-- Co san tai lieu de pitch, demo va phan cong team.
+- [Alibaba Cloud Hackathon - Learning+Resources.pdf](Alibaba%20Cloud%20Hackathon%20-%20Learning%2BResources.pdf)
+- [[MY] Intro to AI & ML + Hands-on with Model Studio API.pdf](%5BMY%5D%20Intro%20to%20AI%20%26%20ML%20%2B%20Hands-on%20with%20Model%20Studio%20API.pdf)
+- [Qwen AI Build Day_ Healthcare Track by Elfie.pdf](Qwen%20AI%20Build%20Day_%20Healthcare%20Track%20by%20Elfie.pdf)
+- [Qwen AI Build Day_ Mobility Track by Tasco.pdf](Qwen%20AI%20Build%20Day_%20Mobility%20Track%20by%20Tasco.pdf)
+- [Qwen AI Build Day_ Public Sector (Government) Track.pdf](Qwen%20AI%20Build%20Day_%20Public%20Sector%20%28Government%29%20Track.pdf)
+- [[Innoboost 2026] Use Cases Summary.xlsx](%5BInnoboost%202026%5D%20Use%20Cases%20Summary.xlsx)
 
-## Noi dung chinh
+## Webinar
 
-- [Contest Analysis](Contest-Analysis)
-- [Official Resources](Official-Resources)
-- [Track Briefs and Use Cases](Track-Briefs-and-Use-Cases)
-- [Consolidated Notes](Consolidated-Notes)
-- [Kickoff Webinar Notes](Kickoff-Webinar-Notes)
-- [Winning Strategy](Winning-Strategy)
-- [Idea 1 - Shinhan SME Credit Copilot](Idea-1-Shinhan-SME-Credit-Copilot)
-- [Idea 2 - Elfie Adherence Rescue Agent](Idea-2-Elfie-Adherence-Rescue-Agent)
-- [Idea 3 - Public Sector Dossier Checker](Idea-3-Public-Sector-Dossier-Checker)
-- [Idea 4 - Tasco Service Advisor Copilot](Idea-4-Tasco-Service-Advisor-Copilot)
-- [Pitch Plan](Pitch-Plan)
-- [Sources](Sources)
-- [GitLab Access](GitLab-Access)
+- [qwenday.txt](qwenday.txt)
 
-## Ket luan nhanh
+## Phien dich
 
-Bo sung moi: trang [Official Resources](Official-Resources) tong hop lai cac huong dan cong khai tu Devpost `resources`, gom dinh huong build, cong nghe duoc khuyen nghi, va kenh ho tro organizer.
+- [qwenday.vi.md](qwenday.vi.md)
 
-Tai lieu dinh kem: trang [Track Briefs and Use Cases](Track-Briefs-and-Use-Cases) cho phep tai truc tiep cac file PDF va XLSX dang duoc team dung de tham chieu.
+## Ghi am
 
-Ban tong hop moi: trang [Consolidated Notes](Consolidated-Notes) gom nhanh link tai lieu goc va ghi chep tong hop de doi chieu truoc khi chot huong build.
-
-Tom tat webinar: trang [Kickoff Webinar Notes](Kickoff-Webinar-Notes) rut ra cac diem quan trong tu file transcript kickoff de team check nhanh timeline, submission flow, va judging criteria.
-
-Neu muc tieu la xac suat thang cao nhat, idea nen uu tien la:
-
-1. `Shinhan SME Credit Copilot`
-2. `Elfie Adherence Rescue Agent`
-3. `Public Sector Dossier Checker`
-4. `Tasco Service Advisor Copilot`
-
-Idea so 1 duoc uu tien vi no co bai toan doanh nghiep ro, du lieu dau vao cu the, demo co the thuyet phuc, va dung Qwen theo cach kho thay bang mot flow rule-based don gian.
+- [record eflie.txt](record%20eflie.txt)
