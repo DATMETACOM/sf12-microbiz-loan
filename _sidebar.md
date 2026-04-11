@@ -2,6 +2,10 @@
 
 - [Home](Home)
 - [Contest Analysis](Contest-Analysis)
+- [Official Resources](Official-Resources)
+- [Track Briefs and Use Cases](Track-Briefs-and-Use-Cases)
+- [Consolidated Notes](Consolidated-Notes)
+- [Kickoff Webinar Notes](Kickoff-Webinar-Notes)
 - [Winning Strategy](Winning-Strategy)
 - [Idea 1 - Shinhan SME Credit Copilot](Idea-1-Shinhan-SME-Credit-Copilot)
 - [Idea 2 - Elfie Adherence Rescue Agent](Idea-2-Elfie-Adherence-Rescue-Agent)

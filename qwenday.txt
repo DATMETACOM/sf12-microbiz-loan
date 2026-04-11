@@ -1,0 +1,1035 @@
+Qwen AI Build Day - Webinar -10 thg 4 2026 01:17 CH
+GenAI Fund
+GenAI Fund
+00:00:08
+Well, everyone, a lot of you are using, NoteTaker, yeah? No worries, we will record this, webinar, and, everyone of you can actually refer it, later.
+Awesome, awesome. How many of you already in the room? See, 95. There's more coming in.
+So, looking at the time now, I think we will start in, like, 5 minutes.
+So, in these 5 minutes, let me… Let me see, so…
+The thing is that, last time when we have, joining a Quen event, and, it was hosted by, Jason, right, which is from the Quen team.
+he also do this prom before the event. It's like, he asked Quen to give him some jokes, right? So I also prom the same thing now.
+So here's some, funny jokes there from, Quen. I don't know whether it's funny or not, but you guys can, give it a…
+Give it a try, right?
+So, the classic Quen pun, they say, like, why did Quan bring a ladder
+to the hackathon. Anyone can answer.
+So I, I, I write it, I say it again. So, why did Quan bring a ladder to the hackathon?
+So because it heard the prompts were the next level.
+Yeah, it's like, no, you guys decide whether it's a… give your reaction, whether this… whether Quen model can create a good joke.
+And they have a joke for developers as well, right? So…
+So they say, like, I asked Quen to help me to write a perfect hackathon joke.
+And it generates 10,000 options.
+then I spent a long time to actually debugging and find which one is actually funny. Yeah, which is what I'm doing right now.
+Yeah. So, I think not bad, not bad for QAM model, the latest one, yeah.
+So you guys can try it out, because Quen just,
+launched their… their models, this 2.6 plus model, like, two… two weeks or a week ago.
+So, yeah, I'm happy that they're actually able to, catch this before… launch this before this Quan AI builder, and you guys can actually leverage on this latest model.
+Yeah, so we will record this.
+I think we're already recording.
+Right, so, Min, can you help me check if we are recording this webinar?
+Minh Tran - GenAI Fund
+Minh Tran - GenAI Fund
+00:02:45
+Yeah, we are currently recording already.
+GenAI Fund
+GenAI Fund
+00:02:47
+Awesome, yeah.
+Okay, cool. We have all our…
+Participants here, how many of them? 100 of them.
+Okay, so there's, quite a number of things we want to cover today.
+So let's,
+let's start on time. Let's not waiting so many people. We are also recording this, and it will be shared with everyone.
+after this as well, so you can refer this back, right? So…
+Again, thanks, thanks everyone for showing up, today, you know, even though it's at around, like, 2PM in Vietnam right now. So, thank you. We will try to make this, you know, kickoff event, you know, to cover as many,
+Questions you have, like today?
+Right? So, for today, I just want to set the tone that what we'll be covering. First, we will, the main objective to make sure that all of you know, you know, how the mechanism works for this Quain AI build day.
+And, because the whole format is a little bit different than typical hackathon, And also,
+also briefing you guys the steps that we, to… to be taken on, DevPost as well. Some of you, you are not familiar with, DevPost, so I will walk you through as well.
+And most importantly, we have all these enterprises guests here to brief you guys on their challenge statements, and it's also an opportunity for you to ask questions to them, so that you get a good clarification before you start building your projects.
+Right? So, yeah, if you are ready.
+We will start, give me a thumbs up if you are ready, or one, put one in the message box, okay.
+Cool, awesome.
+So, yeah, I think I forgot to introduce myself. I'm Eugene. I'm the Head of Programs and, the Marketing Lead for Gen AI Fund. Welcome, everyone, for today's Quant AI Build Day kickoff events.
+So… so what is a Quent AI Build Day, right? So, Quent AI Build Day is not a typical hackathon, that's why we… we are not really, you know.
+putting the name called, like, Hackathon, because, how this is, like, different than a typical hackathon is that, this is the enterprise-backed, AI hackathon. All the use cases
+And the challenge statement is actually, a real challenge statement that is currently happening in the enterprise, and they are seeking for solutions, right? So, other than the prizes, the cash prizes we are winning,
+These are also opportunities that are open up to you to potentially work with the enterprise on the POC,
+And also, a biggest, bigger opportunity, later, which is eventually, if everything goes well, you could actually launch this product together with the enterprise and offer this to their millions of customers.
+Right? I think this is, what making this, whole, AI build days, so amazing and so different than a typical hackathon, because there's something, big opportunities and big impact you can actually lift
+you know, starting, live behind this, and starting from this Quan AI build day.
+Right? So, I'll walk you through a very high levels of a timeline, right? So, after today,
+I mean, right after this webinar, we were entering a build period, right? From today until 17 of April.
+Where you can actually start, build remotely, right? You don't have to build in person, build your team remotely. You have, 7 days to build it, right? Then,
+Moving on, then we will have this, remote, evaluations to shortlist up to 10 teams for each track.
+And, these, 10 teams will be, selected to be… present or pitched on 21st of April, which is the event day itself.
+Right? So on the event day itself, the pitch day is happening on 21st of April.
+Right, where we'll gather all of you, be there.
+And the winners for each track, will be, selected to showcase on the event after the pitch day, which is called the Alibaba SME, Alibaba Cloud SME,
+AI Growth Day. Yeah, very long name, very long name.
+Yeah, so for that particular, event, there's… there will be, more than 300 people that
+gathering in the same room, so it's also a big opportunity to showcase your solutions to a wider group of people that consists of SMEs, enterprises.
+yeah, we open up the doors for you, right? So, the…
+The key, some important rules that you have to know before this is that, if your team are shortlisted, we are
+We are asking you to have at least one representative to attend in person on the pitch day, right? So that you can actually pitch in front of the judge, and that's the requirement.
+And also, the next, key requirement is that, for all the solutions you have, you must use a QAM model.
+to build it.
+Right? That's why, today we'll also have,
+A special guest from, Quan, is Dr. Ferdin. He will actually walk you through, on some of the, Quan, tech stack and, some case studies, so that you can get inspired on how to really utilize, this latest Quen models to build your solution.
+Right? So, if you have any questions, you can, list it down in the chat session there. So during Q&A, I will just, look for the questions and, answer you. So keep your question first.
+Yeah, and we will attend to you, shortly, right?
+So, yeah, so here comes the important part, right? I think some of you, actually raised up, these, questions a couple of times on, the instructions and how to actually navigate around on a dev post. So, I will walk you guys through today.
+Just give me a moment, I will switch to the particular… Yeah.
+Can you guys see my screen now? I think I should be in left post now. If you can, can you…
+put one in the chat box there, so I know.
+Wait, let me see again.
+Okay, anyway, I will continue.
+Yep.
+So, when you, when you land on our,
+our DevPost, landing page here, Quent AI Build Day.
+And you will see all the information for these, events, this hackathon itself, right? Just… do read.
+before you proceed to, build anything for the use case itself, right? At these requirements here, we have also uploaded all the use cases
+the track's use cases, you can refer here to get more information, and also seek for clarification later with the enterprise leaders in the room.
+Right, so… and also the, prices, and this is the finalized version, right? Everything's, announced today, it will be finalized.
+And, we also have some good news to… to share with you guys later, right? I will… I will keep this first, so stay until the end. We will share it with you. So, yeah, so let's talk about, the team formation, right? So, let's go to this, create project, click this button.
+yeah, they will ask you some questions here, already, ready at this tab. So, it will land you on… at this, page.
+And this is the first section you will go through. So, if you are, building the solutions or the project yourself, right, you can actually skip this step by clicking this, if you're an individual, team. But if you are joining with, other teammates, maximum four, people in a team.
+Right? So there's two ways you can actually add them in your team. One.
+The first one is that you put their, you can put… insert their email address at this field, and send them an invite. It will immediately have them here.
+Provided that they already have a DevPost account.
+Right? The second way is that, you send them an invitation link.
+Right, just copy this and send to them, and once they accept, you will see their name here. As long as they have their name here.
+They are part of the team already.
+Right? So, once it's done, save and continue, then you will go to the next
+Category here is, like, your project name, fill in your project name, your elevator pitch.
+Let's fill in here, only 200, you know, characters.
+For you to fill in, that's why it's called Elevator Peach.
+Then go to project details. Here's the part that's really important, right?
+try to, you know, there's some guidance for you to follow, to write for… to introduce your project, right? But try to include as many information as possible. This is really important because,
+the first phase of evaluations is done remotely, right? So there's no two-way kind of communications. The judge can't ask you questions, and you can't really explain further in front of them.
+So, that's why, it's… the best practice is to add as many informations you have in, this section itself.
+Right? Second, share with us what are the, you know, tech stack are you using to build these, solutions, this project?
+And, also very important instruction here is to have your GitHub link here as well, and the demo site, any kind of links you want us to refer to review your project.
+Please.
+them here.
+Right? And you can also upload some of the image at here, and
+video demo link. This is also very important. Please walk us through your, solution with, video, right? Because,
+You are the best person to know the whole user journey, and the whole evaluation on the first phase is done remotely, that's why it's important, just walk us through and share with us the video link here.
+Right? So it doesn't have to be public, you can unlist and just share with us here, right? So once you have
+Putting all the informations here.
+Then you can save and continue and go to the next tab.
+Which is some additional info. If you have other informations you want to share with us, you can upload the files here.
+Right? And, here's the next step, and this is one of the most important steps, is to select the tracks that you want to enter.
+Right? We understand that, there is some, projects.
+Or particular solutions might, addressing
+two challenge statements at the same time. So, you can actually, for example, you can select two types.
+if… Your particular projects is serving to,
+track, challenges, right? So, you can do that, right? Feel free to, you know, select, if you are building more projects.
+then, Submit another project. Okay, that's not putting everything in one, project, submission.
+Okay, so, reminder to you as well, which is, if you are telling us if you are able to attend on 21st of April, right? So, I guess everyone should take yes. Otherwise, yeah, you wouldn't able to pitch on that day.
+Okay, so when this is done, save continue, then you will go to, submit, final submit, sections here.
+Right, so here's the final reminders for all of you.
+And just check the… Terms and conditions here, and submit.
+Okay, so here's the… here's the, some, tips, right? So everything you submit at here, I would recommend you to submit it earlier, right? So I would call this as a soft submission.
+Because once you click submit, it doesn't mean that you are considered, like,
+final submission. So everything is just, in… in…
+is tentatively, it's a… it's a tentative submission, right? So, how… when would it be considered final, submission? It's…
+on, once it passed the deadline, right, which is happening on the 17th of April, 11.59 PM Vietnam time, so once it passed the time.
+Yeah, so it considered a final submission. So we… we happened before, that there are some team, they, they never clicked this submit button.
+everything here is in draft, right? So, if you never click this submit button and everything in draft, we will consider you as not submitting. So, what I would recommend you, a tips for you, is that right after this webinar, if you are very clear on what you want to build already, what track you want to build.
+Just, you know, you can… you can try to fill everything first, in… in a very high-level manner.
+And at least click the submit button here.
+So we know your… your intentions on… on submitting to this, particular track.
+Right? So, and, and just make sure before the deadline, and before, once you confirm your project, submission, just make sure you, you click multiple times these projects to make sure that you really, like, submitted your project.
+Right, to avoid all this, you know, logistics, issues.
+Okay, interesting. Who's drawing, yeah?
+Try to… guys, not drawing anything on the screen. How can I remove this?
+Min, can you help me to… Remove the… Yeah.
+Okay. Okay, cool.
+Basically, that is for the walkthrough on this platform. Oh, yeah, and speaking about
+looking for teammates, right? If you're looking for teammates, you can go to this participant tabs here.
+So make sure… For your… if you are looking for teammates, make sure you select, the team setting.
+called, looking for teammates here, and you will be labeled as available to request for team up. So if you want to work with a particular person for the project, you can click Request to Team Up here, and once they accept.
+you will be part of their team.
+Right? So, but…
+So for, for… so the next question is that, how were you able to engage with these people?
+Or how would…
+the participants were able to reach out to you. So try to add some informations here, like your GitHub accounts, or, you know, some of your Telegram's accounts here, so people can actually reach out to you. Or you can, you know, call out them in our support group, or in the team formation group.
+To, to talk to them, right? Your, your, about your, project's ideas.
+And, yeah, and make sure that they actually, you know, accept your request to team up together.
+Okay, that is for, team formation part.
+So, let me quickly look if there's any questions from you guys I can cover now, because I have
+some time.
+Yeah, so someone's called, like, Tron.
+Yeah, this link, you are right. So, thank you for sharing the death post link, dev post link in the group, so everyone can refer to it.
+Okay… Yeah, you guys, I saw someone is actually quite smart. He actually shared,
+himself, he actually recommends himself to be part of your team. You can grab this opportunity to share in the chat group, asking, you know, the opportunity to work together.
+Okay, there's a question asking, can I change my team size during the development phase if I register as individual? Can… you can change everything
+until the submission deadline, right? So, once it passed the submission deadline.
+Everything should consider fixed, right? And you can't change anymore.
+Okay, we'll answer one last question, then we'll move to the next, next slide.
+Must teams to be formed by today, or can teams be formed any time before the deadline? Yeah, you can form, you can edit anything, be it your projects and your team, forming, before the submission deadline. Yeah, so once it's past the submission deadline, it considers as fixed.
+Okay?
+Cool, we'll come back to the questions later.
+And now we are… Coming back to the slides here…
+Okay, I hope I cover most of the…
+Platform walkthrough on the project submissions and team formations.
+Give me a thumbs up if it answers most of your questions, right?
+Okay, where's the chat? I need to look at the chat. Okay.
+Awesome.
+Cool, so the next, next, things I want to cover here is the, the evaluations model that we are looking at for this,
+hackathon, right, the AI Build Day. So this, these are the key four areas they're looking at. First pillar is the problem relevance, right? Whether, you know, your… your solutions are addressing,
+to the particular, challenge statements from the enterprises, yeah, we… there's no open categories, yeah, so all the… the projects you build must
+relevance to a particular track, right? Second is, the solution quality, how well it's actually, it builds, how it, like, like, for example, one of the tracks is, in, in healthcare, right? So, there's some,
+accuracy, when it comes to, the evaluations, right, that the model has to be… reach certain accuracy, so this is considered the solution quality we are looking at, right? How practical it is, how, when it comes to deployments.
+Yeah, the user able to understand it, right? This is the solution quality that we are actually looking at.
+And the third pillar is the use of AI, right? And one of the key requirements for your project is using Quant Model.
+So please explain to us the reasoning behind, the rational behind on how you actually… you use quant models to build these solutions. The more information you're given, it will give you a greater advantage when it comes to the evaluation. But, and lastly.
+It's the execution and demo.
+Right? Share with us your prototype, the MVPs, if it's an existing product, we are open to that as well. Share with us the solution, how it works, walk us through with a video link.
+Right? So, yup, that's the… that's what we are looking for when it comes to, you know, evaluating your projects.
+Cool. So, everyone here, are you guys excited? Give me a… give me a…
+666 in China, they're, like, like, 666 in the… in the chat section. Yeah, awesome.
+So, yeah, now it's the favorite part. We have, some excited, judges joining our, on our event day. It's also, like, these people, they don't usually show up, some of them, so it's an opportunity for you to meet them as well. So come to join us on the event day, right?
+Yeah, so these are the folks we have,
+more of them they are confirming soon, but these are the ones that definitely will be there, right? So we have, 3 special guests, from, Quan,
+I mean, for this, event, they purposely fly into Vietnam. We have, Mark, from, Quen, for Ali Cloud, basically the same. There's a solution architect. Anything about the tech side of things of Quan, he's the best person to go to. Same go to, Dr. Ferdin as well.
+Right? And we have February, right?
+I would say, she's the Santa Claus for, developers community. Yeah, you can look for him, look for her for all these, like, credits, and all these capybara perks, yeah.
+She's the, yeah, Santa Claus for you.
+Okay, and next we will have, like, Feng from Tesco. He's the go-to person, and the person in charge of everything on the innovation side of things for Tesco. And then his background, he used to exit a startup,
+before, and now he's… he's helping, you know, Tesco to run, the innovations. So, it's a very, friendly person to, talk to. Talk to him, he, he gives a lot of good, great advice to startups, right? And builders as well, because he…
+he… he's been to that before, right? So, and we have…
+Okay, bear with me, I'm not Vietnamese, I'm Malaysian. So, we have An Dao here, we have Jay, correct me if I'm wrong, that's… I'm learning, right? So, we have both, the AI person from,
+Alfie team, one of the leading, healthcare, startups and, in the, in the, in the regions right now.
+So, we will also… I mean, today we also have the co-founder in the room, JF, as well, but, yeah, but he will be trying to be with us on that day. So, yeah, let's, let's, you know, tell him and ask him to come over and join us together on that day. Yeah, so he's… he's here with us.
+And we have, Lynn from, Logivan, one of the…
+startups, like, renowned startups in Vietnam, right? I think a lot of you know her as well, as a very successful, entrepreneur.
+And not to forget, two of our partners, Laura and Kai.
+Right? So I think Kai and Laura is also in the room as well. Yeah.
+Laura, are you in the same room?
+I believe you're here, too. Okay, awesome.
+So these are the judges.
+And…
+And next is that, yeah, it's the prices, this is what you are actually looking for, right, for this AI Build Day. Let's quickly walk you guys through as well.
+So, here's the final, you know.
+prizes for each, track. So we will have 4 tracks this time, and, there will be, track winners for each track, right? So for each track, there will be, 1,000 US dollar, sponsored by Quan in cash.
+for the track winners, I think this is, you know, basic, right? I think the biggest opportunity, which is the, you know, for example, when it comes to financial service track.
+is actually backed by, Xinhan Financial Group, right? So, Xinhan Financial Group actually has, arms called, like, Xinhan, Future Lab. They run all these, innovations, initiatives for Xinhan Financial Group.
+So, they have this program called Xinhan Inobuz. They are giving out, 200 million Vietnam Dong, POC opportunities, right? So, if you are building something
+That they are so excited about.
+They will pay you, right? Continue this journey, and, and, and…
+eventually, potentially deploy in their ecosystem, right? So, yeah, you are not building this just, you know, for this hackathon and just walk away like that, right? It could potentially become a business.
+After this, right? So that's as the opportunity offering from, Xinhan Financial Group.
+And, the next track is a mobility track, right, backed by, Tesco. As you know, Tesco is, one of the largest mobility players in Vietnam, right? So they have two, challenge statements this time.
+So one is the open challenge, where, you know, there's a potential $10,000 seed investment in your projects for up to 3 teams, right? That's pretty exciting, right? It's not just one, it's three.
+So, if you are not winning the track, but you could potentially be getting their investment, right? So, there's more chances for you to win, in this mobility track. So, for another track, it's called the Learning and Development track. I think Feng will actually brief you guys more later.
+So that is also a $2,000 US dollar POC contract, if, you will get selected, and you can, you know, launch it, internally, and try it out in, Tesco ecosystem.
+Right? And, next, we have this, like, healthcare track, which is backed by Alfie.
+Right, so this is, also very interesting, other than just the price, cash price itself, there's also a POC, potentially, like, POC contract that's up to 1 billion Vietnam dong, right? And there's 3 challenge statements.
+So, grab this opportunity to… if you're interested in healthcare, right, grab this opportunity to work with Alfie, right? If you are also looking for… for jobs, right? So, also grab this opportunity to showcase your
+Capability in building, great products.
+For LP, they're actually looking for, you know, great builders to work with them together as well, right? Lastly, it's the public sector, which is,
+kind of, you know, a special, track for this time. So we have a government, representative who will be part of us. So imagine, your solution could potentially
+launched to the whole Vietnam, right? So, yeah, this… we'll keep this, as, as a surprise first, the… the government representative will be there on the event day itself.
+Right? So, yep, that is the prizes. I think, I just received, you know, a good news, or even, like, a surprise for everyone, is that there's additional prizes
+Just coming from our Santa Claus Febrea.
+She says, like, all the winning teams here will also be given, 1,000 US dollar credits, from Quen, right? So, yeah, thanks to Santa Cross, that's why. Stay more…
+your time with, the Santa Claus during the event day, you might not know what could be coming to you, right? Like, today, she just said, like, 1K, US dollar of credits to every one, winning team in these four tracks, okay?
+Awesome.
+So, yeah, then now is the exciting part, which is the challenge statements briefing from all the,
+tracks, enterprises.
+So, may I have, laura Are you around?
+Can you unmute yourself?
+Minh Tran - GenAI Fund
+Minh Tran - GenAI Fund
+00:31:28
+Hey, Eugene, can you, add Laura as co-host?
+GenAI Fund
+GenAI Fund
+00:31:32
+Yeah, can you, can you do it? Let me…
+Minh Tran - GenAI Fund
+Minh Tran - GenAI Fund
+00:31:34
+Yeah, just only you can…
+GenAI Fund
+GenAI Fund
+00:31:37
+Oh, interesting.
+Okay, I have a multiple row now.
+One moment, yeah… Okay, Laura.
+Dan, you are the co-host now.
+Can you unmute yourself?
+No?
+Laura Nguyen
+Laura Nguyen
+00:31:54
+Okay, I can now. Okay, cool, you do just… just stay on the screen.
+GenAI Fund
+GenAI Fund
+00:31:59
+Yeah.
+Laura Nguyen
+Laura Nguyen
+00:32:00
+So, hello everyone, this is Laura. I'm actually at the airport at the moment, so in case that if you can hear a little bit of noise from my side, my apologies for that. So, I would like to take a few minutes to walk you through the Xinhan, track. It's actually the financial survey track by, Xinhan Future Lab.
+What are you building, what is smarter, and what's happened today? so before, I start, just a quick question for everyone, and I think that you're probably by now familiar with, like, how to do the thumbs up. How many of you here have built something for a financial institution before?
+Okay.
+Interesting. Okay, so, why a bit.
+Cool. So, I guess that, this is actually, why make this, track difference, right? Because, if you've been in, financial survey track before, you know that,
+It's actually in order to get access to the real problem, to the real data and real team is, relatively difficult. So, for this track, you are not showing, a made-up case study. It's actually, Xinhan Financial Group has come to us with a 30s, difference use case across their four entities. Eugene, if you can move to the next slide, please.
+So, for in this, four entities, it's gonna be the Xinhan Bank, Xinhan Finance, Security, and Light Insurance. So, Lai mentioned, this is a real problem that they want to solve.
+And, today, with the Quant support, they're going… you are going to build a solution for one of them, and I think that Eugene mentioned a little bit about the price, and what we know we can get already.
+So… For the next one.
+on the challenge side, here's, how the track win will work. So I think that, for maybe today, or after this section, I hope that all of you will go to the Gen AI Fund platform, and then you can see the different use case from there. If it's not, there is a WhatsApp group where you can actually go inside and then ask about, like, how you can see the
+the problem statement.
+And then you can pick one that'll fit your team's type and expertise. If you haven't done that, like I say, right, you do it now, before you actually start building
+When you pick the use case, and then after that, you are building a working solution that you can present to the
+panel, and after that, we're gonna get a winner over there. We're gonna get a Shinhan's, Future Lab representative to be there to listen to your page. And at the same time, Quan Team will be there, to support you on a technical side as well.
+And what the winner will get, Eugene, to the next slide.
+So, if you're curious about what you're gonna get, from this track, you two just mentioned a little bit earlier already, but I wanted to emphasize that again. So number one is that you're gonna get a catch prize, for… for the, Crane AI Builder. This is straightforward.
+And the second one, which is, like, the important things, we're gonna formally list you as a track winner, and then after that, submit your profile directly to the Xinhan Future Lab. Not just, like, random hackathon submission. And this is gonna be served as a curated recommendation from a Gen AI fund, and that is marty, because we're actually helping, Xinhan Future Lab to scouting, and at the same time, choosing the winner for the Inoboots program.
+So Innovos is a Shinhan's open innovation program that I'm currently powered by Gen AI Fund.
+And the selected company will get to run, 11 to 12 weeks, proof of concept engagement directly with the Xinhan's Mizunit unit, and then you're gonna get assessed through the internal team, data, decision maker, and then when, success phone team, we can get, like, 200 million, cash grants, right? So, it's gonna be the fully funded, and at the same time, you get the support from Xinhan, also from our team as well.
+And then, get into the InnoBoot one.
+You're gonna go through the, open application, screening interview, and then, you know, the whole set.
+Over there. So, basically, if you're the winning team at the track, generally, it's a shortcut, into something way bigger for you.
+And then to the next one, for the applications. So, this is a… this is actually quite an important part, and I wanna… and I hope all of you will listen carefully, because it could sound a little bit confusing here. So, when you register for this hackathon, you actually fill in the form already.
+This will, collect the basic information, like your team, your building, contact details, that enough for us to run on the hackathon day.
+But at the same time, there's another obligation for you to, submit
+In case that, you wanted to go directly to the InnoBots program as well, like, for example, your company background, your solution approach, your team credential, traction, and all of that as well. So is this, like, that's why we call it a dual application process, because of, you know, there's a tool for you to supply, to apply.
+So…
+We are asking, everyone on the Xinhan, track at the moment, or, like, in the fintech track, not just the winner, like, for everyone. We're gonna follow up with you over the email as well, in terms of, like, guiding you what needed, but basically, one is that
+You're gonna have…
+to, you're gonna see the problem statement, on the GenAI Fund platform, and at the same time, you're gonna see the…
+application for you to apply. I saw that at the sum of the question in terms of, like, you know, you have the, problem, in, to upload on the Inobook platform, don't you worry, just, we're gonna contact you over the email, and then after that, you can share with us, and then we're gonna get it figured. Because the deadline for that is actually on the 3rd of May, right? So.
+think about, like, in a way that the hackathon get you in the room today, and then, the platform, or, like, the, you know, books, the application will get you to Shinhan. So, Luo Posette for that.
+And, there are a few quick, key updates, Eugene, to the next slide. So,
+Importance on the 21st of April, is actually the hackathon day. So, like I mentioned after today, you're gonna get an email from us, with the instructions, so that you can apply, and also that, at the same time, to see the use case, in case that if you haven't seen that yet.
+Right, and then after that, for the last deadline for the full application of Innovus is actually on the 3rd of May. So this is a hard close, so don't miss that.
+And then after that, it's gonna be the, announced for the top, 30, and then, around mid-May, and then the interview to May, and then you probably know, you will know who's going to the POC by end of May early June.
+So that is, on the, financial survey track by, by Xinhan Future Lab. Encourage that if you have any questions, please feel free to just drop in the chat, or, like, contact our team over the email, and then, we've been happy to answer that, for you as well.
+Okay, Uten, okay, that is to the…
+that is the first track for, for the finance track. And then I'm gonna move to another track, which is, like, the public sector, which is, like, if, any of you have, followed, JDI Fan Activity, on the social media, you probably know that we actually involve, quite a bit with some of the public sector activity, especially on the awareness side, but at the same time, some of our startup is actually
+do the, redeployment and, currently in the public sector. So the problem that you are seeing right now is also a problem directly from the public sector, not something we made it up.
+So, moving to the next one, so…
+For the public sector, so this is all of this information already shared with you on the public, on the track…
+problem statement, but just like to, to, recall that a little bit. So currently, in the, many of the public sector agencies or organizations, there's a
+there's a process of how they receive the information. So, for those who are Vietnamese, you're probably familiar with this, but for those who are not Vietnamese, but basically, when you want to,
+Submit, or, like, you know, contact with a certain public
+sector organization, what happened is that you have a few choices. So, choice number one is that you actually have to send the physical document to the organization that you wanted to meet, and then, after that, or the second choice is actually online, in which that you can just go to the, you know, the portal, of the citizen, and then you also can submit, or, like, the… put the request over there. And then after that, all of this requests is gonna be rare to, like.
+Administrations, or administrative…
+department in which setup they've been trying to see whether or not what you're asking for, you are sending to the right department. And then from there, if it's yes, then they're gonna route you to the… route your letter or, like, application to the… another department, which is a handle that.
+If it's no, then they're gonna return back to you and say that, no, it's not relevant, and then, you know, you submit that again.
+And normally that process, it takes around, like, 5 to 7 working days. And then after, when your legislative application or letter, go to the right department, and then after that, the department also needs to summarize the information about, oh, okay, exactly what are you trying to ask?
+What is needed? What information already provide in your letter?
+And then after that, they're gonna find, okay, who involved in that, problem or that matter. And then after, when they find out who's relevant, then they actually,
+can either answer you, or take some time to analyze a little bit more. So at the moment, the public sector organizational agency take a lot of time to handle that. So, I know that sometimes that we as a citizen feel like, oh my god, it's so frustrated because it takes forever time, but just bear in mind that there's a lot of documents, both physical and online, that they need to deal with. And then because of that, it's just, like, very hypothetical.
+percentage of application or later were manually processed at the moment. And then the average time for each department is going to be, like, 5 to 7 working days.
+And then also many develop department involved. And also, in terms of the, Eugene, you can move to the next one.
+security, layer, in, so there's a… when the document happened, I think I'll just go ahead by just explaining the whole sector just now, but basically, in terms of the, security and in terms of the documents, right, there's, four different types, classified, documents for the, public sector, which is, like, one is, like, public, which is you can buy it online, for example, some of the law.
+some of the meetings, like, in the parliament, is actually public online, and then the second, the second time is confidential, and then the next tie, next one is, like, super confidential, and another one, which is, like, extremely confidential, so basically four layers, and each of the layers actually work, classified differently, and then the people will respond to that differently as well. So that is something that I also want whoever will be on this track to
+take into the consideration in terms of, like, okay, you handle the public document, but at the same time, you had to handle thinking about, like, what are the, considerations that a, you know, a public sector organization had to think about. Moving to the next one.
+Right, so, we already listed down, like, a few challenges over here. For example, manual identification part of the document, cross-department consolidations, and then also extended approval cycle. My recommendation is that you either can just follow in each of the challenges separately, or you can just create a workflow to handle the whole process end-to-end.
+So that is quite open for, for the public sector, challenge.
+So, moving to the next one.
+Okay, I mentioned a little bit about, like, constraints over here, in which that, you know, physical documents. So, currently, there's a digital transformation process is happening, so many of the submissions will be moved to, online, but at the same time, you know, physical is in there. So, when you build that, or, like, you build on this track, I would have a few recommendations. For example, number one is that
+thinking about, you know, how you can handle both of that to create a centralized database system. Or thinking about, like, moving forward, because of, you know, Imaging NetApp in the future is moved towards the, Funly, online system, then, you know, how is that gonna…
+whatever you're building also, will be the… will be continued in the future. And then, of course, like, multi-level documents, classifa… classification, and also trying to be,
+specific about quantifiable outcome, right? For example, right now, it's just, like, 5 to 10, 5 to 7 working days, so if your solution, what do you plan to, to shorten it by, right?
+Okay,
+So with that, I think that is the last slide, if I'm not… oh, okay. So, design outcome, against, right, for example, some of the, future state, capability that I will list over here,
+for example, like, automated, injection, intelligent classifications, or, like, AI summarization. This is some, but it's not limited to. So, you're more than welcome to think about how you can approach this, problem statement. And also, I do have a recommendation, I do have a,
+Some information, like, As you can imagine that, there's a different province in… include, like, local
+the public sector organization, or, like, central one. So it means that whatever you're building will be very, very potential to replicate, in a different organization as well. And then, if you can have some of the,
+If you can have some of other recommendations that are, in terms of how you can support, to make that process faster, we are happy to facilitate the direct connections for you, with the public, sector organizations. And also new in our track as well, there will be a government, official, it's actually deputy director level,
+we enjoy Earth to judge for this, problem statement, which is, like, we're gonna announce later on. I keep all of the surprise, for Eugene, so that we can share with you later. Any questions, feel free to, let me know, let us know in the group, or, you know, via, any channel that you feel comfortable with, emails, and, you know, WhatsApp.
+With that, thank you.
+GenAI Fund
+GenAI Fund
+00:47:32
+Yeah, thanks, Laura, for… for walking us through, like, two… two track challenge statements all together. Understand that you're flying off really soon.
+But we are still a little bit of time, because I understand you can't stay until the end of this webinar. Let's address some of the questions they have now, if you have some time now, maybe 2 or 3 questions.
+I need to unmute you, is it?
+Oh, interesting.
+Because I already make you… Give me one moment now.
+Laura Nguyen
+Laura Nguyen
+00:48:12
+Okay, there's what now?
+GenAI Fund
+GenAI Fund
+00:48:14
+Yep, yep.
+Laura Nguyen
+Laura Nguyen
+00:48:15
+Can you please read the question, or what question should I take? Happy to take some of the questions if we have time.
+GenAI Fund
+GenAI Fund
+00:48:22
+Yep, yeah, you can read through the chat, but let me pick some of you. There's a guy called Adrian Chi, he asked if we will get any data sets from the government side.
+In order to build some more, like, realistic and feasible solutions.
+Laura Nguyen
+Laura Nguyen
+00:48:37
+Yeah, so, actually, as I mentioned, right, there's a many of the, documents is actually published. There's, for example, some of the lore, you can totally get on, like, to Vietnam Public, or, like, some of the, channels, for the law in Vietnam, or Ministry of Justice. You also can get some documents over there as well.
+GenAI Fund
+GenAI Fund
+00:48:57
+So… Nope.
+Laura Nguyen
+Laura Nguyen
+00:48:58
+Yeah, and also, like, and for example, some of the meetings at the Parliament, actually, is also published on YouTube as well. You also can take the information from there. Not all of the documents, and then, are classified as confidential.
+So you can take that from, the internet.
+GenAI Fund
+GenAI Fund
+00:49:18
+Okay, oh yeah, I understand, where he's coming from, because he probably is not the local.
+From looking at his name.
+Right, yeah, let our team try to get if there's any, examples of materials that we can get it from publicly, and, put it into the landing page, and you can refer from there.
+Okay, thanks, Adrian, for asking that. Let me check if I have any other… Questions.
+Min, can you pin some of the questions to us?
+Let me see… I think let's talk about the Xinhan one.
+Let's see… I just thought I saw one.
+Anyway, yeah. So I think, thanks, thanks, Laura. We will, we will also collect all from all this question, from all this, chat later, and we will, try to address all of you and make it a document and share with every one of you, after this, webinar as well.
+Right? So, thanks, Laura, for, you know, tuning in, even though in a busy schedule.
+And, we'll move to the next track. Thank you!
+Okay, so the next track would be, from Tesco, the mobility track, right? So we have two challenge statements from, Tesco.
+May I have a phone? Are you in the room?
+Phong Dinh Phong
+Phong Dinh Phong
+00:50:48
+Yes, I am.
+GenAI Fund
+GenAI Fund
+00:50:49
+Awesome. Wow, I can feel your energy. Let's go!
+Phong Dinh Phong
+Phong Dinh Phong
+00:50:53
+Okay, Okay.
+GenAI Fund
+GenAI Fund
+00:50:56
+See? Yeah.
+Phong Dinh Phong
+Phong Dinh Phong
+00:50:57
+Next one, please.
+Okay, thank you. Maybe before jumping into the, the challenges, let me present some, thing about Tusco output in order to give you a better context of what to build.
+So Tusco is, a mobility and automotive ecosystem, so you… you can imagine, we focus on cars, right? So we sell, and we buy and we sell cars, and also we having the mobility service as well. So you can imagine there's two life cycles.
+We have the life cycle of the car ownership, so we're interested in everything that we can
+buy a… when user can buy a new car, when they have the needs to, financing their cars, buying insurance for their cars, or at, after a while, they can sell their car and trade in and buy a new one, right? That's a whole car ownership.
+life cycle. The second one is, mobility service, which is more like the car uses life cycle. So we want to…
+touch on every, touchpoint from the user's perspective. From toll collections, when you, go to the highway, you have to pay for the toll fees.
+To pass through, to e-parking, and other service, like the, car rentals, or maps and navigation. So all of these are what we are interested in, in building, right?
+Next slide, please.
+a few key numbers that you may see the scale of our operation at the moment. Last year, we sold more than 40,000 cars.
+That's about, nearly 14% market share of overall market. We, are operating 180 or so rooms at the moment, across Vietnam.
+And in Vietnam, we are among the top 5 retailers that are paying taxes to the government. So we are not only just one car, we are not just producing one car, but we are the mega dealerships. We, we sell and service cars for 16 different brands.
+And out of this brand, there are 5 brands that we actually, the importer and the sole distributor in Vietnam, that include, Gili, Ling & Co, Vonvo, Zhiker, and Lotus.
+Some other brands, like Ford and Toyota, even though we are not a distributor, but we are also having a very high market share for those brands.
+More than, like, a third of the cars are selling on the market, or any Toyota or Ford brand, is sold and served by Tesco.
+Okay, so that's the Task Force, site. On another end, we also owned VETC brand. This is a toll collection company.
+And in Vietnam, there are 3 providers in the market, and we are luckily being the market leader with, 75% of market shares.
+That means we are serving 4.1 million car owners, and having, like, 2 million transactions, of total collection per day. So that's the scale of the, operation at the moment, right?
+Okay, next slide, please.
+So bringing to this, few days, we present two, two challenges.
+The first challenge is more or less, like, a very open one.
+So you see, from the previous, two cycle, two life cycle, right? The life cycle of car ownership and the life cycle of the mobility and car usage.
+We haven't got all of the touchpoints there, right? So that's the ultimate reason. It's not something that's already there. We have here and there, for example, we,
+We start… we have the tow collection service. We start building the e-parking with 300 locations in Hano, and Ho Chi Minh City right now. We have launched a roadside assistance service.
+But there are many more. For example, we, we are building, a car wash, network, car wash platform, for, all over Vietnam. That is one of the initiatives that we are focusing, on right now.
+And there are many more. If you have a chance to use, buy and sell car and, and use car in Vietnam, you'll probably see, there are a lot of, use cases.
+That could be built, and we are happy to invite the builders and founders that have any interest in building and solving any pain point or use case in mobility areas, right? So, that's a challenge.
+And, one of the motivations from our group, why we are interested in
+in mobility challenge, is, one of the… one of the motivation is to increase our user engagement. At the moment, even though we have, like, 4 million users.
+But they open our app quite, like, infrequently. They only come to the app when they need to top up their digital wallet for toll payments.
+But we want the user to engage more with the app. The goal is to convert users from, like, monthly active users to really, like, daily active users. So that's a challenge. And,
+For this challenge, we are open for, investment as well, so you are not building, just for fun in 7 to 10 days, but you can actually.
+together with us, continue developing this, this, business concept.
+and bring that into the real productions, right? So that's the first one.
+The second one is more like a vertical into the human resource and training and development. At the moment, we have more than 10,000 employees that need regular trainings and developments.
+And as you know, like most of the traditional enterprises, we are still managing the learning and development quite traditionally, like offline classrooms,
+And we want to bring that in… we want to digitalize in, and centralize, managing, the costs and convert in from the traditional, class-based, learning and development into an e-learning platform.
+from long sections into, like, micro-learning experience. So that's the purpose. And in order to…
+facilitate this process, we need a kind of app and engine to quickly develop new courses and new learning materials, including the quizzes.
+videos, the slides, that could be… we'll be able to use in our learning and management systems, right? So the… the ultimate output of the system is the courses that we can import into our learning and management software.
+And, these costs will be immediately published on our internal,
+employee portals, right? So people are… our employees are coming to our mobile apps every… every day.
+They're doing the, you know, the check-in, they're doing meetings, and now they will be doing, learning and development, and we… we… we are hungry for
+contents, quality and engaging content over there, okay? So the winning team, will, we will use your solution right away into productions, so it's gonna be a very real and urgent, use case that we are presenting.
+Yes, so I think… I hope that this is clear enough, but if not, I'm happy to take questions. Back to you.
+GenAI Fund
+GenAI Fund
+00:59:45
+Yeah, thanks, Fong. That's a lot of context, and I love it, and when it comes to share both, especially the open categories, you even mentioned the TASCO Foundry programs, and also the learning developments is
+I think the keyword that you just mentioned is that you would like to bring it to the productions, right? So, I think this is the exciting part of this hackathon itself. We are not just seeking for, you know, MVPs only. We are here being very serious to bring this to productions into the enterprise ecosystem, right? So.
+Yeah, think of a very holistic way of putting yourself into the shoes of the enterprise, and build the projects from there.
+Okay, yeah, keep coming with your questions. We are actually looking at it, our colleagues actually trying to labor them, and we will address during the Q&A sessions later. Thanks, Feng, thanks again.
+I love the energy, yeah. Guys, keep, keep the questions coming. We will, also, for those who are not really answering today, we will also,
+You know, answer you, like, after this, webinar in a document way, okay?
+So, the next track, will be a very interesting track. It's a healthcare track, right? A highly regulated, very, like, life-saving kind of track, right? So, let's, welcome, our healthy.
+representative,
+Do we… yup.
+Is it Doi?
+Jean-Francois Legourd
+Jean-Francois Legourd
+01:01:16
+And that was JF.
+GenAI Fund
+GenAI Fund
+01:01:17
+Oh, JF, yeah, okay, cool, yeah, you are the one presenting. Awesome.
+Jean-Francois Legourd
+Jean-Francois Legourd
+01:01:20
+Of course. I'll leave it to you.
+GenAI Fund
+GenAI Fund
+01:01:21
+Yeah. It's on you.
+Jean-Francois Legourd
+Jean-Francois Legourd
+01:01:23
+I'll just simply ask for next slide whenever I need to go. Okay, perfect. Good afternoon, everybody. JF here, co-founder of Alfie, dialing from Ho Chi Minh City. Today, we'll go straight, very soon to the challenge, but just a bit of background into Alfie, so you know who we are and the team that is behind it.
+is to drive medical impact. We started 5 years ago, and we have already 1.5 million people. We have a super platform that works with patients and doctors. We're present today, 30 countries.
+I said 1.5 million users, 4.9 stars on the stores, we know how to code. I was the head of digital for Samsung Asia Pacific, for many years, working for the chairman of Samsung. Today, we're approaching $100 million valuation.
+Probably one of the largest digital health companies that was born in Asia Pacific, but we're headquartered in the US.
+We grow 50% year-on-year, and we have done all that with an engineer team based out of Ho Chi Minh City. We've been operating even before this company in Vietnam since 1999. So, we are technology people, but we work in the healthcare space.
+around 90 people around the world, the majority of product and engineering, everyone in Ho Chi Minh.
+And that's how we keep the company fast moving. There is an app that is quite popular that takes care of all wellness and diseases, and there is, as well, next, a platform for doctors that we are launching next month on the next slide.
+Great, perfect. So that's about us. If you want to know about us, you will find it online. There's plenty of documentation. You can even download the application and play with it. You'll see some of the challenges that we will present today. We solved them one way. We're not always happy about the way they were solved. And we are also using this competition to test out
+open source, model, like Plain AI. There is prizes, of course. We put our money where the mouth is.
+1 billion, like, round number, so 1 billion dong for a commercial contract, is that in case some of you were to build a company, whether on these challenges or on others, if we want to work with you, we'll find a POC, to be your first client and set up your own company.
+If we spot and fall in love with you, and you fall in love with us, you want to build kick-ass products, AI-centered, then we have no limitation in headcount to put your right talent.
+So that's a bit about the prices. You will have people, from my team, the head of AI products, Dow, that is on the call today, and I have AI engineering that will be the judges.
+Yeah. Starting with the first challenge.
+And, I saw some of the questions online already. Let's start with the number one challenge here. A medical scribe. The context, you've all been to the doctor, hospitals, or private clinic. What you might not know is they spend around 20% of their time basically taking notes on what was discussed. It's time that goes to waste.
+That can be optimized if you were to have an AI listening into the conversation and preparing all the notes.
+That could increase productivity greatly and make sure that the medical staff do what they join medicine for, which is to care for you and the other patients.
+So, the idea there is to build an AI system that is capable of listening to a conversation, identify who speaks, and then generate
+Not only the transcript, but the summary that is matching the conversation, but matching also the standard of a clinical consultation document.
+These are official standards, format.
+And so, when we're gonna be receiving your code, we're gonna see whether or not, when we pass, we input into your model an audio consultation in Arabic, in Vietnamese, in French, or in English. We'll pick one randomly. We'll see whether or not you have been able to accurately, capture the information.
+Holistically, and then, that, the experience for, for the person using the piece of software that you have created, it's, it's good.
+So we have Create Plateria behind it, and that's challenge number one.
+Challenge number two.
+We are testing Quine AI on another type of capability. If the first one was voice-to-text transcript and the ability to summarize matching a specific format, here we are testing image capabilities.
+So, the idea there is, when you're a patient, or when you're yourself, you know how to put yourself on a scale and know what is your weight. But actually, that is not very useful. What really matters is your body fat, how much fat you have in your body.
+And that, it's very expensive devices.
+However.
+With two pictures from the front camera of your phone, you can quite accurately estimate what is the body fat
+of an individual, what is their body measurement, provided that you have added first what is their height, and what is their weight. And the image recognition can identify places in your body, how much fat there is, and help you understand that even if you have put on weight, it may be muscle, and you're actually going in the right direction.
+So here we will be seeing whether or not, with Point AI, you're capable of building a small tool that is capable of ingesting, and within a few seconds, churn back body measurement and body fight ratio.
+It's pretty easy for us to know if it's good or not. We know the measurements, and we know the body fat ratio of the pictures that we will be putting in.
+So that's challenge number two, image processing and the type of intelligence behind just simply image processing.
+And challenge…
+The Labs Analyzer.
+That is the ability, to… so, first things first, you know what is a lab result, you go to give a bit of your blood, or your urine, or whatever, and then you'll get plenty of numbers, but none of us understand what they mean.
+That doesn't really help the patient, and every time you change lab, you will get different results.
+So, that's a bit of a problem with medical information. When it is there, it is confusing for the patient.
+The idea here is, can you upload your lab results in
+The solution that you're building, in order for all the information to be
+Analyze the data to be structured, and to turn
+to return to you as a user, not only the data, but a summary about what's going on that is good, and what's going on that is bad. And if you had several lab results.
+Are you able to see what got better, or what got worse? And what to do, or what question to ask your doctor, now that you finally understand what this is?
+You will be able to see inside the LC application an example of that. We have already built it, but we, here, we want to see whether Quan AI, a model that is open source compared to the other technologies that we're using, is capable of beating the Western models.
+What we're assessing, and that's the three challenges, what we're assessing here is not simply whether or not CoinAI is capable of doing something. We're assessing the way that you will identify that behind these
+Allegedly simple challenges, there is a lot of complexity that goes behind.
+So it's a good element for us to assess your intelligence, your ability to unveil the complexity behind something that may look simple for the user.
+This is the purpose, and we will be providing audio file. I will be uploading one
+for you for the first one, an audio consultation, although you could create one very easily by asking any AI to simulate a patient conversation with a doctor, and use 11 Labs or any text-to-speech software to create audio conversation in any language.
+That about it, that's about LC and the three challenges that we have for you for this, Academ.
+GenAI Fund
+GenAI Fund
+01:10:11
+Thanks, thanks, JF.
+you are really max… max out the time given. 10 minutes, just nice, yeah.
+Okay, awesome. We are still on time, right? So, I think my colleague, like Min also, actually sum up some of the questions. You can actually look through it. We will… we will go through it, during the Q&A sessions, right?
+We will continue with our agenda first.
+Thanks, JF.
+Cool. So now is the interesting part, right? We will welcome a Quen team to do some technical sharing. I think most of you here is pretty new with Quan Model, and also pretty exciting, like, what you can actually build with Quan Model.
+So, we also invite, Dr. Ferdin, from the Quan team. He's also the…
+person who, the trainers for, for, all the developers, right? So may I have, you in the room?
+Dr. Ferdin?
+Ferdin Joe
+Ferdin Joe
+01:11:10
+Can you hear me?
+GenAI Fund
+GenAI Fund
+01:11:11
+Yes, yes. Yeah, so I… I will… are you able to share your screen?
+Ferdin Joe
+Ferdin Joe
+01:11:19
+Let me share it now.
+GenAI Fund
+GenAI Fund
+01:11:20
+Yep.
+Ferdin Joe
+Ferdin Joe
+01:11:31
+Are you able to see my screen now?
+GenAI Fund
+GenAI Fund
+01:11:33
+Let me stop mine here.
+Jason Lin (Qwen)
+Jason Lin (Qwen)
+01:11:36
+Yes.
+Ferdin Joe
+Ferdin Joe
+01:11:38
+Okay. A very good evening, everyone. So let me share about this Model Studio product. So, this is the AI, model, AI token consumption engine of Alibaba Cloud. So, to start with.
+I would like to show the Alibaba Cloud's global infrastructure. Currently, we are having, like, 29 Alibaba Cloud regions, that is, like, in 29 geographical regions across the world, and we are having 92 data centers.
+So if you take the concentration of the data centers, you can see, like, in the Eastern Asian region, like, there is, like, an avalanche of data centers. So, if you take, especially in the Southeast Asia, we have, like, 3 data centers in Kuala Lumpur, Singapore, and Jakarta, and then we have two in Bangkok, and then in Asia Pacific, we have in Manila, and then Hong Kong, and so on.
+And then, if you take the AI capability, like, we're not talking about the cloud infrastructures, but when it comes to the AI infrastructure, according to the Gartner's
+statistics for AI knowledge management apps and general productivity. Alibaba Cloud has been continuously into the emerging leaders position. And then, for the generative AI engineering, also the same. And then when it comes to the generative AI model providers.
+Alibaba Cloud is still placed in the emerging leaders. It's actually leading this path. And then for the generative AI specialized to cloud infrastructure, we have Alibaba Cloud in the emerging leaders as well.
+So these are, like, the world-class compliance has been satisfied by Alibaba Cloud. So we have, like, more than 150 certifications, like, including all the ISO certifications, and then the regional-based certifications. Like, for example, if you take Singapore, we have, like, all the local certifications.
+All the privacy policies satisfied, and then we have some industry-specific laws and regulations also satisfied.
+Now, we have this Alibaba Cloud Tongi model family. So, in this Tongi model family, we have this product called as Alibaba Cloud Model Studio. That's where
+you are going to consume our tokens. So, here we have the two main foundation models we call as the Quen and the one.
+So, Quen, we have, like, the Quen Turbo, Quen Plus, and then QuenMax. So, these are, like, the basic text-based models, and then we have the reasoning model called as QWQ. So, in case if you want to have, like, the reasoning or thinking module, then you can go for the QWQ. And then, for the vision language models, we have the QuenVL, and then there are some models which we have, like.
+better than other AI models for, like, the mathematics and the coding. And then coming to the multimedia data production, that is for the text and video production, we have the one model. So this foundation model has, like, the text-to-image, image-to-video, and text-to-video. And these all are available with this one model.
+Now, what is this, Quinn?
+So this Quen is actually, like, named as Xianwen in Chinese. So Xianwen means asking 1,000 questions, so it's based on, like, the transformer architecture, and it is currently supporting more than 200 languages.
+So it started developing, like, from 7 billion parameters, and now the Quin 3 has got up to, like, 1 trillion parameters.
+And then, when it comes to the foundation models, it is having, like, the models which are ranging from tiny models, which are, like, for embedding into, like, the smaller, architectured devices, and then for MASU, like, hundreds of billions of parameters.
+And it is like having a multilingual feature. It can understand 119 languages, and including the Southeast Asian languages, like Thai, Bahasa, Malay, Indonesian, Vietnamese even, and then we have Korean, Japanese, and all supported.
+And then when it comes to the multi-model, it is having the QuenVL model, and then for the audio speech, we have all… all of them, you can use it with one single API. I will be showing a small demonstration for this.
+So, we have these four flagship models, like, the Quen Max is, like, the most powerful, state-of-the-art complex reasoning model. So, if you want to create, like, a huge amount of text, then you can go for the Quen Max model. So, we have, like, these are, like, different variants of our Quen model. So, currently, we have the Quen 3.6. So, the Quenmax is for, like, to get, like, huge number of text.
+And then we have the Quen Plus, this is for, like, some bots, or, like, for content generation and business applications. Then we have the Quen Flash, this is for getting the output in a faster and in a lower-cost way. So it is giving, like, a high throughput with a high, quick summarization for, like, low-latency chatbots. So then we have, like, the specialist models. We have the Quen 3,
+3.6 coder, and then we have the QWQ model, and then the QWEN3 embedding models. So these are, like, for various specialized models, like the Quen 3 coder is used for connecting with the IDEs. There are the coding model, the coding plan with the Quen. We can subscribe, like, for the hackathon purpose, if you just subscribe for
+10 US dollar, then you'll get, like, a few thousands of credits, and then you'll be able to create the application very easily. It can get an integration with the APIs of… sorry, the plugins or extensions of Visual Studio Code and many other IDEs are available.
+And then we have the reasoning and modeling with the QuenMath, as well as the QWQ model. And then for the RAG applications, we can use the QUEN3 embedding.
+So these are, like, the specialist models available. And now, we have, like, different senses that the Quen can do. We have the Quen VL, that is a vision language. This is for, like, looking into the images or videos.
+So this can take the static images, and the videos you can have, like, up to 1 hour long of video can be fed into this model, and then you can read through the model and get the outcome.
+And then we have the Quen Audio and the Quen ASR. These are, like, the speech-based models. The Quen Audio is used to convert the text to speech, and the Quen ASR is, like, the speech… automatic speech recognition.
+And then we have the Quin image, so this is, like, text-to-image, where you can just give the prompt and get the outcome in the form of images.
+And then we have Quen Omni, so this is, like, all in one. So you have, like, to understand the text, or the images, or the audios, or the videos, all in one, you can have it in this, Quen Omni.
+Now, we have the capabilities, so, like, in case if you want to do some information retrieval, there are options you can use with these Quinn models in order to go and search the internet and bring the outcome. That is also available. And then we have the writing assistance, coding development, and then for the educational support, many of you have pitched down, like, the presentations today. You were mentioning different scenarios
+like for the finance, or, like, for some, kind of public sector. So you can definitely look onto what kind of scenario, and then you can decide on which model you want to use.
+So we have the models, like 1.5, 2, 2.5, and now we have the 3.6.
+So, 1.5 is used for, like, very low latency requirements. Like, if you want to get, like, the response in a faster pace, you can use 1.5. 2 is for general purpose, and 2.5 is for, like, some mission-critical tasks, or for research and development. And then 3.5 is used for, like, the high-capacity outcomes.
+And when we released the 3.55 model of Quinn, you can see, like, who have commented on our, performance model, metrics.
+So, Elon Musk has given, like, the impressive intelligence density.
+So, not just that, like, if you take, the various, benchmarks, like a hugging Face, we are, like, leading the charts in there. And recently, we, after the release of 3.6 Gwen, we have, ranked number one in the open router, leaderboard. And then, when we, when it comes to different.
+benchmarks, we are, like, leading in those cases. So, for certain cases, we are, like, number one in the case of AI model performance.
+So we have, like, this model as a service where we have, like, ultimate model services from the Tungi Quan, as well as we have the third-party models, also some industry models also available.
+So, as I mentioned, we have the foundation models of Quinn and One. So, these two are provided as model as a service using our product called as Alibaba Cloud Model Studio, and this will be supported by various AI infrastructure products, like for computer storage or network, whatever it is. And now.
+We have, like, Quinn and one majorly, and then we have another thing called as the fun model. So, Fun Models is also available in the Model Studio.
+So we have, like, the COSI Voice and the Fun ASR, these are all, actually, it's, like, something parallel to the Gwen audio and the Gwen ASR and the Gwen TTS. So the, the… why we need to have this is, like.
+We have, like, two different teams making these two different types of models, so that's, like, we have, like, our own kind of improvement in the model development.
+So, this is, like, some statistics from the Hugging Face. So, so far, we have crossed more than 600 million of downloads of Quen model from The Hugging Face, and people used our models to create their own model by customizing the model. Likewise, we have, like, 170,000 models which are listed already.
+And now we have, like, the endpoints. So, when you are creating the API, so you have to choose which API will be using which data center or the region. So we have what we call as the endpoint. So currently, we have, like, 5 endpoints all over the world. So, for the mainland China, we have this China, Beijing.
+And then, for… usually for the international market, we recommend people to use Singapore. But then, now we have, like, additional endpoints for U.S, Virginia, Frankfurt, and then in Hong Kong. So what is the reason, and why… what is the need for having this?
+So, when you are having more number of endpoints, and if your application, which you are supposed to develop and deploy, will be, like, in a farther place.
+and you want to get, like, a right amount of latency, then these endpoints are good. Like, for example, a person is living in
+Vietnam, and you want to cover a customer in Europe, like UK, or France, or even Germany. So then they can choose this Germany-Frankfurt endpoint, and then create that API to respond to the customer. So definitely, they will get a very little latency than having any other endpoint.
+Now, how you can use this? So, you can go to access the model studio, and then you can select your model there, and then you can call by the API.
+Or, like, the… you can call by the playground also. So, whichever the way you want, you can try on it. Next, I would like to explain about the QuenVL model. So, this is the vision language model.
+So this can go for the videos which are, like, even up to 1 hour, and it can go for, like, multiple languages. Read through the pictures.
+As well as the video. Oh, the shadow ones, you know, Konoma.
+And then we have different, models for the one model. So the one we have, like, VAN also belongs to our Alibaba Chungi family. So, 2.5 has, like, complex motions, and it can even follow the physics laws.
+And then it is designed for the cinematic quality and text generation and visual effects. So these are, like, different features available.
+And then we have the 1 2.2. This is created for, like, using the director's perspective, how you want to focus the lights, and how you want to create different options. So I have a small video clip, I would just play for, like, a few seconds, and then move on.
+This video is totally created by one to Python.
+So you can show, like, what view, what angle, how you want to place the things, everything.
+And then we have, using this 1 2.2, we used this for the iLight Festival in Singapore. So for the iLight Festival, we used the one for the video generation, and we placed an interface in front of the Marina Bay Sands in Singapore, where the people just scan their QR code, and just to take a selfie and upload into the system, it will…
+create a video of the people, and show, like, how they will look like in an AI city. That was the scenario. And here I have some video clippings on how my colleagues tried it, and how it looks like for them.
+So these are, like, the AICT, and then how they look like in there.
+And now we have the 1 2.5, so this is, like, to add the video as well as the audio also in the video. So these are, like, this is the feature here.
+So, you can see, like, how small the prompts are getting in.
+Unlike the other models, the prompt size is very less, and you just specify, like, few words, and then a few… a couple of sentences, and then you are able to make the video.
+Showtime!
+See?
+And then you can add the music reference, and then you can add, like, what kind of speech to deliver, everything you can specify in there.
+Hey! Give me a battle feat!
+Give me some faith!
+And then you can change what kind of background you want, and then specify, like, what kind of fume you want to feed in, and how you need to place it, and background lights, everything.
+Yeah!
+That's how you can do with the 1-2.5, and then we have the 1.2.6, where you can mention, like, short-based, prompting, like, what you need to place for, like, certain second level limit, like, so for this timing, you need to go for, like, a particular action, and then the time limit of 2 to 4 seconds, so 4 to 5 seconds, like that, you can specify. And you can have, like, a length of
+like, up to 15 seconds, you can go for the 1.2.6. And the 1.2.7, it has gone to, like, we have the 2.7 now. 2.7, it can go up to, like, 15 seconds for a video.
+So this one we have specified for each second, we have specified everything.
+Towards us! And it speaks of everything.
+And the video plays off.
+And then we have the QuenCoder model, so this is quite comfortable enough for writing any kind of code or creating applications. So, in case
+If you are using the Visual Studio Code, and you want to develop an application, I would recommend a plugin named Kilocode is available. So, if you download the Kilocode extension, you can use the Quen API, and then the Quen extension, and to develop the code, and then it will create the application for yourself.
+And then we have the Alibaba Cloud Coding Plan. This also you can consume from the model studio, where we have, like, for $10 for the Lite version, and the Pro version we give for, like, 50 US dollar per month.
+So you have, like, a good amount of tokens, which is good enough for completing this challenge as well.
+So then we have this coder IDE. So the coder IDE also you can create and create an account and then start consuming. But I would recommend you to go with the Visual Studio Code with the Model Studio API.
+So, that's about my presentation, and now I would like to show a small demonstration on how to use these applications. Let me share my other one.
+Okay, so now we have gone into the console of Alibaba Cloud. After you log in, you'll get a screen like this, and then you click onto this console over here, the right top corner.
+And then you have to look for the product of Model Studio.
+So I have gone into the model studio. So this screen, you will get it only when you create the account, and then you attach a payment method, then you'll be allowed to start consuming the AI tokens. So I hope, like, my team will be providing you with the tokens you can load in the
+The top-up money you can, get with the coupons.
+So here we have the dashboard over here, the left top corner over here. Just click onto that.
+So here, you can choose what model you want to use. Like, you want to have, like, 3.6 or 3.5, or even we have, like, the DeepSeek model is available and all. So here, I'm using the Singapore as the endpoint.
+So, by default, I get, like, Singapore. So, in case if you want to use the other regions, you are free to choose.
+So, I recommend you to use Singapore because it's quite near to you, so you can get, like, a better latency.
+So now I ask a question, like, hello, can you give me a travel… itinerary… to… Help…
+Let me visit… Ho Chi Minh City.
+for 3 days. So I'm coming to Vietnam for 3 days, right? So, I have mentioned like this. So, it will automatically provide everything. So, here you can choose this particular thing. Now, we are having the thinking process.
+And then it will… based on this thinking, it will provide you the outcome. So, here, we can just use this playground to see how and what performance it provides for each and every model.
+So, then we have, like, the API endpoints and everything. Let me finish this one.
+So this is for the text model. So here, we have consumption in terms of different ways. Like, we have the input tokens, there will be a cost, and then for the… if you're using thinking, the thinking mode will have a cost of the tokens, and then the output will be having the tokens.
+But when you compare with the AI token consumption of Alibaba Cloud's Model Studio against the Western Cloud, or, like, any other products, we are having, like, you will get more AI tokens for every dollars you can ever spend. So that is what we provide, like, we consume, like, less number of tokens
+and we provide a much better outcome. So here you have seen, like, day one, where I can go for, like, the historic ones, and the day two for, like, the tunnels and local culture, and the day three for, like, coffee and relaxation. So this is for the text, right? So then we have the… for the speech.
+So, for the speech, you can choose, like, whether you want to have, like, a Quen ASR, for the speech recognition, or, like, you want to use, like, the fun ASR. In this, we even have, like, the speech synthesis, that is the text-to-speech.
+you can choose different models, and then you can choose to use with that. And then we have the…
+vision playground. So, in the vision playground, we have the visual understanding. So, here you have to upload an image, and then ask what is there in the picture. It will provide the response as well. So, in case, if you want to create an image, so you can go to this image generation.
+So here you can provide your prompt to generate the pictures. So this is for the Quinn image model, and then we have even the
+one model. So the one model, you can choose which model, 1, 2.6 is available, so you can just choose, and then you can start creating the images. And then we have the video generation. So, for the video generation, we have the 1, 2.6 models, 2.5, 2.2, all are available.
+So, I have asked, like, one prompt, which to develop the video. It was able to generate the video as well, and that's how you can do with the playground. Now, coming to the product, how for your hackathon you are going to use it? Just go to the home page, and now we need to go to the API. So, how to create the API? So, you just go to this API key in… by just mousing…
+mouse-overing this gear icon, and then click onto the API key. So, already I created this one, but I'm no longer using this, so I'm just using this to delete it. I delete this one.
+Now, I want to create a new API key, so I click onto this.
+And the workspace, I use the main workspace.
+And then I click on OK.
+I just copy this.
+So, you should not forget the API key, so you can just copy it from here. So, this is the one. You just click onto this, you will copy it.
+And then, wherever you wanna go, and you can take it, so if you want to see, like,
+Let's say you want to create a chatbot.
+So you're using this Quen 3.6.
+Plus. So I click onto this. So here you can just scroll down.
+And you can see, like, the sample code is available.
+So you can use this one, and instead of this API-Cope API key, you have to replace this place with the API key which you have created already in this account, and then you can start using this. So you can customize this code, or you can give it into the coding API, and then you can develop the source code and create it like a product.
+Like, for example, you open this Visual Studio code.
+So in the Visual Studio code, it's like,
+So we have the extensions over here.
+So, the kilo code is available.
+And then we have, like, you have to use the endpoints and everything, you have to install this, and you can just, you have to add the prompts
+I'll just give this later.
+So then you can just prompt, and then it will use the API endpoints and everything. So where to get the endpoint? So the endpoint, you can see, like, in the model studio. So here you can see, like, API key, and then the dashcope INTL.
+This is the endpoint, the base URL over here. So you can choose this API endpoint, and then the API key which you copied, and then you run this code, it is going to run. And then for the coding plan, you can just subscribe from here.
+So, here we have the, different plans available. So, right now, I have subscribed the Lite version, that is why it is not showing here.
+So, the pro plan we have, like, for $50, and the light plan I have for, like, $10. So, this will also create, like, a specific key.
+You can copy this key, and then for the OpenAPI compatible tools, you can use this endpoint, or, like, Anthropic API protocol, you can use this endpoint. And then we have, like, different models, you can choose which model you want to use, everything you can specify here.
+And then you can use it as a subscription part.
+Like, you can use this model, and then go to your application and start working on it.
+So, then you can click on to this model studio, and then you can choose. In case if you are creating an application for, like, the chatbot, where you give, like, text as input, or images as input, and you want to get, like, a response.
+So, for the visual, you can go for, like, Quen 3, VL+, or any model, you just click on it, or you can get into the details, like the source code, everything you can get in over here.
+So that's something what you can do with this. And then I go to the visual again. So here we have, like, this Quen image.
+And even we have the Quen Image Edit. So what this Quen Image Edit is doing is, like, if you want to create, like, an application where you want the people to edit their pictures, they want to enhance, like, to restore a very ancient picture to a new one, they can use this Quen Image Edit.
+And then we have, like, different variants… variants of these visual language models. And then going to the one model, so you have all these over here, you can have the one video edit, everything you have over here.
+And the most important thing is, like, we have the Quen 3 Live Translate. So in case if you have, like, a streaming application where the people speak in one language, but you want to translate and transmit to multiple users in different languages, so you can use this live translate. The latency for this one is, like, around 1-2 seconds, you will be able to translate and immediately broadcast it to
+the people in a faster pace. So, this is about the models.
+And then I have mentioned about the coding plan, and then we have, like, for the inference, we have the text generation Omni model for, like, different options.
+And then we have, like, speech synthesis, image generation, all these are available. So, in case if you want to use, like, the kilocode, you have the options here available.
+So you can start using them.
+And, that's how we will work on with Model Studio. So, in case if you want to see how much you are consumed with your models, so you just need to scroll down or, like, go to the dashboard and go to this monitoring.
+So it will show, like, how much monitoring consumption has been done. So I didn't use it for a couple of days, so it is not showing anything here, but you can use for a certain number of times, and then you can see, like, how the models are performing.
+And then we have the permissions, so here we have, like.
+what users you want to add, like, so in case if you create an, you're working in a team, right? So this is, like, a main username account. So then, for, like, other cases, we can use, like, to see the usage, and then you can, based on that, you can do, like, creating, like,
+RAM user account, and then that RAM user account, you can add it into the permissions, and then you can use it over here. And then you can click onto the usage, that's where you can see, like, how much
+is consumed by the model, and everything will be provided over here. So when you create an account with, by default, you will get, like, millions of tokens for each and every model.
+So you can consume that. On top of that, my team will be providing you with some coupons, so you can consume from that. So definitely, you will have, like, enough number of tokens, so you don't need to worry about the token consumption.
+Definitely you will get enough amount of tokens to finish this hackathon for sure. And then, it's even if you use the coupons, and then for that value of money.
+you can get, like, more number of text output than what you get in other AI models. So, this is something quite peculiar with Alibaba Cloud's Quen models. So, there are, like, different options available. You can try using them.
+And, yeah, that's all about my demonstration, so I'm done with that.
+GenAI Fund
+GenAI Fund
+01:42:10
+Thank you. Thank you, Dr. Ferdins. Very, very,
+holistic walkthrough in just a short minute, like, 30 minutes of time. We… you're just trying to give as many as you can. So we're recording this session as well, so guys, no worries. We will… we will upload to the… the dev post there, and you can watch it back again, just in case you miss out anything, right?
+Yeah. I saw a lot of questions coming in. You guys can't wait to get… start to build, right? So, we would like to introduce Fabria to walk through with everyone on the credit claiming process. Thanks, Dr. Ferdin, again. Yep.
+Ferdin Joe
+Ferdin Joe
+01:42:52
+Welcome.
+Febria R. (Qwen)
+Febria R. (Qwen)
+01:42:52
+Okay, let me share my screen.
+GenAI Fund
+GenAI Fund
+01:42:55
+Okay, cool.
+Febria R. (Qwen)
+Febria R. (Qwen)
+01:42:57
+Okay, can you guys see my screen?
+Yup. Hopefully, yes. Okay.
+Okay, thank you, everyone. My name is Fabria.
+I'm from the Alibaba team. I'll walk you through the process.
+on how, you can claim your credits. So the first one, I think we required you to, create Alibaba Cloud account, so later, after you already create the account, we can inject the coupon into your specific account.
+And then the second step is, you need to add and verify the payment method, for your account. So how you can do it is, later in the expenses and costs, console.
+You can go to the payment details, And… Sorry.
+Where is it?
+Oh, sorry, the payment method.
+And then you can add payment method here.
+You can, add either a credit card or debit card, or PayPal, and you can bind the payment method. And then after that, then you can go to the step 3, which is, to submit your credit request, for the hackathon.
+So, the link is, later, I think the… this document already there in the dev post.
+You can go to the post link and follow the steps. It's quite similar to the one that I mentioned earlier.
+And the link to claim your credit is here on the Step 3. So this is really important, after you complete step 1 and 2, please ensure you go to step 3.
+to this account, this will ask you to log in later, but because, I already logged in, maybe I just quickly, log out first, so you see how it works.
+Okay, I already woke up.
+So you can just click this link.
+And then it will ask you to sign in. You just sign in, with the account that you already created.
+And you… once you complete the Step 1 and 2, you will be able to open this, form.
+If you are not computing the Step 1 and 2, usually it will give you a pop-up error, or a blank error, when you try to submit
+So, please fill out the details, and I think, end of today, maybe around 7pm, I will, take a look on all the data, and getting all your, user IDs, and I will, inject the coupons.
+So, after that, there's gonna be,
+email that I sent to your email,
+To indicate that, whether you already, we already grant the coupon to your account or not.
+So, once you receive the email, I think, in the same expenses, tab, you can go to the coupons here.
+And then you can see if any coupons already injected to your accounts.
+So that's how you can indicate, if the coupon already, injected to your account or not.
+I think for this hackathon, we will give you around 50 US dollars to start.
+So, yeah, you can try, to use the Model Studios, as Dr. Farden, earlier mentions, to start, your project using Gwen.
+I think that's all on the coupon credits, related.
+flow. Any questions, maybe?
+I think I saw some of the questions in the group chat earlier. I already tried to answer some of it.
+So, yeah, I think, Eugene, do we have any group chat, with the participants? So I think later, if they have any issue, just, contact me on that group chat, and we can see how we can troubleshoot together.
+GenAI Fund
+GenAI Fund
+01:47:09
+Sure, sure. So, guys, just keep the questions coming. Even though we are not addressing it today, we will, save all these questions, and we will revert to all the respective folks to answer it, and then we will come back to you in a document and answer all the questions you have, right?
+Febria R. (Qwen)
+Febria R. (Qwen)
+01:47:28
+Yep.
+GenAI Fund
+GenAI Fund
+01:47:28
+So, so yeah, but we definitely have a Q&A session later, just, just stay, stay until the end, right? There's, some key steps, so, to ask you guys to take, before this as well.
+So thanks, Fabria, for, you know, being so, so, focused on these sessions as well, because I saw you already answering some of their questions.
+I need to double-check, like, if I'm repeating the questions again. So, yeah, if any of the enterprise leaders, if you are, feel free to answer their question if you have the answers already, right? Okay.
+Cool, let me continue to share my screen.
+So, I believe the sessions
+earlier. It's pretty much covered quite a lot of intensive content when it comes to setting up the account, when it comes to the Quan, capabilities, you know, how you actually can utilize it, all of that.
+So you can see, there's actually quite a lot of things for… you can actually utilize the cloud models to do. It's a multi, it's a multi-model, right? So, yeah, thanks for that. For all the, you know, claim, cloud credits, claiming, and learning resources, we already uploaded to the
+dev post.
+just read through it, everything. If you couldn't find it, probably you haven't… you didn't go through it, well, right? So we'll try to make it more obvious for you to find that.
+together. Okay, yeah, so now we come to the Q&A session, but there's some of the FAQ we want to address here as well, before we go to Q&A. So, first question is that, can a team submit more than one project? Yes, you are allowed to submit multiple projects.
+So, you just have to go to dev post there,
+just create multiple projects, right? Don't submit, one, so in one… when you create one project, don't submit multiple projects in one project, right? You have to… if you have another solution, create another,
+project again, okay? So second is that, do we need to build a brand new solution from scratch? Not necessary, so you can,
+built from scratch, if after you got inspired by some of the challenges today, or if you listened from some of the challenges today and you found that, hey, you already have these, solutions already, and already in the market, you already start selling, so you can also use the existing solutions to
+you know, to submit for this AI Build Day as well, as long as it incorporates Quem model, right? So you can… so what you have to do is, if you are not using Quan Model, just customize and run the whole solution with the Quan Model.
+Right? So the third… questions, let me… Is that,
+Can an individual be part of more than one team? Yes, you can. So you can invite, multiple, people that, you know, join, like, each other's, to build different projects together. We are open.
+For that as well.
+And,
+The fourth question is that, yeah, does my whole team have to be attend on 21st April? Not necessary, but you need to have at least one official team representative to be there, to pitch to the judges if you got shortlisted, right?
+Lastly, it would be, can you make changes to our submission after 70th of April?
+So, no. So, whatever you submit on 17th of April, or if you submit earlier, when it reached 17th of April, 11.59, night time, it's… whatever you submit is considered fixed, right? You cannot, change anything anymore, even though,
+you… you are shortlisted, to pitch on the event day, you can't update anything, right? Just to be fair to everyone, right? Okay, you can only pitch whatever you have submitted.
+On the event day itself, right, on the pitch date itself.
+Okay, so, we still have some time. We can go through some of the Q&A, right? I think some of the,
+answers. I think JF also very, you know, spent a lot of time to answer their, their questions. Yeah, so I have questions here for, for Alfie, right? See anyone from the Alfie can answer.
+So, it's regarding for the challenges of 1 and 3 that's already built and launched by Alfie, so…
+The audience would like to know what exactly are you expecting from the projects, and
+And that, they are working on, yeah.
+Can you answer that?
+Jean-Francois Legourd
+Jean-Francois Legourd
+01:52:16
+Sure, sure, sure, sure. So, one is actually being built at the time we speak, and when you work in the healthcare space, you have to eventually have all your applications localized in one country, each country.
+Unfortunately, the Western LLM are usually not available in most of the developing countries. You only have one hub here, one hub there. So we need to be able to start developing our own LLM, or our own models.
+Using open source models that we could deploy in, a cloud environment.
+that doesn't have AWS, that doesn't have GCP, that doesn't have,
+Azure, that may or may not have Alibaba Cloud. And we need to be able to not be dependent on the presence of one cloud versus the other to be present and operating in that country. So, it's the first time that we would be using, and we want to see that Coin is actually very well known to be one of the best open source,
+LLM, and of course, sets of AI capabilities, and we need to see whether or not we could actually, build, rebuild our tools on open source LLMs. Well, it's not only LLMs, it's AI capability and AI sets of services.
+So we have to rebuild. That's still the case for, the medical,
+scribe, scribe, as well as for, the case number 3, which is the,
+the lab result, analyzer. For case number two, we are currently, by the way, using a third-party vendor. They cost a bomb.
+And they are crap.
+So I need to rebuild it.
+And I never prioritized it.
+And the team internally all wants to rebuild it, and we said, you know what, why don't we use that opportunity to see if we could use Quan to rebuild it? So that, we absolutely need to change it. It cost a bump, and yes, it's not really good anyway, so… yeah, that's it.
+GenAI Fund
+GenAI Fund
+01:54:19
+Yeah, so I think, from what I understand, it's basically, Alfie asking you to… to beat their existing solution, right? Make a better version.
+Yeah, if you…
+Jean-Francois Legourd
+Jean-Francois Legourd
+01:54:29
+For 1 and 3, yes. Actually, 3 is there. It's us, and it's working very well. It was actually developed by Dow on the phone tonight, today.
+Element number two, we're using a vendor, and they are crap, so we have to really… you're competing with an existing vendor, so that's why, you know, we have budget for it, and if you were to build a company on that, or if you were to join us, we have plenty of budget available. On number one, Daryl and the team are building the new tool.
+So,
+She will be able to really see, even if you don't manage to finalize the product and get the perfect version, she knows exactly, and will know exactly, the type of struggle that you're facing.
+And see whether or not you're facing the same as them in your sports process and your speed of working. And this way, they know what the struggle that you're facing. The best way for us to assess the quality of your team is not to know if you find the solution to one problem.
+Because life is about solving many different types of problems, so we are more assessing your style, your speed, your level of intelligence at solving something that you don't… you've never heard of before, you have no medical background. We don't either, by the way, in our team. Most of the most brilliant people at Healthy, had to learn everything from scratch.
+And that's how you distinguish smart people, not because they came with knowledge, but they came with processing power.
+GenAI Fund
+GenAI Fund
+01:55:49
+Awesome, yeah, I think, that's… that's pretty addressing the questions already. Thanks, JF. But, before that, right, I also have… I see a couple of questions, but it's surrounding on, this, same goes to TASCO as well, but I'll come to you, Feng, later. It's about,
+I think a couple of them mentioning about, the sample data they can… they can actually access to…
+When it comes to building the… the projects,
+Yeah, can you address that for Challenge 1 to 3? I think you shared one for Challenge 1.
+How about the challenge 2 and 3? What's the arrangement from there?
+Phong Dinh Phong
+Phong Dinh Phong
+01:56:27
+So, my turn, I'll still…
+GenAI Fund
+GenAI Fund
+01:56:29
+Alfie, Alfie can answer it first, yeah, then it comes to you.
+Jeff, or anyone from LV Team, yeah.
+Jean-Francois Legourd
+Jean-Francois Legourd
+01:56:37
+Sorry, which question? Because I was reading the chat at the same time, sorry.
+GenAI Fund
+GenAI Fund
+01:56:41
+Yeah, yeah, because there's a couple of questions I saw, like, before and after, surrounding on the data, sample data they could access.
+Jean-Francois Legourd
+Jean-Francois Legourd
+01:56:49
+I updated already one audio file, and I will upload one lab result. I'm actually currently anonymizing it to make sure that you don't know who it is, but otherwise, you will have one sample. And by the way, you could also go to a Diag in Vietnam for a few bucks, you could have your health check.
+Which is good. Worst case scenario, you know if you're in good health, and you will get a very good lab results sample, so…
+Pretty simple. And they do that within an hour, so it's…
+That's the way you… by the end of your account, you are in better health, which is already a win.
+GenAI Fund
+GenAI Fund
+01:57:25
+Awesome. Okay, thanks, thanks. So if, I mean, we see your questions, we… and we have prepared some of the resources you guys asked as well, so after today, we will probably,
+yeah, update the dev post with all the new resources, and you will be receiving our, updates as well. So just make sure that you, join our support group on WhatsApp, and, also keep our eyes, close to your, inbox. We'll be sending email updates to you as well.
+Right? So the… yeah, so for… for Tesco, right, I think there's a question that's asking, to you about, to access to the…
+learning portal, so that they can know what is the current user journey and experience, and the whole learning materials on the platforms, and they can actually build
+On top of that.
+Right, yeah, and any answer for this?
+Phong Dinh Phong
+Phong Dinh Phong
+01:58:21
+Yeah, I think, having an account locked into the system may not feasible, but what I can do is to take screenshots.
+of the, relevant screens related to training and development. So you have, basically, the, understanding the flows
+over there. And, you say that also we can have, like, some input materials, like PDF files or anything that can generate, tuning materials.
+Yes, we would see what is not, like, sensitive, and we would choose a few samples for you to do so.
+GenAI Fund
+GenAI Fund
+01:59:06
+Okay, yeah, so we will… we will collect some of these resources and update you guys later.
+Alright.
+Phong Dinh Phong
+Phong Dinh Phong
+01:59:14
+I think after… after the team formulated,
+we would have the, group chats together? I guess so, right?
+GenAI Fund
+GenAI Fund
+01:59:24
+Yeah, we already have a WhatsApp group with all, most of our team in there. We will add you guys in as well, yeah.
+just, just, just, we are not adding you guys before this, just in case you get spammed a lot of message, but after this, we will add, all these judges. Let me know, who, who would like to be in, and we will add you guys in.
+Alright, and for, Tasco, continue, like, what…
+There's a question, like, is there… must be a Vietnam company for TASCO project program?
+Yeah, there must be a Vietnam entity to be…
+to be built for, Tesco.
+Phong Dinh Phong
+Phong Dinh Phong
+02:00:12
+No, I don't think so. But of course, the process of procurements and buildings later on will get, a bit of, more complicated. But that's not, not, not really an issue. I think the main thing is we want to find, good solutions.
+GenAI Fund
+GenAI Fund
+02:00:30
+Yeah, I think Gen AI Fund will support on this, when it comes to the administrations of things. But for now, let's focus on building great solutions. If the solution is so good, the rest we will figure out it together.
+Okay, yeah, I think we have answered about the access to the portals already,
+Okay, yeah, that's for Tesco, and
+Let me check if there's any other questions.
+Okay, it's in the dev post, yeah, so you… so there's a question asking about how to submit the project,
+We just did a walkthrough with everyone earlier in this webinar, so it will be recorded and post, you can refer that later.
+And how to join the WhatsApp group, right? We will… we already include this link in the… in the, dev post. Just, make sure that you… you go through everything in the dev post, and,
+join the group, right? Yeah, Min, please double-check if it's also listed there, otherwise we'll make it more obvious in the landing page.
+Okay, I'll default project.
+Okay, if we can deliver multiple projects, Then… In multiple fields, like financial.
+Yeah, so, so if your particular solutions, or projects can deliver, like, two cases, right, two use cases from different tracks, for example, for example, right,
+you can straight away just select at this last, submission, give you an example here. One moment. Can you guys see my screen?
+Yeah, I think it should be possible.
+Yeah, so just when you are at the This space edit hackathon submission.
+Yeah, so at the… this additional info.
+make sure that you select the track winners, the track you want to participate in. So if your solution can solve two, track challenge statements.
+Just select two, for example.
+Right? So… yup.
+Let me see… don't get this call.
+Yeah, I think that's basically covered most of it, because, I think for Febrea and also
+JF also answering already, but we will… we will consolidate all these, questions and answer, and we'll send to you as a FAQ.
+Right? Thanks, everyone. We have still, like, the next key next step after this. There's some tips for you. Let me go back to my slide.
+Before we end, give me, like.
+5 more minutes, yeah, I think 5 more minutes were pretty done.
+Okay, cool. So, here's the timeline and some key action steps you have to do, before,
+After the… right after this webinar.
+Some key dates you should mark down, on your calendar is that right after this is our build period, and the deadline is actually 17, 11.59 PM, at Vietnam time, GMT plus 7.
+Right, so whatever you submit already, and it passed the deadline, it will be fixed, right? But whatever you submit before this, it will still consider in draft, okay?
+And you can edit anytime.
+So, we will have… we will have online evaluations in this period, and the selected, shortlisted, team will be, pitching on 21st of April, and that
+a shortlisted team will be announced on 21st April as well, right?
+So, and also the showcase event will be happening on the 22nd of April, and the winning teams from each track will be presenting on 22nd of April, which is the Alibaba Cloud SME Growth Day, AI growth day as well.
+Okay, so here are the key, action steps,
+There are 5 of them, but one…
+should be your top priority now is that you need to confirm your track by 13 of April. So how do you do that? Is that, you come to here, right? Again.
+I know now you are not building anything yet, right? So, just fill in as, just fill in some dummy data right now.
+And… Select the particular track you want to join, save continue until the end, and click Submit.
+So everything you submit right now is just a tentative submission, right? But it will tell us, like, which track you are actually joining.
+So just make sure that by the end you, have finished your project.
+Upload everything, update everything, and click save, and eventually, Submit from here.
+Yeah, so a lot of teams last time, they, they, forget to click this submit button, so wherever they submit earlier.
+Which is in draft, the dummy one.
+is submitted, and and unfortunately, we have to, disqualify them, right? So.
+Let's not making this, you know, happen, and we just want to remind you again, right? So, make sure that you click the submit button, in the end.
+And, back to this. So, also mark down this key date, right? What I would recommend you is, if you have already know which, track you want to build.
+you can just do this right away, right? And creating the project right now. You can add your team later, you can do anything, like, later on, right? But at least select the track.
+Immediately, right? If you plan to build for 3-track, then, just create 3 projects and select 3-track first.
+Okay?
+So, some of the other action steps you have to do is register on that post, complete your profile. Also, join our community on WhatsApp group.
+We sent a couple of emails to you guys before. It's also, the link is also in a dev post. You can actually find the links there and join from there.
+And I also understand that, some of you actually, attended as a leader, or registered as a leader. So, please also advise your, teammate, also register on, DevPost as well. And most importantly, also.
+register on our Luma account, because we'll be using, Luma to check in, you know, for your attendance, right? So remind your team members to register on Luma, event if they haven't, done that.
+Right? So start building today, and submit on by 27, okay?
+So for the resources, I think, because the next two days is a week, weekend, for some enterprises, it takes some time to… to consolidate some of the resources to update you guys. So the latest,
+update will be on, on Monday. We'll try to, consolidate some of the, resource, additional information for you.
+Yeah, so we will keep everyone posted in the WhatsApp, and even email as well. So, yeah, let's stay connected. And before we end everything, let's take a group picture together, and…
+Yeah, because it's, so rare that we can gather everyone's, all these builders together, right? So, Min, are you around?
+Minh Tran - GenAI Fund
+Minh Tran - GenAI Fund
+02:08:17
+Yeah, I'm here.
+GenAI Fund
+GenAI Fund
+02:08:18
+Yeah, so,
+Can everyone just turn on your camera? We will do a screenshot of everyone that show up today.
+I want to check with Fabriel, is there any, like.
+Minh Tran - GenAI Fund
+Minh Tran - GenAI Fund
+02:08:29
+hour.
+GenAI Fund
+GenAI Fund
+02:08:30
+gesture, we can, you can use, like, love, or usually what Kapi Bara will do.
+I just do love, right? Okay, so I will just turn on your camera so we can capture you, and in a count of, 3, my colleague, Min, he will do a screenshot, right?
+So, we will also do a shout-out in our social medias and all our, channels, so that we can feature you, you can find yourself, and we share that you are joining this, you know, build day together, right?
+So, yeah, we have a couple of pages. I see everyone, yeah, almost 90% of you already, like, turning on.
+We have our partners here, Kai, turning on from the airport, right? So, I think we just do a love here, like this.
+Instead of doing the reaction one, we do a real one, right? Okay, so in a count of 3,
+We'll do a screenshot. 1, 2, 3…
+Yay! Let's go, let's go, start building, builders!
+Min, you're done, there's a couple of pages.
+Minh Tran - GenAI Fund
+Minh Tran - GenAI Fund
+02:09:32
+Yeah, we're already done.
+GenAI Fund
+GenAI Fund
+02:09:34
+Okay, Don?
+Minh Tran - GenAI Fund
+Minh Tran - GenAI Fund
+02:09:35
+Awesome.
+GenAI Fund
+GenAI Fund
+02:09:36
+Thanks, guys. Let's get started. Looking forward, I think everyone is excited already on building some projects together. So, yeah, we'll see you guys on the event day.
+Thank you.
