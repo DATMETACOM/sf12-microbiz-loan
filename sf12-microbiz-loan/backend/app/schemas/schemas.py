@@ -129,3 +129,25 @@ class CreditScoreResponse(BaseModel):
     loan_limit: float
     max_tenure_months: int
     reason_codes: Optional[list[str]] = None
+
+
+class EWAApplication(BaseModel):
+    employee_id: str
+    amount: float
+    reason: Optional[str] = None
+
+
+class EWAResponse(BaseModel):
+    id: str
+    employee_id: str
+    employee_name: str
+    amount: float
+    fee: float
+    total_deduct: float
+    net_amount: float
+    status: str
+    created_at: datetime
+    monthly_limit: float
+    current_month_usage: float
+    remaining_limit: float
+    compliance_note: str

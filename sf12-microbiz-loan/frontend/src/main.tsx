@@ -1,10 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App'
+import SF11App from './SF11App'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <SF11App />
   </StrictMode>,
 )

@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom"
+import { useState } from "react"
 import {
   LayoutDashboard,
   Wallet,
@@ -7,11 +8,16 @@ import {
   Shield,
   Activity,
   Brain,
-  AlertTriangle
+  AlertTriangle,
+  MessageCircle,
+  Smartphone
 } from "lucide-react"
+import ChatboxSidebar from "./ChatboxSidebar"
 
 const navItems = [
   { path: "/", label: "Tổng quan", icon: LayoutDashboard, role: "all" },
+  { path: "/shinhan-app", label: "App Shinhan", icon: Smartphone, role: "all" },
+  { path: "/ai-assistant", label: "Trợ lý Thông minh", icon: MessageCircle, role: "all" },
   { path: "/employee", label: "Nhân viên", icon: Users, role: "employee" },
   { path: "/hr", label: "HR & Doanh nghiệp", icon: Building2, role: "hr" },
   { path: "/bank", label: "Ngân hàng & Admin", icon: Shield, role: "bank" },
@@ -21,6 +27,14 @@ const navItems = [
 
 export default function SF11Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation()
+  const [isChatboxOpen, setIsChatboxOpen] = useState(false)
+
+  // Determine user role based on current path
+  const getUserRole = (): "employee" | "hr" | "bank" => {
+    if (location.pathname.startsWith("/hr") || location.pathname.startsWith("/financial-wellness")) return "hr"
+    if (location.pathname.startsWith("/bank") || location.pathname.startsWith("/ai-risk")) return "bank"
+    return "employee"
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
@@ -83,6 +97,12 @@ export default function SF11Layout({ children }: { children: React.ReactNode }) 
           <span>Powered by Qwen AI + Alibaba Cloud</span>
         </div>
       </footer>
+
+      <ChatboxSidebar
+        isOpen={isChatboxOpen}
+        onClose={() => setIsChatboxOpen(!isChatboxOpen)}
+        userRole={getUserRole()}
+      />
     </div>
   )
 }
