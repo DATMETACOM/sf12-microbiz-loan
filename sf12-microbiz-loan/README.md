@@ -5,6 +5,12 @@
 **Track**: Financial Services Track by Shinhan Future's Lab  
 **Hackathon**: Qwen AI Build Day 2026
 
+## Master Plan (Code + Pitch)
+
+- Single source of truth: [docs/BUILD-AND-PITCH-MASTER-PLAN.md](docs/BUILD-AND-PITCH-MASTER-PLAN.md)
+- Dung tai lieu nay de di theo phase tu Phase 0 den Phase 9.
+- Moi phase co: muc tieu, dau ra code, dau ra pitch, tieu chi pass.
+
 ## Problem
 
 - Online sellers, freelancers, gig workers **không có CIC history** hoặc chứng minh thu nhập truyền thống
@@ -56,7 +62,21 @@ npm run dev
 
 ```bash
 cd sf12-microbiz-loan/backend
-python seed_data/generate_mock_data.py
+python seed_data/generate_mock_data.py --customers 50 --months 8 --seed 42
+```
+
+Dataset se duoc tao vao:
+- `seed_data/sellers.json`
+- `seed_data/cashflows.json`
+- `seed_data/loans.json`
+- `seed_data/repayments.json`
+
+De force reset va nap lai seed data khi backend startup:
+
+```bash
+$env:DEMO_REBUILD_SCHEMA_ON_STARTUP="true"
+$env:DEMO_RESET_ON_STARTUP="true"
+fastapi dev app/main.py
 ```
 
 ## Project Structure
