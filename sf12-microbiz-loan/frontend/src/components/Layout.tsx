@@ -1,10 +1,11 @@
 import { Link, useLocation } from "react-router-dom"
-import { BarChart3, Store, Bot, LayoutDashboard, Shield } from "lucide-react"
+import { BarChart3, Store, Bot, LayoutDashboard, Shield, Smartphone } from "lucide-react"
 
 const navItems = [
   { path: "/", label: "Tổng quan", icon: LayoutDashboard },
   { path: "/seller", label: "Seller", icon: Store },
   { path: "/scoring", label: "AI Chấm điểm", icon: Bot },
+  { path: "/mobile", label: "Mobile", icon: Smartphone },
   { path: "/admin", label: "Quản trị", icon: BarChart3 },
 ]
 
