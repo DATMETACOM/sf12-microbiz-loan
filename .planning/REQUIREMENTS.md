@@ -78,13 +78,39 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| (Populated during roadmap creation) | | |
+| AUTH-01 | Phase 1 | Pending |
+| AUTH-02 | Phase 1 | Pending |
+| AUTH-03 | Phase 1 | Pending |
+| AUTH-04 | Phase 1 | Pending |
+| AI-05 | Phase 1 | Pending |
+| AI-01 | Phase 2 | Pending |
+| AI-02 | Phase 2 | Pending |
+| AI-03 | Phase 2 | Pending |
+| AI-04 | Phase 2 | Pending |
+| EWA-01 | Phase 2 | Pending |
+| EWA-02 | Phase 2 | Pending |
+| EWA-03 | Phase 2 | Pending |
+| EWA-04 | Phase 2 | Pending |
+| EWA-05 | Phase 2 | Pending |
+| LOAN-01 | Phase 3 | Pending |
+| LOAN-02 | Phase 3 | Pending |
+| LOAN-03 | Phase 3 | Pending |
+| LOAN-04 | Phase 3 | Pending |
+| LOAN-05 | Phase 3 | Pending |
+| LOAN-06 | Phase 3 | Pending |
+| LOAN-07 | Phase 3 | Pending |
+| DASH-01 | Phase 3 | Pending |
+| DASH-02 | Phase 3 | Pending |
+| DASH-03 | Phase 3 | Pending |
+| DOC-01 | Phase 4 | Pending |
+| DOC-02 | Phase 4 | Pending |
+| DOC-03 | Phase 4 | Pending |
 
 **Coverage:**
-- v1 requirements: 25 total
-- Mapped to phases: 0
-- Unmapped: 25 ⚠️
+- v1 requirements: 27 total
+- Mapped to phases: 27
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-04-17*
-*Last updated: 2026-04-17 after initial definition*
+*Last updated: 2026-04-17 — traceability added during roadmap creation*
