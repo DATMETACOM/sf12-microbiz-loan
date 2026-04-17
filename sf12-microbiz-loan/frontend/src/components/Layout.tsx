@@ -1,7 +1,5 @@
 import { Link, useLocation } from "react-router-dom"
-import { useState } from "react"
 import { BarChart3, Store, Bot, LayoutDashboard, Shield, Smartphone } from "lucide-react"
-import ChatboxSidebar from "./ChatboxSidebar"
 
 const navItems = [
   { path: "/", label: "Tổng quan", icon: LayoutDashboard },
@@ -13,15 +11,6 @@ const navItems = [
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation()
-  const [isChatboxOpen, setIsChatboxOpen] = useState(false)
-
-  // Determine user role based on current path
-  const getUserRole = (): "employee" | "hr" | "bank" | "seller" | "admin" => {
-    if (location.pathname.startsWith("/admin")) return "admin"
-    if (location.pathname.startsWith("/seller")) return "seller"
-    if (location.pathname.startsWith("/mobile")) return "seller"
-    return "seller" // Default to seller for SF12
-  }
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -63,12 +52,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <span>Powered by Qwen AI + Alibaba Cloud</span>
         </div>
       </footer>
-
-      <ChatboxSidebar
-        isOpen={isChatboxOpen}
-        onClose={() => setIsChatboxOpen(!isChatboxOpen)}
-        userRole={getUserRole()}
-      />
     </div>
   )
 }

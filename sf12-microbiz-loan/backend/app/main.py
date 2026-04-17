@@ -5,7 +5,7 @@ import os
 from pathlib import Path
 
 from app.database import Base, SessionLocal, engine
-from app.routers import admin, loans, sellers, ewa
+from app.routers import admin, loans, sellers
 from app.services.seed_loader import seed_demo_data
 
 # Ensure model metadata is registered before create_all
@@ -30,7 +30,6 @@ app.add_middleware(
 app.include_router(sellers.router)
 app.include_router(loans.router)
 app.include_router(admin.router)
-app.include_router(ewa.router)
 
 
 @app.on_event("startup")
