@@ -1,0 +1,1202 @@
+[
+  {
+    "seller_id": "SLR0001",
+    "platform": "tiktok_shop",
+    "month": "2025-10",
+    "revenue": 11617363.0,
+    "transactions": 179,
+    "avg_order_value": 64901.0,
+    "return_rate": 0.068,
+    "growth_rate": 0.072
+  },
+  {
+    "seller_id": "SLR0001",
+    "platform": "tiktok_shop",
+    "month": "2025-11",
+    "revenue": 20876679.0,
+    "transactions": 370,
+    "avg_order_value": 56423.0,
+    "return_rate": 0.03,
+    "growth_rate": 0.07
+  },
+  {
+    "seller_id": "SLR0001",
+    "platform": "tiktok_shop",
+    "month": "2025-12",
+    "revenue": 14652526.0,
+    "transactions": 451,
+    "avg_order_value": 32489.0,
+    "return_rate": 0.068,
+    "growth_rate": 0.088
+  },
+  {
+    "seller_id": "SLR0001",
+    "platform": "tiktok_shop",
+    "month": "2026-01",
+    "revenue": 17099242.0,
+    "transactions": 403,
+    "avg_order_value": 42430.0,
+    "return_rate": 0.062,
+    "growth_rate": -0.001
+  },
+  {
+    "seller_id": "SLR0001",
+    "platform": "tiktok_shop",
+    "month": "2026-02",
+    "revenue": 11664569.0,
+    "transactions": 177,
+    "avg_order_value": 65902.0,
+    "return_rate": 0.053,
+    "growth_rate": 0.06
+  },
+  {
+    "seller_id": "SLR0001",
+    "platform": "tiktok_shop",
+    "month": "2026-03",
+    "revenue": 12383881.0,
+    "transactions": 112,
+    "avg_order_value": 110570.0,
+    "return_rate": 0.073,
+    "growth_rate": 0.092
+  },
+  {
+    "seller_id": "SLR0002",
+    "platform": "momo",
+    "month": "2025-10",
+    "revenue": 31704530.0,
+    "transactions": 198,
+    "avg_order_value": 160124.0,
+    "return_rate": 0.014,
+    "growth_rate": -0.044
+  },
+  {
+    "seller_id": "SLR0002",
+    "platform": "momo",
+    "month": "2025-11",
+    "revenue": 38442864.0,
+    "transactions": 476,
+    "avg_order_value": 80762.0,
+    "return_rate": 0.026,
+    "growth_rate": -0.046
+  },
+  {
+    "seller_id": "SLR0002",
+    "platform": "momo",
+    "month": "2025-12",
+    "revenue": 20510106.0,
+    "transactions": 444,
+    "avg_order_value": 46194.0,
+    "return_rate": 0.028,
+    "growth_rate": -0.062
+  },
+  {
+    "seller_id": "SLR0002",
+    "platform": "momo",
+    "month": "2026-01",
+    "revenue": 39107447.0,
+    "transactions": 450,
+    "avg_order_value": 86905.0,
+    "return_rate": 0.074,
+    "growth_rate": 0.051
+  },
+  {
+    "seller_id": "SLR0002",
+    "platform": "momo",
+    "month": "2026-02",
+    "revenue": 31420629.0,
+    "transactions": 124,
+    "avg_order_value": 253392.0,
+    "return_rate": 0.061,
+    "growth_rate": -0.038
+  },
+  {
+    "seller_id": "SLR0002",
+    "platform": "momo",
+    "month": "2026-03",
+    "revenue": 33095901.0,
+    "transactions": 260,
+    "avg_order_value": 127292.0,
+    "return_rate": 0.065,
+    "growth_rate": 0.139
+  },
+  {
+    "seller_id": "SLR0003",
+    "platform": "tiktok_shop",
+    "month": "2025-10",
+    "revenue": 10765000.0,
+    "transactions": 98,
+    "avg_order_value": 109847.0,
+    "return_rate": 0.044,
+    "growth_rate": -0.022
+  },
+  {
+    "seller_id": "SLR0003",
+    "platform": "tiktok_shop",
+    "month": "2025-11",
+    "revenue": 7949393.0,
+    "transactions": 108,
+    "avg_order_value": 73605.0,
+    "return_rate": 0.075,
+    "growth_rate": 0.214
+  },
+  {
+    "seller_id": "SLR0003",
+    "platform": "tiktok_shop",
+    "month": "2025-12",
+    "revenue": 12394902.0,
+    "transactions": 440,
+    "avg_order_value": 28170.0,
+    "return_rate": 0.019,
+    "growth_rate": 0.134
+  },
+  {
+    "seller_id": "SLR0003",
+    "platform": "tiktok_shop",
+    "month": "2026-01",
+    "revenue": 11983479.0,
+    "transactions": 122,
+    "avg_order_value": 98225.0,
+    "return_rate": 0.027,
+    "growth_rate": 0.204
+  },
+  {
+    "seller_id": "SLR0003",
+    "platform": "tiktok_shop",
+    "month": "2026-02",
+    "revenue": 11539549.0,
+    "transactions": 403,
+    "avg_order_value": 28634.0,
+    "return_rate": 0.025,
+    "growth_rate": -0.021
+  },
+  {
+    "seller_id": "SLR0003",
+    "platform": "tiktok_shop",
+    "month": "2026-03",
+    "revenue": 9918417.0,
+    "transactions": 142,
+    "avg_order_value": 69848.0,
+    "return_rate": 0.027,
+    "growth_rate": 0.284
+  },
+  {
+    "seller_id": "SLR0004",
+    "platform": "tiktok_shop",
+    "month": "2025-10",
+    "revenue": 17975703.0,
+    "transactions": 474,
+    "avg_order_value": 37923.0,
+    "return_rate": 0.035,
+    "growth_rate": 0.298
+  },
+  {
+    "seller_id": "SLR0004",
+    "platform": "tiktok_shop",
+    "month": "2025-11",
+    "revenue": 17305157.0,
+    "transactions": 99,
+    "avg_order_value": 174800.0,
+    "return_rate": 0.064,
+    "growth_rate": -0.032
+  },
+  {
+    "seller_id": "SLR0004",
+    "platform": "tiktok_shop",
+    "month": "2025-12",
+    "revenue": 25881977.0,
+    "transactions": 278,
+    "avg_order_value": 93101.0,
+    "return_rate": 0.01,
+    "growth_rate": 0.195
+  },
+  {
+    "seller_id": "SLR0004",
+    "platform": "tiktok_shop",
+    "month": "2026-01",
+    "revenue": 24533620.0,
+    "transactions": 181,
+    "avg_order_value": 135545.0,
+    "return_rate": 0.076,
+    "growth_rate": 0.259
+  },
+  {
+    "seller_id": "SLR0004",
+    "platform": "tiktok_shop",
+    "month": "2026-02",
+    "revenue": 17218385.0,
+    "transactions": 326,
+    "avg_order_value": 52817.0,
+    "return_rate": 0.08,
+    "growth_rate": 0.005
+  },
+  {
+    "seller_id": "SLR0004",
+    "platform": "tiktok_shop",
+    "month": "2026-03",
+    "revenue": 25827547.0,
+    "transactions": 374,
+    "avg_order_value": 69058.0,
+    "return_rate": 0.025,
+    "growth_rate": 0.063
+  },
+  {
+    "seller_id": "SLR0005",
+    "platform": "lazada",
+    "month": "2025-10",
+    "revenue": 63940073.0,
+    "transactions": 157,
+    "avg_order_value": 407262.0,
+    "return_rate": 0.07,
+    "growth_rate": 0.037
+  },
+  {
+    "seller_id": "SLR0005",
+    "platform": "lazada",
+    "month": "2025-11",
+    "revenue": 58533885.0,
+    "transactions": 53,
+    "avg_order_value": 1104413.0,
+    "return_rate": 0.027,
+    "growth_rate": 0.274
+  },
+  {
+    "seller_id": "SLR0005",
+    "platform": "lazada",
+    "month": "2025-12",
+    "revenue": 66456312.0,
+    "transactions": 167,
+    "avg_order_value": 397942.0,
+    "return_rate": 0.074,
+    "growth_rate": 0.279
+  },
+  {
+    "seller_id": "SLR0005",
+    "platform": "lazada",
+    "month": "2026-01",
+    "revenue": 92840939.0,
+    "transactions": 142,
+    "avg_order_value": 653809.0,
+    "return_rate": 0.076,
+    "growth_rate": 0.153
+  },
+  {
+    "seller_id": "SLR0005",
+    "platform": "lazada",
+    "month": "2026-02",
+    "revenue": 70177146.0,
+    "transactions": 86,
+    "avg_order_value": 816013.0,
+    "return_rate": 0.041,
+    "growth_rate": 0.099
+  },
+  {
+    "seller_id": "SLR0005",
+    "platform": "lazada",
+    "month": "2026-03",
+    "revenue": 83311931.0,
+    "transactions": 121,
+    "avg_order_value": 688528.0,
+    "return_rate": 0.078,
+    "growth_rate": 0.027
+  },
+  {
+    "seller_id": "SLR0006",
+    "platform": "momo",
+    "month": "2025-10",
+    "revenue": 9200729.0,
+    "transactions": 433,
+    "avg_order_value": 21249.0,
+    "return_rate": 0.043,
+    "growth_rate": 0.249
+  },
+  {
+    "seller_id": "SLR0006",
+    "platform": "momo",
+    "month": "2025-11",
+    "revenue": 10820245.0,
+    "transactions": 135,
+    "avg_order_value": 80150.0,
+    "return_rate": 0.04,
+    "growth_rate": 0.053
+  },
+  {
+    "seller_id": "SLR0006",
+    "platform": "momo",
+    "month": "2025-12",
+    "revenue": 14267518.0,
+    "transactions": 289,
+    "avg_order_value": 49369.0,
+    "return_rate": 0.06,
+    "growth_rate": 0.202
+  },
+  {
+    "seller_id": "SLR0006",
+    "platform": "momo",
+    "month": "2026-01",
+    "revenue": 10848966.0,
+    "transactions": 260,
+    "avg_order_value": 41727.0,
+    "return_rate": 0.046,
+    "growth_rate": 0.262
+  },
+  {
+    "seller_id": "SLR0006",
+    "platform": "momo",
+    "month": "2026-02",
+    "revenue": 13154173.0,
+    "transactions": 202,
+    "avg_order_value": 65120.0,
+    "return_rate": 0.022,
+    "growth_rate": 0.039
+  },
+  {
+    "seller_id": "SLR0006",
+    "platform": "momo",
+    "month": "2026-03",
+    "revenue": 11296119.0,
+    "transactions": 243,
+    "avg_order_value": 46486.0,
+    "return_rate": 0.032,
+    "growth_rate": 0.274
+  },
+  {
+    "seller_id": "SLR0007",
+    "platform": "tiktok_shop",
+    "month": "2025-10",
+    "revenue": 23402658.0,
+    "transactions": 425,
+    "avg_order_value": 55065.0,
+    "return_rate": 0.052,
+    "growth_rate": -0.063
+  },
+  {
+    "seller_id": "SLR0007",
+    "platform": "tiktok_shop",
+    "month": "2025-11",
+    "revenue": 17241546.0,
+    "transactions": 495,
+    "avg_order_value": 34831.0,
+    "return_rate": 0.012,
+    "growth_rate": 0.273
+  },
+  {
+    "seller_id": "SLR0007",
+    "platform": "tiktok_shop",
+    "month": "2025-12",
+    "revenue": 21938334.0,
+    "transactions": 277,
+    "avg_order_value": 79200.0,
+    "return_rate": 0.031,
+    "growth_rate": 0.139
+  },
+  {
+    "seller_id": "SLR0007",
+    "platform": "tiktok_shop",
+    "month": "2026-01",
+    "revenue": 19702481.0,
+    "transactions": 336,
+    "avg_order_value": 58638.0,
+    "return_rate": 0.03,
+    "growth_rate": 0.2
+  },
+  {
+    "seller_id": "SLR0007",
+    "platform": "tiktok_shop",
+    "month": "2026-02",
+    "revenue": 18276825.0,
+    "transactions": 130,
+    "avg_order_value": 140591.0,
+    "return_rate": 0.018,
+    "growth_rate": 0.018
+  },
+  {
+    "seller_id": "SLR0007",
+    "platform": "tiktok_shop",
+    "month": "2026-03",
+    "revenue": 17254971.0,
+    "transactions": 92,
+    "avg_order_value": 187554.0,
+    "return_rate": 0.071,
+    "growth_rate": -0.074
+  },
+  {
+    "seller_id": "SLR0008",
+    "platform": "shopee",
+    "month": "2025-10",
+    "revenue": 18504387.0,
+    "transactions": 130,
+    "avg_order_value": 142341.0,
+    "return_rate": 0.051,
+    "growth_rate": 0.106
+  },
+  {
+    "seller_id": "SLR0008",
+    "platform": "shopee",
+    "month": "2025-11",
+    "revenue": 17535462.0,
+    "transactions": 133,
+    "avg_order_value": 131846.0,
+    "return_rate": 0.042,
+    "growth_rate": 0.143
+  },
+  {
+    "seller_id": "SLR0008",
+    "platform": "shopee",
+    "month": "2025-12",
+    "revenue": 20894237.0,
+    "transactions": 142,
+    "avg_order_value": 147143.0,
+    "return_rate": 0.072,
+    "growth_rate": -0.081
+  },
+  {
+    "seller_id": "SLR0008",
+    "platform": "shopee",
+    "month": "2026-01",
+    "revenue": 17738671.0,
+    "transactions": 53,
+    "avg_order_value": 334692.0,
+    "return_rate": 0.047,
+    "growth_rate": 0.224
+  },
+  {
+    "seller_id": "SLR0008",
+    "platform": "shopee",
+    "month": "2026-02",
+    "revenue": 15255487.0,
+    "transactions": 312,
+    "avg_order_value": 48896.0,
+    "return_rate": 0.027,
+    "growth_rate": 0.063
+  },
+  {
+    "seller_id": "SLR0008",
+    "platform": "shopee",
+    "month": "2026-03",
+    "revenue": 10932784.0,
+    "transactions": 275,
+    "avg_order_value": 39756.0,
+    "return_rate": 0.073,
+    "growth_rate": 0.14
+  },
+  {
+    "seller_id": "SLR0009",
+    "platform": "zalopay",
+    "month": "2025-10",
+    "revenue": 38590149.0,
+    "transactions": 78,
+    "avg_order_value": 494745.0,
+    "return_rate": 0.057,
+    "growth_rate": 0.259
+  },
+  {
+    "seller_id": "SLR0009",
+    "platform": "zalopay",
+    "month": "2025-11",
+    "revenue": 46547820.0,
+    "transactions": 65,
+    "avg_order_value": 716120.0,
+    "return_rate": 0.068,
+    "growth_rate": 0.092
+  },
+  {
+    "seller_id": "SLR0009",
+    "platform": "zalopay",
+    "month": "2025-12",
+    "revenue": 36315023.0,
+    "transactions": 146,
+    "avg_order_value": 248733.0,
+    "return_rate": 0.046,
+    "growth_rate": -0.054
+  },
+  {
+    "seller_id": "SLR0009",
+    "platform": "zalopay",
+    "month": "2026-01",
+    "revenue": 42720123.0,
+    "transactions": 277,
+    "avg_order_value": 154224.0,
+    "return_rate": 0.056,
+    "growth_rate": 0.295
+  },
+  {
+    "seller_id": "SLR0009",
+    "platform": "zalopay",
+    "month": "2026-02",
+    "revenue": 29729585.0,
+    "transactions": 96,
+    "avg_order_value": 309683.0,
+    "return_rate": 0.029,
+    "growth_rate": 0.024
+  },
+  {
+    "seller_id": "SLR0009",
+    "platform": "zalopay",
+    "month": "2026-03",
+    "revenue": 49263681.0,
+    "transactions": 106,
+    "avg_order_value": 464752.0,
+    "return_rate": 0.06,
+    "growth_rate": 0.248
+  },
+  {
+    "seller_id": "SLR0010",
+    "platform": "lazada",
+    "month": "2025-10",
+    "revenue": 36632947.0,
+    "transactions": 295,
+    "avg_order_value": 124179.0,
+    "return_rate": 0.075,
+    "growth_rate": 0.052
+  },
+  {
+    "seller_id": "SLR0010",
+    "platform": "lazada",
+    "month": "2025-11",
+    "revenue": 58699661.0,
+    "transactions": 334,
+    "avg_order_value": 175747.0,
+    "return_rate": 0.051,
+    "growth_rate": 0.294
+  },
+  {
+    "seller_id": "SLR0010",
+    "platform": "lazada",
+    "month": "2025-12",
+    "revenue": 43969283.0,
+    "transactions": 69,
+    "avg_order_value": 637236.0,
+    "return_rate": 0.045,
+    "growth_rate": -0.079
+  },
+  {
+    "seller_id": "SLR0010",
+    "platform": "lazada",
+    "month": "2026-01",
+    "revenue": 32456813.0,
+    "transactions": 446,
+    "avg_order_value": 72773.0,
+    "return_rate": 0.049,
+    "growth_rate": -0.043
+  },
+  {
+    "seller_id": "SLR0010",
+    "platform": "lazada",
+    "month": "2026-02",
+    "revenue": 29826251.0,
+    "transactions": 147,
+    "avg_order_value": 202900.0,
+    "return_rate": 0.078,
+    "growth_rate": 0.218
+  },
+  {
+    "seller_id": "SLR0010",
+    "platform": "lazada",
+    "month": "2026-03",
+    "revenue": 42470747.0,
+    "transactions": 359,
+    "avg_order_value": 118303.0,
+    "return_rate": 0.07,
+    "growth_rate": 0.059
+  },
+  {
+    "seller_id": "SLR0011",
+    "platform": "momo",
+    "month": "2025-10",
+    "revenue": 50944741.0,
+    "transactions": 263,
+    "avg_order_value": 193706.0,
+    "return_rate": 0.058,
+    "growth_rate": 0.223
+  },
+  {
+    "seller_id": "SLR0011",
+    "platform": "momo",
+    "month": "2025-11",
+    "revenue": 63548051.0,
+    "transactions": 496,
+    "avg_order_value": 128121.0,
+    "return_rate": 0.014,
+    "growth_rate": 0.194
+  },
+  {
+    "seller_id": "SLR0011",
+    "platform": "momo",
+    "month": "2025-12",
+    "revenue": 75889983.0,
+    "transactions": 268,
+    "avg_order_value": 283172.0,
+    "return_rate": 0.073,
+    "growth_rate": 0.168
+  },
+  {
+    "seller_id": "SLR0011",
+    "platform": "momo",
+    "month": "2026-01",
+    "revenue": 52708910.0,
+    "transactions": 449,
+    "avg_order_value": 117392.0,
+    "return_rate": 0.075,
+    "growth_rate": -0.074
+  },
+  {
+    "seller_id": "SLR0011",
+    "platform": "momo",
+    "month": "2026-02",
+    "revenue": 64352083.0,
+    "transactions": 142,
+    "avg_order_value": 453184.0,
+    "return_rate": 0.033,
+    "growth_rate": -0.098
+  },
+  {
+    "seller_id": "SLR0011",
+    "platform": "momo",
+    "month": "2026-03",
+    "revenue": 64361009.0,
+    "transactions": 312,
+    "avg_order_value": 206285.0,
+    "return_rate": 0.066,
+    "growth_rate": 0.038
+  },
+  {
+    "seller_id": "SLR0012",
+    "platform": "momo",
+    "month": "2025-10",
+    "revenue": 19871119.0,
+    "transactions": 184,
+    "avg_order_value": 107995.0,
+    "return_rate": 0.015,
+    "growth_rate": 0.24
+  },
+  {
+    "seller_id": "SLR0012",
+    "platform": "momo",
+    "month": "2025-11",
+    "revenue": 14766662.0,
+    "transactions": 302,
+    "avg_order_value": 48896.0,
+    "return_rate": 0.036,
+    "growth_rate": 0.227
+  },
+  {
+    "seller_id": "SLR0012",
+    "platform": "momo",
+    "month": "2025-12",
+    "revenue": 14874029.0,
+    "transactions": 197,
+    "avg_order_value": 75503.0,
+    "return_rate": 0.033,
+    "growth_rate": 0.212
+  },
+  {
+    "seller_id": "SLR0012",
+    "platform": "momo",
+    "month": "2026-01",
+    "revenue": 19334573.0,
+    "transactions": 121,
+    "avg_order_value": 159790.0,
+    "return_rate": 0.052,
+    "growth_rate": 0.263
+  },
+  {
+    "seller_id": "SLR0012",
+    "platform": "momo",
+    "month": "2026-02",
+    "revenue": 12604098.0,
+    "transactions": 96,
+    "avg_order_value": 131293.0,
+    "return_rate": 0.069,
+    "growth_rate": 0.227
+  },
+  {
+    "seller_id": "SLR0012",
+    "platform": "momo",
+    "month": "2026-03",
+    "revenue": 18958712.0,
+    "transactions": 306,
+    "avg_order_value": 61957.0,
+    "return_rate": 0.036,
+    "growth_rate": 0.212
+  },
+  {
+    "seller_id": "SLR0013",
+    "platform": "tiktok_shop",
+    "month": "2025-10",
+    "revenue": 40899175.0,
+    "transactions": 300,
+    "avg_order_value": 136331.0,
+    "return_rate": 0.024,
+    "growth_rate": 0.062
+  },
+  {
+    "seller_id": "SLR0013",
+    "platform": "tiktok_shop",
+    "month": "2025-11",
+    "revenue": 38465054.0,
+    "transactions": 65,
+    "avg_order_value": 591770.0,
+    "return_rate": 0.04,
+    "growth_rate": 0.125
+  },
+  {
+    "seller_id": "SLR0013",
+    "platform": "tiktok_shop",
+    "month": "2025-12",
+    "revenue": 55133543.0,
+    "transactions": 475,
+    "avg_order_value": 116071.0,
+    "return_rate": 0.028,
+    "growth_rate": 0.063
+  },
+  {
+    "seller_id": "SLR0013",
+    "platform": "tiktok_shop",
+    "month": "2026-01",
+    "revenue": 63463652.0,
+    "transactions": 268,
+    "avg_order_value": 236805.0,
+    "return_rate": 0.043,
+    "growth_rate": 0.084
+  },
+  {
+    "seller_id": "SLR0013",
+    "platform": "tiktok_shop",
+    "month": "2026-02",
+    "revenue": 38832133.0,
+    "transactions": 240,
+    "avg_order_value": 161801.0,
+    "return_rate": 0.046,
+    "growth_rate": 0.25
+  },
+  {
+    "seller_id": "SLR0013",
+    "platform": "tiktok_shop",
+    "month": "2026-03",
+    "revenue": 37180383.0,
+    "transactions": 455,
+    "avg_order_value": 81715.0,
+    "return_rate": 0.056,
+    "growth_rate": 0.228
+  },
+  {
+    "seller_id": "SLR0014",
+    "platform": "zalopay",
+    "month": "2025-10",
+    "revenue": 11025551.0,
+    "transactions": 166,
+    "avg_order_value": 66419.0,
+    "return_rate": 0.071,
+    "growth_rate": 0.233
+  },
+  {
+    "seller_id": "SLR0014",
+    "platform": "zalopay",
+    "month": "2025-11",
+    "revenue": 13982700.0,
+    "transactions": 319,
+    "avg_order_value": 43833.0,
+    "return_rate": 0.061,
+    "growth_rate": 0.156
+  },
+  {
+    "seller_id": "SLR0014",
+    "platform": "zalopay",
+    "month": "2025-12",
+    "revenue": 13973900.0,
+    "transactions": 304,
+    "avg_order_value": 45967.0,
+    "return_rate": 0.055,
+    "growth_rate": 0.037
+  },
+  {
+    "seller_id": "SLR0014",
+    "platform": "zalopay",
+    "month": "2026-01",
+    "revenue": 14438387.0,
+    "transactions": 302,
+    "avg_order_value": 47809.0,
+    "return_rate": 0.074,
+    "growth_rate": 0.047
+  },
+  {
+    "seller_id": "SLR0014",
+    "platform": "zalopay",
+    "month": "2026-02",
+    "revenue": 11216977.0,
+    "transactions": 352,
+    "avg_order_value": 31866.0,
+    "return_rate": 0.05,
+    "growth_rate": 0.101
+  },
+  {
+    "seller_id": "SLR0014",
+    "platform": "zalopay",
+    "month": "2026-03",
+    "revenue": 13623418.0,
+    "transactions": 85,
+    "avg_order_value": 160276.0,
+    "return_rate": 0.026,
+    "growth_rate": -0.083
+  },
+  {
+    "seller_id": "SLR0015",
+    "platform": "zalopay",
+    "month": "2025-10",
+    "revenue": 49040599.0,
+    "transactions": 187,
+    "avg_order_value": 262249.0,
+    "return_rate": 0.04,
+    "growth_rate": -0.01
+  },
+  {
+    "seller_id": "SLR0015",
+    "platform": "zalopay",
+    "month": "2025-11",
+    "revenue": 68333286.0,
+    "transactions": 75,
+    "avg_order_value": 911110.0,
+    "return_rate": 0.044,
+    "growth_rate": 0.15
+  },
+  {
+    "seller_id": "SLR0015",
+    "platform": "zalopay",
+    "month": "2025-12",
+    "revenue": 63921797.0,
+    "transactions": 94,
+    "avg_order_value": 680019.0,
+    "return_rate": 0.055,
+    "growth_rate": 0.283
+  },
+  {
+    "seller_id": "SLR0015",
+    "platform": "zalopay",
+    "month": "2026-01",
+    "revenue": 43258458.0,
+    "transactions": 85,
+    "avg_order_value": 508923.0,
+    "return_rate": 0.051,
+    "growth_rate": 0.067
+  },
+  {
+    "seller_id": "SLR0015",
+    "platform": "zalopay",
+    "month": "2026-02",
+    "revenue": 74545336.0,
+    "transactions": 455,
+    "avg_order_value": 163836.0,
+    "return_rate": 0.075,
+    "growth_rate": 0.295
+  },
+  {
+    "seller_id": "SLR0015",
+    "platform": "zalopay",
+    "month": "2026-03",
+    "revenue": 53945310.0,
+    "transactions": 440,
+    "avg_order_value": 122603.0,
+    "return_rate": 0.024,
+    "growth_rate": 0.059
+  },
+  {
+    "seller_id": "SLR0016",
+    "platform": "momo",
+    "month": "2025-10",
+    "revenue": 14534567.0,
+    "transactions": 222,
+    "avg_order_value": 65471.0,
+    "return_rate": 0.042,
+    "growth_rate": -0.021
+  },
+  {
+    "seller_id": "SLR0016",
+    "platform": "momo",
+    "month": "2025-11",
+    "revenue": 13728581.0,
+    "transactions": 199,
+    "avg_order_value": 68988.0,
+    "return_rate": 0.053,
+    "growth_rate": 0.283
+  },
+  {
+    "seller_id": "SLR0016",
+    "platform": "momo",
+    "month": "2025-12",
+    "revenue": 17142370.0,
+    "transactions": 210,
+    "avg_order_value": 81630.0,
+    "return_rate": 0.027,
+    "growth_rate": -0.036
+  },
+  {
+    "seller_id": "SLR0016",
+    "platform": "momo",
+    "month": "2026-01",
+    "revenue": 20225955.0,
+    "transactions": 152,
+    "avg_order_value": 133065.0,
+    "return_rate": 0.067,
+    "growth_rate": 0.246
+  },
+  {
+    "seller_id": "SLR0016",
+    "platform": "momo",
+    "month": "2026-02",
+    "revenue": 14392155.0,
+    "transactions": 53,
+    "avg_order_value": 271550.0,
+    "return_rate": 0.056,
+    "growth_rate": 0.211
+  },
+  {
+    "seller_id": "SLR0016",
+    "platform": "momo",
+    "month": "2026-03",
+    "revenue": 12367703.0,
+    "transactions": 183,
+    "avg_order_value": 67583.0,
+    "return_rate": 0.055,
+    "growth_rate": 0.155
+  },
+  {
+    "seller_id": "SLR0017",
+    "platform": "zalopay",
+    "month": "2025-10",
+    "revenue": 22860658.0,
+    "transactions": 404,
+    "avg_order_value": 56586.0,
+    "return_rate": 0.019,
+    "growth_rate": -0.093
+  },
+  {
+    "seller_id": "SLR0017",
+    "platform": "zalopay",
+    "month": "2025-11",
+    "revenue": 35061719.0,
+    "transactions": 387,
+    "avg_order_value": 90599.0,
+    "return_rate": 0.059,
+    "growth_rate": -0.053
+  },
+  {
+    "seller_id": "SLR0017",
+    "platform": "zalopay",
+    "month": "2025-12",
+    "revenue": 36672338.0,
+    "transactions": 451,
+    "avg_order_value": 81313.0,
+    "return_rate": 0.032,
+    "growth_rate": 0.186
+  },
+  {
+    "seller_id": "SLR0017",
+    "platform": "zalopay",
+    "month": "2026-01",
+    "revenue": 33765912.0,
+    "transactions": 286,
+    "avg_order_value": 118063.0,
+    "return_rate": 0.051,
+    "growth_rate": -0.09
+  },
+  {
+    "seller_id": "SLR0017",
+    "platform": "zalopay",
+    "month": "2026-02",
+    "revenue": 23779645.0,
+    "transactions": 134,
+    "avg_order_value": 177460.0,
+    "return_rate": 0.011,
+    "growth_rate": 0.013
+  },
+  {
+    "seller_id": "SLR0017",
+    "platform": "zalopay",
+    "month": "2026-03",
+    "revenue": 27362348.0,
+    "transactions": 110,
+    "avg_order_value": 248749.0,
+    "return_rate": 0.015,
+    "growth_rate": 0.266
+  },
+  {
+    "seller_id": "SLR0018",
+    "platform": "momo",
+    "month": "2025-10",
+    "revenue": 37754853.0,
+    "transactions": 316,
+    "avg_order_value": 119477.0,
+    "return_rate": 0.069,
+    "growth_rate": 0.262
+  },
+  {
+    "seller_id": "SLR0018",
+    "platform": "momo",
+    "month": "2025-11",
+    "revenue": 50268260.0,
+    "transactions": 437,
+    "avg_order_value": 115030.0,
+    "return_rate": 0.032,
+    "growth_rate": 0.183
+  },
+  {
+    "seller_id": "SLR0018",
+    "platform": "momo",
+    "month": "2025-12",
+    "revenue": 45664203.0,
+    "transactions": 185,
+    "avg_order_value": 246834.0,
+    "return_rate": 0.074,
+    "growth_rate": -0.067
+  },
+  {
+    "seller_id": "SLR0018",
+    "platform": "momo",
+    "month": "2026-01",
+    "revenue": 61070768.0,
+    "transactions": 474,
+    "avg_order_value": 128841.0,
+    "return_rate": 0.042,
+    "growth_rate": -0.082
+  },
+  {
+    "seller_id": "SLR0018",
+    "platform": "momo",
+    "month": "2026-02",
+    "revenue": 67504948.0,
+    "transactions": 56,
+    "avg_order_value": 1205446.0,
+    "return_rate": 0.057,
+    "growth_rate": 0.082
+  },
+  {
+    "seller_id": "SLR0018",
+    "platform": "momo",
+    "month": "2026-03",
+    "revenue": 49268900.0,
+    "transactions": 189,
+    "avg_order_value": 260682.0,
+    "return_rate": 0.08,
+    "growth_rate": 0.131
+  },
+  {
+    "seller_id": "SLR0019",
+    "platform": "lazada",
+    "month": "2025-10",
+    "revenue": 55937207.0,
+    "transactions": 110,
+    "avg_order_value": 508520.0,
+    "return_rate": 0.068,
+    "growth_rate": -0.0
+  },
+  {
+    "seller_id": "SLR0019",
+    "platform": "lazada",
+    "month": "2025-11",
+    "revenue": 62349427.0,
+    "transactions": 415,
+    "avg_order_value": 150240.0,
+    "return_rate": 0.024,
+    "growth_rate": 0.177
+  },
+  {
+    "seller_id": "SLR0019",
+    "platform": "lazada",
+    "month": "2025-12",
+    "revenue": 110110842.0,
+    "transactions": 82,
+    "avg_order_value": 1342815.0,
+    "return_rate": 0.073,
+    "growth_rate": 0.032
+  },
+  {
+    "seller_id": "SLR0019",
+    "platform": "lazada",
+    "month": "2026-01",
+    "revenue": 55752263.0,
+    "transactions": 369,
+    "avg_order_value": 151090.0,
+    "return_rate": 0.038,
+    "growth_rate": 0.19
+  },
+  {
+    "seller_id": "SLR0019",
+    "platform": "lazada",
+    "month": "2026-02",
+    "revenue": 56934561.0,
+    "transactions": 358,
+    "avg_order_value": 159035.0,
+    "return_rate": 0.036,
+    "growth_rate": -0.007
+  },
+  {
+    "seller_id": "SLR0019",
+    "platform": "lazada",
+    "month": "2026-03",
+    "revenue": 95266982.0,
+    "transactions": 292,
+    "avg_order_value": 326257.0,
+    "return_rate": 0.077,
+    "growth_rate": 0.031
+  },
+  {
+    "seller_id": "SLR0020",
+    "platform": "lazada",
+    "month": "2025-10",
+    "revenue": 50558702.0,
+    "transactions": 207,
+    "avg_order_value": 244245.0,
+    "return_rate": 0.061,
+    "growth_rate": 0.002
+  },
+  {
+    "seller_id": "SLR0020",
+    "platform": "lazada",
+    "month": "2025-11",
+    "revenue": 41169900.0,
+    "transactions": 355,
+    "avg_order_value": 115972.0,
+    "return_rate": 0.017,
+    "growth_rate": 0.141
+  },
+  {
+    "seller_id": "SLR0020",
+    "platform": "lazada",
+    "month": "2025-12",
+    "revenue": 66237386.0,
+    "transactions": 69,
+    "avg_order_value": 959962.0,
+    "return_rate": 0.061,
+    "growth_rate": 0.232
+  },
+  {
+    "seller_id": "SLR0020",
+    "platform": "lazada",
+    "month": "2026-01",
+    "revenue": 68182923.0,
+    "transactions": 242,
+    "avg_order_value": 281748.0,
+    "return_rate": 0.062,
+    "growth_rate": 0.269
+  },
+  {
+    "seller_id": "SLR0020",
+    "platform": "lazada",
+    "month": "2026-02",
+    "revenue": 46654270.0,
+    "transactions": 464,
+    "avg_order_value": 100548.0,
+    "return_rate": 0.077,
+    "growth_rate": 0.155
+  },
+  {
+    "seller_id": "SLR0020",
+    "platform": "lazada",
+    "month": "2026-03",
+    "revenue": 63726828.0,
+    "transactions": 302,
+    "avg_order_value": 211016.0,
+    "return_rate": 0.015,
+    "growth_rate": -0.016
+  }
+]

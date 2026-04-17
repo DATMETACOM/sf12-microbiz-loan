@@ -1,0 +1,222 @@
+[
+  {
+    "id": "SLR0001",
+    "name": "Nguyen Van An",
+    "phone": "0934271420",
+    "email": "seller1@example.com",
+    "seller_type": "ecommerce",
+    "shop_name": "An Shop",
+    "platform": "tiktok_shop",
+    "credit_score": 785,
+    "monthly_revenue_avg": 16573342.0
+  },
+  {
+    "id": "SLR0002",
+    "name": "Tran Thi Bich",
+    "phone": "0946716043",
+    "email": "seller2@example.com",
+    "seller_type": "ecommerce",
+    "shop_name": "Bich Shop",
+    "platform": "momo",
+    "credit_score": 699,
+    "monthly_revenue_avg": 28536413.0
+  },
+  {
+    "id": "SLR0003",
+    "name": "Le Hoang Cuong",
+    "phone": "0935745153",
+    "email": "seller3@example.com",
+    "seller_type": "gig_worker",
+    "shop_name": "Cuong Shop",
+    "platform": "tiktok_shop",
+    "credit_score": 454,
+    "monthly_revenue_avg": 9742221.0
+  },
+  {
+    "id": "SLR0004",
+    "name": "Pham Minh Duc",
+    "phone": "0962222998",
+    "email": "seller4@example.com",
+    "seller_type": "freelancer",
+    "shop_name": "Duc Shop",
+    "platform": "tiktok_shop",
+    "credit_score": 629,
+    "monthly_revenue_avg": 20295175.0
+  },
+  {
+    "id": "SLR0005",
+    "name": "Hoang Thi Emma",
+    "phone": "0972177633",
+    "email": "seller5@example.com",
+    "seller_type": "freelancer",
+    "shop_name": "Emma Shop",
+    "platform": "lazada",
+    "credit_score": 457,
+    "monthly_revenue_avg": 67232803.0
+  },
+  {
+    "id": "SLR0006",
+    "name": "Vo Thanh Phuoc",
+    "phone": "0959917233",
+    "email": "seller6@example.com",
+    "seller_type": "ecommerce",
+    "shop_name": "Phuoc Shop",
+    "platform": "momo",
+    "credit_score": 624,
+    "monthly_revenue_avg": 12217638.0
+  },
+  {
+    "id": "SLR0007",
+    "name": "Bui Quoc Gia",
+    "phone": "0981545332",
+    "email": "seller7@example.com",
+    "seller_type": "gig_worker",
+    "shop_name": "Gia Shop",
+    "platform": "tiktok_shop",
+    "credit_score": 580,
+    "monthly_revenue_avg": 18426706.0
+  },
+  {
+    "id": "SLR0008",
+    "name": "Dang Thi Hoa",
+    "phone": "0940219977",
+    "email": "seller8@example.com",
+    "seller_type": "gig_worker",
+    "shop_name": "Hoa Shop",
+    "platform": "shopee",
+    "credit_score": 702,
+    "monthly_revenue_avg": 15529218.0
+  },
+  {
+    "id": "SLR0009",
+    "name": "Ngo Van Khoa",
+    "phone": "0991746096",
+    "email": "seller9@example.com",
+    "seller_type": "gig_worker",
+    "shop_name": "Khoa Shop",
+    "platform": "zalopay",
+    "credit_score": 727,
+    "monthly_revenue_avg": 40392825.0
+  },
+  {
+    "id": "SLR0010",
+    "name": "Ly Thi Lan",
+    "phone": "0960741859",
+    "email": "seller10@example.com",
+    "seller_type": "ecommerce",
+    "shop_name": "Lan Shop",
+    "platform": "lazada",
+    "credit_score": 665,
+    "monthly_revenue_avg": 42013030.0
+  },
+  {
+    "id": "SLR0011",
+    "name": "Cao Minh Manh",
+    "phone": "0975392212",
+    "email": "seller11@example.com",
+    "seller_type": "freelancer",
+    "shop_name": "Manh Shop",
+    "platform": "momo",
+    "credit_score": 783,
+    "monthly_revenue_avg": 64769989.0
+  },
+  {
+    "id": "SLR0012",
+    "name": "Truong Quoc Nguyen",
+    "phone": "0986728163",
+    "email": "seller12@example.com",
+    "seller_type": "freelancer",
+    "shop_name": "Nguyen Shop",
+    "platform": "momo",
+    "credit_score": 746,
+    "monthly_revenue_avg": 15242880.0
+  },
+  {
+    "id": "SLR0013",
+    "name": "Phan Thi Oanh",
+    "phone": "0941522806",
+    "email": "seller13@example.com",
+    "seller_type": "freelancer",
+    "shop_name": "Oanh Shop",
+    "platform": "tiktok_shop",
+    "credit_score": 706,
+    "monthly_revenue_avg": 46708740.0
+  },
+  {
+    "id": "SLR0014",
+    "name": "Doan Van Phuc",
+    "phone": "0911824753",
+    "email": "seller14@example.com",
+    "seller_type": "ecommerce",
+    "shop_name": "Phuc Shop",
+    "platform": "zalopay",
+    "credit_score": 696,
+    "monthly_revenue_avg": 10872871.0
+  },
+  {
+    "id": "SLR0015",
+    "name": "Ninh Thi Quynh",
+    "phone": "0944066003",
+    "email": "seller15@example.com",
+    "seller_type": "ecommerce",
+    "shop_name": "Quynh Shop",
+    "platform": "zalopay",
+    "credit_score": 794,
+    "monthly_revenue_avg": 57108614.0
+  },
+  {
+    "id": "SLR0016",
+    "name": "Luong Thanh Son",
+    "phone": "0982313744",
+    "email": "seller16@example.com",
+    "seller_type": "gig_worker",
+    "shop_name": "Son Shop",
+    "platform": "momo",
+    "credit_score": 780,
+    "monthly_revenue_avg": 16193217.0
+  },
+  {
+    "id": "SLR0017",
+    "name": "Dinh Thi Uyen",
+    "phone": "0984198190",
+    "email": "seller17@example.com",
+    "seller_type": "ecommerce",
+    "shop_name": "Uyen Shop",
+    "platform": "zalopay",
+    "credit_score": 494,
+    "monthly_revenue_avg": 26420531.0
+  },
+  {
+    "id": "SLR0018",
+    "name": "Mai Van Vuong",
+    "phone": "0978561238",
+    "email": "seller18@example.com",
+    "seller_type": "gig_worker",
+    "shop_name": "Vuong Shop",
+    "platform": "momo",
+    "credit_score": 530,
+    "monthly_revenue_avg": 50087450.0
+  },
+  {
+    "id": "SLR0019",
+    "name": "Ha Thi Xuan",
+    "phone": "0966510180",
+    "email": "seller19@example.com",
+    "seller_type": "ecommerce",
+    "shop_name": "Xuan Shop",
+    "platform": "lazada",
+    "credit_score": 532,
+    "monthly_revenue_avg": 79578086.0
+  },
+  {
+    "id": "SLR0020",
+    "name": "Tong Quang Yen",
+    "phone": "0974683365",
+    "email": "seller20@example.com",
+    "seller_type": "gig_worker",
+    "shop_name": "Yen Shop",
+    "platform": "lazada",
+    "credit_score": 641,
+    "monthly_revenue_avg": 49694323.0
+  }
+]
