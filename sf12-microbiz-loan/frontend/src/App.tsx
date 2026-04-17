@@ -1,19 +1,23 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import SellerDashboard from './pages/seller/Dashboard'
-import AdminDashboard from './pages/admin/Dashboard'
-import ScoringPage from './pages/scoring/ScoringPage'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Layout from "./components/Layout"
+import Landing from "./pages/Landing"
+import SellerPage from "./pages/seller/Dashboard"
+import ScoringPage from "./pages/scoring/ScoringPage"
+import AdminDashboard from "./pages/admin/Dashboard"
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Navigate to="/seller" replace />} />
-        <Route path="/seller/*" element={<SellerDashboard />} />
-        <Route path="/admin/*" element={<AdminDashboard />} />
-        <Route path="/scoring/*" element={<ScoringPage />} />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/seller" element={<SellerPage />} />
+          <Route path="/seller/:id" element={<SellerPage />} />
+          <Route path="/scoring" element={<ScoringPage />} />
+          <Route path="/scoring/:id" element={<ScoringPage />} />
+          <Route path="/admin" element={<AdminDashboard />} />
+        </Routes>
+      </Layout>
     </BrowserRouter>
   )
 }
-
-export default App
