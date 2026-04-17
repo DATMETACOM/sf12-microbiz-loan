@@ -219,15 +219,14 @@ export default function ChatboxSidebar({ isOpen, onClose, userRole = "employee" 
             <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
               <Zap className="w-8 h-8 text-white" />
             </div>
-            <h4 className="font-bold text-slate-800 mb-2">Chào bạn! 👋</h4>
+            <h4 className="font-bold text-slate-800 mb-2">{getWelcomeMessage().title}</h4>
             <p className="text-sm text-slate-600 mb-4">
-              Tôi là Trợ lý Tài chính AI, có thể giúp bạn với:
+              {getWelcomeMessage().subtitle}
             </p>
             <ul className="text-sm text-slate-600 space-y-1 text-left inline-block">
-              <li>💰 Ứng lương EWA</li>
-              <li>📊 Quản lý chi tiêu</li>
-              <li>💡 Lời khuyên tiết kiệm</li>
-              <li>📈 Tư vấn đầu tư</li>
+              {getWelcomeMessage().features.map((feature, i) => (
+                <li key={i}>{feature}</li>
+              ))}
             </ul>
           </div>
         )}
@@ -288,4 +287,31 @@ export default function ChatboxSidebar({ isOpen, onClose, userRole = "employee" 
         <div className="flex gap-2">
           <input
             type="text"
-            value={inp
+            value={inputMessage}
+            onChange={(e) => setInputMessage(e.target.value)}
+            onKeyPress={(e) => e.key === "Enter" && handleSendMessage()}
+            placeholder="Nhập câu hỏi của bạn..."
+            className="flex-1 px-4 py-3 bg-slate-100 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            disabled={isLoading}
+          />
+          <button
+            onClick={handleSendMessage}
+            disabled={!inputMessage.trim() || isLoading}
+            className="p-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-xl hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {isLoading ? (
+              <Loader2 className="w-5 h-5 animate-spin" />
+            ) : (
+              <Send className="w-5 h-5" />
+            )}
+          </button>
+        </div>
+        {useMock && (
+          <p className="text-xs text-slate-400 mt-2 text-center">
+            🤖 Demo Mode — Nhập API Key để sử dụng Qwen AI thật
+          </p>
+        )}
+      </div>
+    </div>
+  )
+}

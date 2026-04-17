@@ -8,7 +8,7 @@ import {
   CheckCircle,
   AlertCircle,
   Fingerprint,
-  FaceID,
+  User,
   Smartphone,
   ArrowRight,
   Zap
@@ -303,7 +303,7 @@ export default function EmployeeDashboard() {
                 onClick={() => { setBiometricMethod("faceid"); setTimeout(handleBiometricSuccess, 1500) }}
                 className="flex-1 p-4 border-2 border-slate-200 rounded-xl hover:border-green-500 hover:bg-green-50 transition-all"
               >
-                <FaceID className="w-8 h-8 mx-auto mb-2 text-slate-600" />
+                <User className="w-8 h-8 mx-auto mb-2 text-slate-600" />
                 <p className="text-xs font-medium text-slate-700">Face ID</p>
               </button>
             </div>

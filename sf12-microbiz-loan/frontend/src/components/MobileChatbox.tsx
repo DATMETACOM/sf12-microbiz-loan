@@ -12,7 +12,7 @@ import {
   Wallet,
   Target
 } from "lucide-react"
-import { chatWithQwen, mockChatResponse, ChatMessage, getEmployeeSuggestions } from "../lib/qwenChat"
+import { chatWithQwen, mockChatResponse, ChatMessage, getSellerSuggestions } from "../lib/qwenChat"
 
 interface MobileChatboxProps {
   isOpen: boolean
@@ -96,7 +96,7 @@ export default function MobileChatbox({ isOpen, onClose }: MobileChatboxProps) {
               <Sparkles className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-bold text-sm">Trợ lý Tài chính AI</h3>
+              <h3 className="font-bold text-sm">Mini-CFO AI</h3>
               <p className="text-xs opacity-80">Powered by Qwen AI</p>
             </div>
           </div>
@@ -128,7 +128,7 @@ export default function MobileChatbox({ isOpen, onClose }: MobileChatboxProps) {
                 </div>
                 <h4 className="font-bold text-slate-800 text-sm mb-2">Chào bạn! 👋</h4>
                 <p className="text-xs text-slate-600">
-                  Tôi có thể giúp bạn với EWA, chi tiêu, tiết kiệm...
+                  Tôi là Mini-CFO AI, giúp bạn quản lý dòng tiền & vay vốn
                 </p>
               </div>
             )}
@@ -170,7 +170,7 @@ export default function MobileChatbox({ isOpen, onClose }: MobileChatboxProps) {
           {messages.length === 0 && (
             <div className="px-4 py-2 bg-white border-t border-slate-100">
               <div className="flex flex-wrap gap-2">
-                {getEmployeeSuggestions().slice(0, 3).map((suggestion, i) => (
+                {getSellerSuggestions().slice(0, 3).map((suggestion, i) => (
                   <button
                     key={i}
                     onClick={() => handleSuggestionClick(suggestion)}
@@ -188,9 +188,9 @@ export default function MobileChatbox({ isOpen, onClose }: MobileChatboxProps) {
             <div className="px-4 py-3 bg-white border-t border-slate-100">
               <div className="grid grid-cols-3 gap-2">
                 {[
-                  { icon: Wallet, label: "Rút EWA", color: "bg-green-100 text-green-600" },
-                  { icon: TrendingUp, label: "Chi tiêu", color: "bg-blue-100 text-blue-600" },
-                  { icon: Target, label: "Tiết kiệm", color: "bg-purple-100 text-purple-600" },
+                  { icon: Wallet, label: "Hạn mức", color: "bg-green-100 text-green-600" },
+                  { icon: TrendingUp, label: "Doanh thu", color: "bg-blue-100 text-blue-600" },
+                  { icon: Target, label: "Tín dụng", color: "bg-purple-100 text-purple-600" },
                 ].map((action, i) => (
                   <button
                     key={i}
