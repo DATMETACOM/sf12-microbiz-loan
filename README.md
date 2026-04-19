@@ -31,25 +31,6 @@ SF12 works as a mini CFO for sellers:
 
 ## Core Workflows
 
-### Workflow Diagram (Mermaid)
-
-```mermaid
-flowchart TD
-    A[Seller Onboarding] --> B[Cashflow Ingestion]
-    B --> C[POST /api/loans/score/{seller_id}]
-    C --> D{Qwen API available?}
-    D -- Yes --> E[AI Score + Reason Codes]
-    D -- No --> F[Rule-Based Fallback Score]
-    E --> G[Risk Segment + Loan Limit]
-    F --> G
-    G --> H[POST /api/loans/apply]
-    H --> I[Policy Checks: min/max/cap]
-    I --> J[Loan Contract + Cap Fields]
-    J --> K[Repayment Simulator]
-    K --> L[Revenue-Based Deduction Plan]
-    L --> M[Admin Dashboard Monitoring]
-    M --> N[NPL and Risk Analytics]
-```
 
 ### 1) Seller Onboarding + Data Ingestion
 
