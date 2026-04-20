@@ -184,11 +184,11 @@ export default function FinancialWellness() {
                   <div className="flex items-center gap-2 mb-1">
                     <div className="flex-1 bg-slate-100 rounded-full h-3 overflow-hidden">
                       <div
-                        className={`h-3 rounded-full ${dept.score >= 80 ? "bg-green-500" : dept.score >= 70 ? "bg-yellow-500" : "bg-red-500"}`}
-                        style={{ width: `${dept.score}%` }}
+                        className={`h-3 rounded-full ${dept.avgScore >= 80 ? "bg-green-500" : dept.avgScore >= 70 ? "bg-yellow-500" : "bg-red-500"}`}
+                        style={{ width: `${dept.avgScore}%` }}
                       />
                     </div>
-                    <span className="font-bold text-slate-800 text-sm w-10">{dept.score}</span>
+                    <span className="font-bold text-slate-800 text-sm w-10">{dept.avgScore}</span>
                   </div>
                   <div className="flex items-center gap-1">
                     {dept.trend === "up" ? (

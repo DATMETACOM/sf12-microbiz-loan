@@ -15,6 +15,45 @@ export interface ChatResponse {
 const QWEN_API_URL = "https://dashscope-intl.aliyuncs.com/api/v1/services/aigc/text-generation/generation"
 
 /**
+ * System prompt for SF12 MicroBiz Loan Mini-CFO Assistant
+ */
+const MICROBIZ_SYSTEM_PROMPT = `Bạn là Mini-CFO AI (Trợ lý Tài chính Thông minh) cho hệ thống MicroBiz Loan của Shinhan Finance.
+
+VAI TRÒ CỦA BẠN:
+1. Cố vấn tài chính chuyên nghiệp cho seller trên nền tảng TMĐT
+2. Giúp quản lý dòng tiền, tối ưu vốn vay
+3. Phân tích dữ liệu kinh doanh, dự báo nhu cầu
+4. Tư vấn chiến lược nâng hạng tín dụng
+
+NGUYÊN TẮC:
+- Luôn trung lập, không thúc đẩy vay quá mức
+- Tập trung vào lợi ích dài hạn của seller
+- Minh bạch về lãi suất, phí, rủi ro
+- Tuân thủ quy định pháp lý (Nghị định 13/2023, Bộ luật Dân sự)
+
+NGỮ CÁCH:
+- Thân thiện, chuyên nghiệp, hiểu biết về kinh doanh online
+- Sử dụng emoji phù hợp
+- Giải thích rõ ràng, đưa ra ví dụ cụ thể
+- Đề xuất giải pháp thực tế
+
+CHỦ ĐỀ CÓ THỂ HỖ TRỢ:
+- Quản lý dòng tiền & vốn vay
+- Tối ưu tỷ lệ trích nợ
+- Chiến lược nhập hàng
+- Nâng hạng tín dụng
+- Giảm tỷ lệ hoàn hàng
+- Mở rộng kinh doanh
+
+KHI SELLER HỎI VỀ VAY:
+- Phân tích khả năng trả nợ
+- So sánh các phương án
+- Khuyên dùng nếu phù hợp
+- Cảnh báo rủi ro nếu cần thiết
+
+Hãy trả lời ngắn gọn, trực tiếp, hữu ích cho seller.`
+
+/**
  * System prompt for SF11 EWA Financial Assistant
  */
 const EWA_SYSTEM_PROMPT = `Bạn là Trợ lý Tài chính Vô tư (Impartial AI Financial Advisor) cho hệ thống EWA & Salary-Linked Lending của Shinhan Finance.
@@ -122,7 +161,158 @@ export async function chatWithQwen(
 export function mockChatResponse(userMessage: string): ChatResponse {
   const lowerMessage = userMessage.toLowerCase()
 
-  // EWA related
+  // Seller-specific responses (SF12)
+  if (lowerMessage.includes("hạn mức") || lowerMessage.includes("vay") || lowerMessage.includes("tín dụng")) {
+    return {
+      message: `**Hạn mức vay của bạn hiện tại: 50 triệu VND** 💰
+
+**Chi tiết:**
+- Đang sử dụng: 30 triệu VND
+- Còn khả dụng: 20 triệu VND
+- Điểm tín dụng: 680/850 (Hạng Vàng) ⭐
+
+**Gợi ý:**
+- Duy trì tỷ lệ hoàn hàng dưới 3% để nâng hạng
+- Kết nối API liên tục 30 ngày để tăng hạn mức +15M
+- Tăng trưởng doanh thu 15% để giảm lãi suất 1-2%
+
+Bạn có muốn tư vấn chi tiết không? 🤔`,
+      timestamp: new Date().toISOString()
+    }
+  }
+
+  if (lowerMessage.includes("điểm tín dụng") || lowerMessage.includes("tăng điểm") || lowerMessage.includes("credit score")) {
+    return {
+      message: `Để tăng điểm tín dụng từ **680 → 750+ (Bạch Kim)**, bạn nên: 📈
+
+**1. Giảm tỷ lệ hoàn hàng**
+- Mục tiêu: Dưới 3% (hiện tại: 3.2%)
+- Kiểm tra chất lượng sản phẩm, đóng gói kỹ hơn
+
+**2. Duy trì kết nối API**
+- Đã kết nối 20/30 ngày
+- Còn 10 ngày để đạt +30 điểm
+
+**3. Tăng trưởng doanh thu**
+- Tháng này: +12% (tốt!)
+- Cần thêm 3% để đạt +50 điểm
+
+**4. Đa dạng hóa nền tảng**
+- Hiện tại: Shopee (100%)
+- Thêm TikTok Shop/Lazada để +20 điểm
+
+Tôi sẽ theo dõi và thông báo khi bạn đạt các mục tiêu! 🎯`,
+      timestamp: new Date().toISOString()
+    }
+  }
+
+  if (lowerMessage.includes("doanh thu") || lowerMessage.includes("revenue") || lowerMessage.includes("tháng này")) {
+    return {
+      message: `**Phân tích doanh thu tháng 4/2026:** 📊
+
+**Tổng quan:**
+- Doanh thu: 285 triệu VND (+12% vs tháng 3)
+- Trung bình/ngày: 9.5 triệu VND
+- Ngày cao nhất: 18.2 triệu (Mega Sale)
+
+**Xu hướng:**
+- Tăng trưởng ổn định 3 tháng liên tục
+- Category bán chạy: Thời trang nữ (+45%)
+- Category cần cải thiện: Phụ kiện (-8%)
+
+**Dự báo:**
+- Tháng 5: dự kiến ~310 triệu (+8%)
+- Nhu cầu nhập hàng: ~150 triệu
+
+Bạn có muốn tôi phân tích chi tiết theo category không? 📈`,
+      timestamp: new Date().toISOString()
+    }
+  }
+
+  if (lowerMessage.includes("nhập hàng") || lowerMessage.includes("vốn") || lowerMessage.includes("khi nào")) {
+    return {
+      message: `**Dựa trên dữ liệu của bạn, đây là thời điểm VÀNG để nhập hàng!** ✨
+
+**Tại sao nên vay vốn nhập hàng NGAY:**
+
+1. **Dự báo nhu cầu tăng mạnh**
+   - Trend sản phẩm của bạn +45% trong 3 tháng
+   - Kho có thể hết hàng trong 5 ngày
+
+2. **Tỷ lệ trích nợ tối ưu**
+   - Hôm nay: 10% (bình thường)
+   - Doanh thu ổn định, khả năng trả nợ tốt
+
+3. **Lợi ích**
+   - Giải ngân tức thì 15-20 triệu
+   - Nhập hàng đón trend, tăng doanh thu
+   - Trả từ doanh thu tương lai
+
+**Gợi ý:**
+- Vay 15-20 triệu để nhập hàng top sellers
+- Tỷ lệ trích nợ 10%, giữ 90% vốn lưu động
+
+Bạn muốn tôi tính toán chi tiết không? 💡`,
+      timestamp: new Date().toISOString()
+    }
+  }
+
+  if (lowerMessage.includes("trích nợ") || lowerMessage.includes("tỷ lệ") || lowerMessage.includes("hôm nay")) {
+    return {
+      message: `**Nhiệt kế dòng tiền hôm nay:** 🌡️
+
+**Tỷ lệ trích nợ: 10% (Bình thường)**
+- Doanh thu ước tính: 9.5 triệu VND
+- Trích nợ: 950k VND
+- Giữ lại: 8.55 triệu VND (90%) ✅
+
+**So với bình thường:**
+- Tỷ lệ chuẩn: 10%
+- Hôm nay: 10% (không đổi)
+- Lý do: Doanh thu ổn định
+
+**Lợi ích:**
+- Giữ được 90% vốn lưu động
+- Có đủ tiền nhập hàng nhỏ
+- Duy trì cash flow tốt
+
+AI sẽ tự động điều chỉnh nếu doanh thu biến động mạnh! 🤖`,
+      timestamp: new Date().toISOString()
+    }
+  }
+
+  if (lowerMessage.includes("hoàn hàng") || lowerMessage.includes("return") || lowerMessage.includes("giảm tỷ lệ")) {
+    return {
+      message: `**Cải thiện tỷ lệ hoàn hàng từ 3.2% → dưới 3%** 🔄
+
+**Phân tích hiện tại:**
+- Tỷ lệ hoàn hàng: 3.2% (gần ngưỡng 3%)
+- Nguyên nhân chính: Size không phù hợp (45%), lỗi sản phẩm (30%)
+- Ảnh hưởng: -10 điểm tín dụng mỗi tháng
+
+**Giải pháp:**
+1. **Cải thiện mô tả sản phẩm**
+   - Thêm bảng size chi tiết
+   - Video đo thực tế
+
+2. **Kiểm tra chất lượng**
+   - Kiểm tra 100% trước khi đóng gói
+   - Ghi chú sản phẩm dễ lỗi
+
+3. **Chính sách đổi trả**
+   - Đổi trả miễn phí trong 7 ngày
+   - Tặng voucher cho khách không đổi trả
+
+**Dự báo:**
+- Nếu áp dụng: có thể giảm xuống 2.5% trong 1 tháng
+- Lợi ích: +50 điểm tín dụng, mở khóa hạn mức cao hơn
+
+Bạn muốn tôi giúp lập kế hoạch chi tiết không? 📋`,
+      timestamp: new Date().toISOString()
+    }
+  }
+
+  // EWA related (SF11)
   if (lowerMessage.includes("ứng") || lowerMessage.includes("ewa") || lowerMessage.includes("rút")) {
     return {
       message: `Để ứng EWA, bạn có thể rút tối đa 30% lương tháng theo Luật Lao động.
@@ -137,7 +327,7 @@ Bạn muốn ứng bao nhiêu? Hãy kiểm tra hạn mức còn lại trước n
     }
   }
 
-  // Salary related
+  // Salary related (SF11)
   if (lowerMessage.includes("lương") || lowerMessage.includes("salary")) {
     return {
       message: `Lương tháng này của bạn sẽ về vào **30/04/2026** 📅
@@ -190,14 +380,14 @@ Bạn muốn tôi phân tích chi tiêu chi tiết không? 📊`,
 
   // Default response
   return {
-    message: `Xin chào! Tôi là Trợ lý Tài chính của bạn 🤖
+    message: `Xin chào! Tôi là Mini-CFO AI, trợ lý tài chính thông minh của bạn 🤖
 
 Tôi có thể giúp bạn với:
-- 💰 Ứng lương EWA
-- 📊 Quản lý chi tiêu
-- 💡 Lời khuyên tiết kiệm
-- 📈 Tư vấn đầu tư cơ bản
-- 🎯 Cải thiện sức khỏe tài chính
+- 💰 Quản lý hạn mức vay & dòng tiền
+- 📊 Phân tích doanh thu & chi phí
+- 💡 Chiến lược nhập hàng & kinh doanh
+- 🎯 Nâng hạng tín dụng & giảm rủi ro
+- 📈 Tối ưu tỷ lệ trích nợ
 
 Bạn cần giúp gì hôm nay? 😊`,
     timestamp: new Date().toISOString()
