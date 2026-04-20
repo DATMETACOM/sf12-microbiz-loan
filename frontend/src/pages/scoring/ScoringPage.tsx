@@ -1,7 +1,8 @@
 import { useParams, useNavigate } from "react-router-dom"
 import { useState, useEffect } from "react"
-import { sellers, cashflows, getScoringFactors, getRiskLabel, getRiskColor, getRiskBg, formatVNDFull, formatVND, typeLabels, platformLabels } from "../../data/mockData"
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, Legend } from "recharts"
+import { sellers, cashflows, getScoringFactors, getRiskLabel, getRiskColor, getRiskBg, formatVNDFull, formatVND, platformLabels } from "../../data/mockData"
+import { api } from "../../lib/api"
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar } from "recharts"
 import { Bot, CheckCircle2, AlertTriangle, Clock, Sparkles, ArrowRight, ArrowLeft, Loader2 } from "lucide-react"
 
 const aiAnalysisSteps = [
@@ -13,29 +14,58 @@ const aiAnalysisSteps = [
   { step: 6, label: "Đang tạo đề xuất khoản vay...", icon: "💰" },
 ]
 
+interface ScoringResult {
+  score: number
+  risk_level: string
+  factors: Array<{ code: string; weight: number; impact: string }>
+  recommendation: string
+  loan_limit: number
+  max_tenure_months: number
+  reason_codes: string[]
+  scoring_breakdown: Record<string, number>
+  flow_analysis?: {
+    monthly_revenue_trend: string
+    revenue_stability_score: number
+    growth_potential: string
+    risk_factors: string[]
+    recommended_loan_limit: number
+    recommended_revenue_share_percent: number
+    overall_assessment: string
+  }
+}
+
 function ScoringDemo({ sellerId }: { sellerId: string }) {
   const navigate = useNavigate()
   const seller = sellers.find((s) => s.id === sellerId)
   const [currentStep, setCurrentStep] = useState(0)
   const [isAnalyzing, setIsAnalyzing] = useState(true)
   const [showResult, setShowResult] = useState(false)
+  const [scoringResult, setScoringResult] = useState<ScoringResult | null>(null)
+  const [error, setError] = useState<string | null>(null)
 
   const cf = cashflows[sellerId] || []
   const factors = getScoringFactors(seller!, cf)
   const avgRevenue = cf.reduce((s, c) => s + c.revenue, 0) / cf.length
-  const weightedScore = factors.reduce((s, f) => s + f.score * (f.weight / 100), 0)
-  const finalScore = Math.round(300 + weightedScore * (550 / 100))
-  const recommendedLimit = Math.min(50000000, Math.round(avgRevenue * 1.5))
-  const revenuePercent = finalScore >= 700 ? 6 : finalScore >= 600 ? 8 : 10
+  const localScore = Math.round(factors.reduce((s, f) => s + f.score * (f.weight / 100), 0))
+  const localFinalScore = 300 + Math.round(localScore * 5.5)
+  const localRecommendedLimit = Math.min(50000000, Math.round(avgRevenue * 1.5))
+  const localRevenuePercent = localFinalScore >= 700 ? 6 : localFinalScore >= 600 ? 8 : 10
 
   useEffect(() => {
     if (!isAnalyzing) return
-    const interval = setInterval(() => {
+    const interval = setInterval(async () => {
       setCurrentStep((prev) => {
         if (prev >= aiAnalysisSteps.length - 1) {
           clearInterval(interval)
-          setTimeout(() => {
+          setTimeout(async () => {
             setIsAnalyzing(false)
+            try {
+              const result = await api.loans.score(sellerId)
+              setScoringResult(result as ScoringResult)
+            } catch (err) {
+              console.error("Scoring API error:", err)
+              setError("Không thể kết nối API. Hiển thị kết quả mock.")
+            }
             setShowResult(true)
           }, 800)
           return prev
@@ -44,7 +74,11 @@ function ScoringDemo({ sellerId }: { sellerId: string }) {
       })
     }, 1200)
     return () => clearInterval(interval)
-  }, [isAnalyzing])
+  }, [isAnalyzing, sellerId])
+
+  const displayScore = scoringResult?.score || localFinalScore
+  const displayLimit = scoringResult?.loan_limit || localRecommendedLimit
+  const displayRevenuePercent = scoringResult?.flow_analysis?.recommended_revenue_share_percent || localRevenuePercent
 
   if (!seller) return <div className="text-center py-12 text-slate-500">Không tìm thấy seller</div>
 
@@ -92,24 +126,30 @@ function ScoringDemo({ sellerId }: { sellerId: string }) {
 
       {showResult && (
         <div className="space-y-6 animate-[fadeIn_0.5s_ease-in]">
+          {error && (
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 text-amber-800 text-sm">
+              <AlertTriangle className="w-4 h-4 inline mr-2" />
+              {error}
+            </div>
+          )}
           <div className="bg-white rounded-xl p-6 shadow-sm border border-slate-100">
             <h3 className="font-semibold text-slate-800 mb-4 flex items-center gap-2"><Sparkles className="w-5 h-5 text-blue-500" /> Kết quả chấm điểm AI</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
                 <p className="text-sm text-slate-500 mb-1">Credit Score</p>
-                <p className={`text-6xl font-bold ${getRiskColor(finalScore)}`}>{finalScore}</p>
-                <span className={`inline-block mt-1 px-3 py-1 rounded-full text-sm font-medium ${getRiskBg(finalScore)}`}>
-                  Rủi ro: {getRiskLabel(finalScore)}
+                <p className={`text-6xl font-bold ${getRiskColor(displayScore)}`}>{displayScore}</p>
+                <span className={`inline-block mt-1 px-3 py-1 rounded-full text-sm font-medium ${getRiskBg(displayScore)}`}>
+                  Rủi ro: {getRiskLabel(displayScore)}
                 </span>
               </div>
               <div className="text-center">
                 <p className="text-sm text-slate-500 mb-1">Hạn mức đề xuất</p>
-                <p className="text-4xl font-bold text-green-600">{formatVND(recommendedLimit)}</p>
+                <p className="text-4xl font-bold text-green-600">{formatVND(displayLimit)}</p>
                 <p className="text-sm text-slate-400 mt-1">VND</p>
               </div>
               <div className="text-center">
                 <p className="text-sm text-slate-500 mb-1">% Doanh thu trả nợ</p>
-                <p className="text-4xl font-bold text-purple-600">{revenuePercent}%</p>
+                <p className="text-4xl font-bold text-purple-600">{displayRevenuePercent}%</p>
                 <p className="text-sm text-slate-400 mt-1">doanh thu/tháng</p>
               </div>
             </div>
@@ -151,13 +191,13 @@ function ScoringDemo({ sellerId }: { sellerId: string }) {
                 </ResponsiveContainer>
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-sm border border-slate-100">
-                <h3 className="font-semibold text-slate-800 mb-3">So sánh phương thức trả nợ</h3>
+<div className="bg-white rounded-xl p-6 shadow-sm border border-slate-100">
+            <h3 className="font-semibold text-slate-800 mb-3">So sánh phương thức trả nợ</h3>
                 <ResponsiveContainer width="100%" height={200}>
                   <BarChart data={cf.map((c) => ({
                     month: c.month.slice(5),
-                    "Trả cố định": Math.round(((recommendedLimit) * 0.02) / 1e6),
-                    "Trả % doanh thu": Math.round((c.revenue * revenuePercent / 100) / 1e6),
+                    "Trả cố định": Math.round(((displayLimit) * 0.02) / 1e6),
+                    "Trả % doanh thu": Math.round((c.revenue * displayRevenuePercent / 100) / 1e6),
                   }))}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
                     <XAxis dataKey="month" tick={{ fontSize: 11 }} />
@@ -175,17 +215,17 @@ function ScoringDemo({ sellerId }: { sellerId: string }) {
             <h3 className="font-semibold text-slate-800 mb-4">Đề xuất của Qwen AI</h3>
             <div className="grid md:grid-cols-3 gap-4">
               <div className="p-4 bg-green-50 rounded-lg border border-green-100">
-                <div className="flex items-center gap-2 mb-2"><CheckCircle2 className="w-5 h-5 text-green-600" /><span className="font-semibold text-green-800">Khuyến nghị: DUYỆT</span></div>
+                <div className="flex items-center gap-2 mb-2"><CheckCircle2 className="w-5 h-5 text-green-600" /><span className="font-semibold text-green-800">Khuyến nghị: {scoringResult?.recommendation?.toUpperCase() || "DUYỆT"}</span></div>
                 <p className="text-sm text-green-700">Seller có lịch sử kinh doanh ổn định, doanh thu tăng trưởng tích cực.</p>
               </div>
               <div className="p-4 bg-blue-50 rounded-lg border border-blue-100">
-                <p className="text-sm text-blue-800"><span className="font-semibold">Hạn mức:</span> {formatVNDFull(recommendedLimit)}</p>
-                <p className="text-sm text-blue-800"><span className="font-semibold">Thời hạn:</span> 6–12 tháng</p>
+                <p className="text-sm text-blue-800"><span className="font-semibold">Hạn mức:</span> {formatVNDFull(displayLimit)}</p>
+                <p className="text-sm text-blue-800"><span className="font-semibold">Thời hạn:</span> {scoringResult?.max_tenure_months || 6} tháng</p>
                 <p className="text-sm text-blue-800"><span className="font-semibold">Lãi suất:</span> 18–22%/năm</p>
               </div>
               <div className="p-4 bg-purple-50 rounded-lg border border-purple-100">
-                <p className="text-sm text-purple-800"><span className="font-semibold">Trả nợ:</span> {revenuePercent}% doanh thu/tháng</p>
-                <p className="text-sm text-purple-800"><span className="font-semibold">TB/tháng:</span> {formatVNDFull(avgRevenue * revenuePercent / 100)}</p>
+                <p className="text-sm text-purple-800"><span className="font-semibold">Trả nợ:</span> {displayRevenuePercent}% doanh thu/tháng</p>
+                <p className="text-sm text-purple-800"><span className="font-semibold">TB/tháng:</span> {formatVNDFull(avgRevenue * displayRevenuePercent / 100)}</p>
                 <p className="text-sm text-purple-800 mt-1 text-xs">* Linh hoạt theo doanh thu thực tế</p>
               </div>
             </div>
@@ -195,7 +235,7 @@ function ScoringDemo({ sellerId }: { sellerId: string }) {
             <AlertTriangle className="w-5 h-5 text-amber-600 mt-0.5" />
             <div className="text-sm text-amber-800">
               <p className="font-semibold">Lưu ý rủi ro</p>
-              <p>Tỷ lệ hoàn hàng TB: {(cf.reduce((s, c) => s + c.return_rate, 0) / cf.length).toFixed(1)}%. Nên theo dõi chỉ số này định kỳ. {finalScore < 600 ? "Seller có risk level cao — cân nhắc hạn mức thấp hơn." : "Risk level chấp nhận được."}</p>
+              <p>Tỷ lệ hoàn hàng TB: {(cf.reduce((s, c) => s + c.return_rate, 0) / cf.length).toFixed(1)}%. Nên theo dõi chỉ số này định kỳ. {displayScore < 600 ? "Seller có risk level cao — cân nhắc hạn mức thấp hơn." : "Risk level chấp nhận được."}</p>
             </div>
           </div>
         </div>
