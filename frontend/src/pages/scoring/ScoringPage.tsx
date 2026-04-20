@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import { sellers, cashflows, getScoringFactors, getRiskLabel, getRiskColor, getRiskBg, formatVNDFull, formatVND, platformLabels } from "../../data/mockData"
 import { api } from "../../lib/api"
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar } from "recharts"
-import { Bot, CheckCircle2, AlertTriangle, Clock, Sparkles, ArrowRight, ArrowLeft, Loader2 } from "lucide-react"
+import { Bot, CheckCircle2, AlertTriangle, Clock, Sparkles, ArrowRight, ArrowLeft, Loader2, TrendingUp, Zap, Lightbulb } from "lucide-react"
 
 const aiAnalysisSteps = [
   { step: 1, label: "Đang kết nối dữ liệu e-commerce...", icon: "🔗" },
@@ -11,7 +11,7 @@ const aiAnalysisSteps = [
   { step: 3, label: "Đang đánh giá khối lượng giao dịch...", icon: "📊" },
   { step: 4, label: "Đang kiểm tra tỷ lệ hoàn hàng...", icon: "📦" },
   { step: 5, label: "Qwen AI đang chấm điểm tín dụng...", icon: "🤖" },
-  { step: 6, label: "Đang tạo đề xuất khoản vay...", icon: "💰" },
+  { step: 6, label: "Đang phân tích Business Insights...", icon: "💡" },
 ]
 
 interface ScoringResult {
@@ -34,6 +34,18 @@ interface ScoringResult {
   }
 }
 
+interface InsightsResult {
+  seller_id: string
+  demand_peak_alert: boolean
+  demand_peak_message?: string
+  stockout_risk: boolean
+  stockout_days_estimate?: number
+  recommended_disbursement?: number
+  surge_percentage?: number
+  seasonality_tip?: string
+  business_tips: string[]
+}
+
 function ScoringDemo({ sellerId }: { sellerId: string }) {
   const navigate = useNavigate()
   const seller = sellers.find((s) => s.id === sellerId)
@@ -41,6 +53,7 @@ function ScoringDemo({ sellerId }: { sellerId: string }) {
   const [isAnalyzing, setIsAnalyzing] = useState(true)
   const [showResult, setShowResult] = useState(false)
   const [scoringResult, setScoringResult] = useState<ScoringResult | null>(null)
+  const [insightsResult, setInsightsResult] = useState<InsightsResult | null>(null)
   const [error, setError] = useState<string | null>(null)
 
   const cf = cashflows[sellerId] || []
@@ -60,11 +73,26 @@ function ScoringDemo({ sellerId }: { sellerId: string }) {
           setTimeout(async () => {
             setIsAnalyzing(false)
             try {
-              const result = await api.loans.score(sellerId)
-              setScoringResult(result as ScoringResult)
+              const [scoreResult, insightsData] = await Promise.all([
+                api.loans.score(sellerId),
+                api.loans.insights(sellerId),
+              ])
+              setScoringResult(scoreResult as ScoringResult)
+              setInsightsResult(insightsData as InsightsResult)
             } catch (err) {
-              console.error("Scoring API error:", err)
+              console.error("API error:", err)
               setError("Không thể kết nối API. Hiển thị kết quả mock.")
+              const mockInsights: InsightsResult = {
+                seller_id: sellerId,
+                demand_peak_alert: false,
+                stockout_risk: false,
+                business_tips: [
+                  "Duy trì kết nối API để theo dõi real-time",
+                  "Giữ tỷ lệ hoàn hàng dưới 3%",
+                  "Tăng cường marketing trong tháng tới",
+                ],
+              }
+              setInsightsResult(mockInsights)
             }
             setShowResult(true)
           }, 800)
@@ -95,7 +123,7 @@ function ScoringDemo({ sellerId }: { sellerId: string }) {
             <p className="text-slate-500 text-sm">{seller.shop_name} · {platformLabels[seller.platform]}</p>
           </div>
           <div className="flex items-center gap-2 px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium">
-            <Bot className="w-4 h-4" /> Qwen AI Scoring Engine
+            <Bot className="w-4 h-4" /> Qwen Max Scoring Engine
           </div>
         </div>
       </div>
@@ -108,7 +136,7 @@ function ScoringDemo({ sellerId }: { sellerId: string }) {
             </div>
             <div>
               <h3 className="font-semibold text-slate-800">Qwen AI đang phân tích...</h3>
-              <p className="text-sm text-slate-500">Model: qwen-plus · Context: 6 tháng cash flow data</p>
+              <p className="text-sm text-slate-500">Model: qwen-max · Context: 6 tháng cash flow data</p>
             </div>
           </div>
           <div className="space-y-3">
@@ -230,6 +258,62 @@ function ScoringDemo({ sellerId }: { sellerId: string }) {
               </div>
             </div>
           </div>
+
+          {insightsResult && (
+            <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl p-6 border border-purple-100">
+              <h3 className="font-semibold text-slate-800 mb-4 flex items-center gap-2">
+                <Lightbulb className="w-5 h-5 text-purple-600" /> Business Insights từ Qwen AI
+              </h3>
+
+              {insightsResult.demand_peak_alert && insightsResult.demand_peak_message && (
+                <div className="mb-4 p-4 bg-green-50 rounded-lg border border-green-200 flex items-start gap-3">
+                  <Zap className="w-5 h-5 text-green-600 mt-0.5" />
+                  <div>
+                    <p className="font-semibold text-green-800">Cơ hội tăng trưởng!</p>
+                    <p className="text-sm text-green-700">{insightsResult.demand_peak_message}</p>
+                    {insightsResult.recommended_disbursement && insightsResult.recommended_disbursement > 0 && (
+                      <p className="text-sm text-green-700 mt-1">
+                        Đề xuất giải ngân: <span className="font-bold">{formatVNDFull(insightsResult.recommended_disbursement)}</span> để capture surge
+                      </p>
+                    )}
+                  </div>
+                </div>
+              )}
+
+              {insightsResult.stockout_risk && (
+                <div className="mb-4 p-4 bg-amber-50 rounded-lg border border-amber-200 flex items-start gap-3">
+                  <AlertTriangle className="w-5 h-5 text-amber-600 mt-0.5" />
+                  <div>
+                    <p className="font-semibold text-amber-800">Cảnh báo hết hàng!</p>
+                    <p className="text-sm text-amber-700">
+                      Ước tính hết hàng trong <span className="font-bold">{insightsResult.stockout_days_estimate || 7}</span> ngày nếu xu hướng tiếp tục.
+                    </p>
+                  </div>
+                </div>
+              )}
+
+              {insightsResult.seasonality_tip && (
+                <div className="mb-4 p-3 bg-blue-50 rounded-lg border border-blue-100 flex items-center gap-2">
+                  <TrendingUp className="w-4 h-4 text-blue-600" />
+                  <p className="text-sm text-blue-800">{insightsResult.seasonality_tip}</p>
+                </div>
+              )}
+
+              {insightsResult.business_tips && insightsResult.business_tips.length > 0 && (
+                <div>
+                  <p className="text-sm font-medium text-slate-700 mb-2">Gợi ý cải thiện kinh doanh:</p>
+                  <ul className="space-y-1">
+                    {insightsResult.business_tips.map((tip, i) => (
+                      <li key={i} className="flex items-center gap-2 text-sm text-slate-600">
+                        <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        {tip}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          )}
 
           <div className="bg-amber-50 rounded-xl p-4 border border-amber-100 flex items-start gap-3">
             <AlertTriangle className="w-5 h-5 text-amber-600 mt-0.5" />

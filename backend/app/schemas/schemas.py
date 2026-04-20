@@ -129,3 +129,15 @@ class CreditScoreResponse(BaseModel):
     loan_limit: float
     max_tenure_months: int
     reason_codes: Optional[list[str]] = None
+
+
+class SmartInsightsResponse(BaseModel):
+    seller_id: str
+    demand_peak_alert: bool
+    demand_peak_message: Optional[str] = None
+    stockout_risk: bool
+    stockout_days_estimate: Optional[int] = None
+    recommended_disbursement: Optional[float] = None
+    surge_percentage: Optional[float] = None
+    seasonality_tip: Optional[str] = None
+    business_tips: list[str] = []

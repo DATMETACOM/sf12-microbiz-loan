@@ -20,6 +20,7 @@ export const api = {
   loans: {
     apply: (data: any) => fetchAPI<any>('/loans/apply', { method: 'POST', body: JSON.stringify(data) }),
     score: (sellerId: string) => fetchAPI<any>(`/loans/score/${sellerId}`, { method: 'POST' }),
+    insights: (sellerId: string) => fetchAPI<any>(`/loans/insights/${sellerId}`),
     simulate: (amount: number, pct: number, revenue: number) =>
       fetchAPI<any>(`/loans/repayment-simulator?amount=${amount}&revenue_percent=${pct}&monthly_revenue=${revenue}`),
     list: () => fetchAPI<{ loans: any[]; total: number }>('/loans'),

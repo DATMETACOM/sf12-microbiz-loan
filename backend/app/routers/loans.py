@@ -7,8 +7,9 @@ from sqlalchemy.orm import Session
 
 from app.database import get_db
 from app.models.models import CashFlow, Loan, LoanPurpose, LoanStatus, RiskSegment, Seller
-from app.schemas.schemas import LoanApplication, LoanResponse, CreditScoreResponse
+from app.schemas.schemas import LoanApplication, LoanResponse, CreditScoreResponse, SmartInsightsResponse
 from app.services.credit_score import calculate_credit_score, calculate_repayment
+from app.services.qwen import analyze_insights
 
 router = APIRouter(prefix="/api/loans", tags=["loans"])
 
@@ -152,6 +153,65 @@ async def get_credit_score(seller_id: str, db: Session = Depends(get_db)):
     db.commit()
 
     return result
+
+
+@router.get("/insights/{seller_id}", response_model=SmartInsightsResponse)
+async def get_smart_insights(seller_id: str, db: Session = Depends(get_db)):
+    seller = db.query(Seller).filter(Seller.id == seller_id).first()
+    if not seller:
+        raise HTTPException(status_code=404, detail="Seller not found")
+
+    cashflow_rows = (
+        db.query(CashFlow)
+        .filter(CashFlow.seller_id == seller_id)
+        .order_by(CashFlow.month.asc())
+        .all()
+    )
+    if not cashflow_rows:
+        raise HTTPException(status_code=404, detail="Cashflow history not found")
+
+    seller_data = {
+        "id": seller.id,
+        "name": seller.name,
+        "seller_type": _enum_value(seller.seller_type),
+        "platform": _enum_value(seller.platform),
+        "monthly_revenue_avg": seller.monthly_revenue_avg,
+    }
+    cash_flow_data = [
+        {
+            "month": row.month,
+            "revenue": row.revenue,
+            "transactions": row.transactions,
+            "return_rate": row.return_rate,
+            "platform": _enum_value(row.platform),
+        }
+        for row in cashflow_rows
+    ]
+
+    try:
+        insights = await analyze_insights(cash_flow_data, seller_data)
+    except Exception:
+        revenues = [c["revenue"] for c in cash_flow_data]
+        growth = ((revenues[-1] - revenues[0]) / revenues[0] * 100) if revenues[0] > 0 else 0
+        insights = {
+            "demand_peak_alert": growth > 20,
+            "demand_peak_message": f"Xu hướng tăng trưởng {growth:.1f}% detected" if growth > 20 else None,
+            "stockout_risk": False,
+            "stockout_days_estimate": None,
+            "recommended_disbursement": int(seller.monthly_revenue_avg * 1.2) if growth > 20 else 0,
+            "surge_percentage": growth if growth > 0 else 0,
+            "seasonality_tip": "Doanh thu ổn định" if abs(growth) < 10 else "Có biến động doanh thu",
+            "business_tips": [
+                "Duy trì kết nối API để theo dõi real-time",
+                "Giữ tỷ lệ hoàn hàng dưới 3%",
+                "Tăng cường marketing trong tháng tới",
+            ],
+        }
+
+    return {
+        "seller_id": seller_id,
+        **insights,
+    }
 
 
 @router.get("/repayment-simulator")
