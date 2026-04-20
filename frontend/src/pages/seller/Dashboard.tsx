@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom"
-import { sellers, cashflows, getScoringFactors, formatVND, formatVNDFull, typeLabels, platformLabels, getRiskLabel, getRiskColor, getRiskBg } from "../../data/mockData"
+import { sellers, cashflows, getScoringFactors, formatVND, formatVNDFull, typeLabels, platformLabels, getRiskLabel, getRiskColor, getRiskBg, LEVELS, getLevelByScore, getLevelProgress, LEVEL_REQUIREMENTS } from "../../data/mockData"
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, Legend } from "recharts"
-import { ArrowLeft, TrendingUp, TrendingDown, Activity, ShoppingBag, ArrowRight, Bot } from "lucide-react"
+import { ArrowLeft, TrendingUp, TrendingDown, Activity, ShoppingBag, ArrowRight, Bot, Star, Zap, Trophy, ChevronRight } from "lucide-react"
 
 function SellerDetail({ id }: { id: string }) {
   const navigate = useNavigate()
@@ -120,6 +120,93 @@ function SellerDetail({ id }: { id: string }) {
         <button onClick={() => navigate(`/scoring/${seller.id}`)} className="px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors flex items-center gap-2">
           <Bot className="w-4 h-4" /> AI Scoring Demo <ArrowRight className="w-4 h-4" />
         </button>
+      </div>
+
+      <div className="bg-gradient-to-br from-purple-50 via-indigo-50 to-blue-50 rounded-xl p-6 border border-purple-100">
+        <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-xl flex items-center justify-center">
+              <Trophy className="w-6 h-6 text-white" />
+            </div>
+            <div>
+              <h3 className="font-bold text-slate-800 text-lg">Level-Up Map</h3>
+              <p className="text-sm text-slate-500">Theo dõi tiến độ lên rank cao hơn</p>
+            </div>
+          </div>
+          {(() => {
+            const level = getLevelByScore(seller.credit_score)
+            const { progress, next } = getLevelProgress(seller.credit_score)
+            return (
+              <div className="text-right">
+                <div className={`inline-flex items-center gap-2 px-4 py-2 ${level.bgColor} border ${level.borderColor} rounded-full`}>
+                  <Star className={`w-4 h-4 ${level.color}`} />
+                  <span className={`font-bold ${level.color}`}>{level.name}</span>
+                </div>
+                {next && (
+                  <p className="text-xs text-slate-500 mt-1">{progress}% đến {next.name}</p>
+                )}
+              </div>
+            )
+          })()}
+        </div>
+
+        <div className="flex gap-2 mb-6 overflow-x-auto pb-2">
+          {LEVELS.map((lvl, idx) => {
+            const isActive = seller.credit_score >= lvl.minScore
+            const isCurrent = seller.credit_score >= lvl.minScore && seller.credit_score <= lvl.maxScore
+            return (
+              <div key={lvl.name} className={`flex-shrink-0 flex flex-col items-center p-3 rounded-xl border-2 transition-all ${
+                isCurrent ? `${lvl.bgColor} border-${lvl.color.split("-")[1]}-400 shadow-md scale-105` : isActive ? `${lvl.bgColor} border-${lvl.color.split("-")[1]}-200` : "bg-slate-50 border-slate-200"
+              }`}>
+                <span className={`text-2xl mb-1 ${isActive ? "" : "opacity-30"}`}>
+                  {idx === 0 ? "🥉" : idx === 1 ? "🥈" : idx === 2 ? "🥇" : idx === 3 ? "💎" : "👑"}
+                </span>
+                <span className={`text-xs font-bold ${isActive ? lvl.color : "text-slate-400"}`}>{lvl.name}</span>
+                <span className={`text-xs ${isActive ? "text-slate-600" : "text-slate-400"}`}>{lvl.minScore}+</span>
+              </div>
+            )
+          })}
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-4">
+          <div className="bg-white rounded-lg p-4 border border-slate-200">
+            <h4 className="font-semibold text-slate-700 mb-2 flex items-center gap-2">
+              <Zap className="w-4 h-4 text-purple-600" /> Yêu cầu lên cấp kế tiếp
+            </h4>
+            <div className="space-y-2">
+              <div className="flex justify-between items-center text-sm">
+                <span className="text-slate-600">{LEVEL_REQUIREMENTS.refundRate.label}</span>
+                <span className="font-medium text-green-600">{LEVEL_REQUIREMENTS.refundRate.next}</span>
+              </div>
+              <div className="flex justify-between items-center text-sm">
+                <span className="text-slate-600">{LEVEL_REQUIREMENTS.apiConnected.label}</span>
+                <span className="font-medium text-green-600">{LEVEL_REQUIREMENTS.apiConnected.next}</span>
+              </div>
+              <div className="flex justify-between items-center text-sm">
+                <span className="text-slate-600">{LEVEL_REQUIREMENTS.revenueGrowth.label}</span>
+                <span className="font-medium text-green-600">{LEVEL_REQUIREMENTS.revenueGrowth.next}</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-lg p-4 border border-slate-200">
+            <h4 className="font-semibold text-slate-700 mb-2 flex items-center gap-2">
+              <Star className="w-4 h-4 text-yellow-500" /> Đặc quyền hiện tại
+            </h4>
+            {(() => {
+              const level = getLevelByScore(seller.credit_score)
+              return (
+                <ul className="space-y-1">
+                  {level.benefits.map((b, i) => (
+                    <li key={i} className="flex items-center gap-2 text-sm text-slate-600">
+                      <ChevronRight className="w-3 h-3 text-green-500" /> {b}
+                    </li>
+                  ))}
+                </ul>
+              )
+            })()}
+          </div>
+        </div>
       </div>
     </div>
   )
