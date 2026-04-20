@@ -20,12 +20,12 @@
 
 ```bash
 # Backend
-cd sf12-microbiz-loan/backend
+cd backend
 pip install -r requirements.txt
 fastapi dev app/main.py
 
 # Frontend (另一 terminal)
-cd sf12-microbiz-loan/frontend
+cd frontend
 npm install
 npm run dev
 ```
