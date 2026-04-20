@@ -1,4 +1,6 @@
 import os
+import asyncio
+import json
 from openai import OpenAI
 from dotenv import load_dotenv
 
@@ -17,7 +19,7 @@ def get_qwen_client() -> OpenAI:
     return _client
 
 
-async def analyze_cash_flow(cash_flow_data: list[dict]) -> dict:
+def _sync_analyze_cash_flow(cash_flow_data: list[dict]) -> dict:
     client = get_qwen_client()
     prompt = f"""Analyze the following e-commerce/e-wallet cash flow data for a micro loan credit assessment.
 Data: {cash_flow_data}
@@ -32,7 +34,7 @@ Provide a JSON response with:
 - overall_assessment: brief summary"""
 
     response = client.chat.completions.create(
-        model="qwen-plus",
+        model="qwen-max",
         messages=[
             {
                 "role": "system",
@@ -42,12 +44,14 @@ Provide a JSON response with:
         ],
         response_format={"type": "json_object"},
     )
-    import json
-
     return json.loads(response.choices[0].message.content)
 
 
-async def score_seller(seller_data: dict, cash_flow_data: list[dict]) -> dict:
+async def analyze_cash_flow(cash_flow_data: list[dict]) -> dict:
+    return await asyncio.to_thread(_sync_analyze_cash_flow, cash_flow_data)
+
+
+def _sync_score_seller(seller_data: dict, cash_flow_data: list[dict]) -> dict:
     client = get_qwen_client()
     prompt = f"""Calculate an alternative credit score (300-850) for this digital economy seller.
 
@@ -72,7 +76,7 @@ Respond with JSON:
 - recommended_revenue_percent: repayment % of revenue"""
 
     response = client.chat.completions.create(
-        model="qwen-plus",
+        model="qwen-max",
         messages=[
             {
                 "role": "system",
@@ -82,6 +86,8 @@ Respond with JSON:
         ],
         response_format={"type": "json_object"},
     )
-    import json
-
     return json.loads(response.choices[0].message.content)
+
+
+async def score_seller(seller_data: dict, cash_flow_data: list[dict]) -> dict:
+    return await asyncio.to_thread(_sync_score_seller, seller_data, cash_flow_data)
