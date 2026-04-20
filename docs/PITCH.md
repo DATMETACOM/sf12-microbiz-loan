@@ -1,75 +1,68 @@
-# Pitch Outline — [SF12] MicroBiz Loan
+# SF12 - MicroBiz Loan
 
-## 1. Problem (30 seconds)
+**SF12** connects digital economy sellers in Vietnam with working capital using AI-powered alternative credit scoring.
 
-- Việt Nam có **~200,000 active online sellers** trên Shopee/Lazada/TikTok Shop
-- + **~4 triệu gig workers** (Grab, Gojek, freelancer)
-- **Hầu hết KHÔNG có CIC history** → không vay được từ ngân hàng/tài chính
-- Shinhan Finance đang bỏ lỡ tệp khách hàng khổng lồ này
+## Problem
 
-## 2. Solution (60 seconds)
+Online sellers, freelancers, and gig workers are invisible to traditional credit systems. They have no CIC history, no payslips, no tax declarations. When a TikTok Shop seller needs 10M VND to restock before a Mega Sale, banks say "no" because there's no paper trail.
 
-**MicroBiz Loan** — AI-powered micro lending cho digital economy sellers
+## Solution
 
-- **Alternative Credit Scoring**: Phân tích cash flow từ e-commerce + e-wallet bằng Qwen AI
-- **Revenue-Based Repayment**: Trả nợ theo % doanh thu → giảm NPL risk
-- **Loan Range**: 5–50M VND, phù hợp nhu cầu vốn lưu động
+SF12 is a "Mini-CFO" for digital economy sellers:
 
-### How AI Scoring Works
-- 6 weighted factors → credit score 300-850
-- No CIC dependency → mở rộng tệp khách hàng
-- Qwen AI phân tích 6 tháng cash flow data
+**AI Alternative Credit Scoring** — No CIC needed. Qwen AI analyzes 6 months of e-commerce cash flow (Shopee, Lazada, TikTok Shop) and e-wallet data (MoMo, ZaloPay) to produce a 300-850 credit score with explainable reason codes.
 
-### How Revenue-Based Repayment Works
-- Good month → pay more, Slow month → pay less
-- NPL target <5% (vs industry avg 8-12%)
+**Revenue-Based Repayment** — Borrowers repay as a % of daily revenue instead of fixed installments. On slow days, the deduction auto-adjusts down to preserve working capital. On Mega Sale days, it increases to help them pay off early.
 
-## 3. Demo (120 seconds)
+**Smart Insights** — AI detects demand peaks from historical patterns and alerts sellers: "Your 200-unit stock will run out in 3 days. Trend is +40% this week. Disburse 15M now to capture the surge."
 
-1. **Seller onboarding** → connect shop
-2. **AI Scoring** → show real-time credit score calculation
-3. **Loan application** → instant approval
-4. **Repayment simulation** → revenue-based vs fixed comparison
+**Credit Gamification** — Transparent level-up progression. Sellers see exactly what to do to unlock higher limits: maintain refund rate <3%, keep API connected, grow revenue 15% month-over-month.
 
-## 4. Business Case (30 seconds)
+**Admin Risk Dashboard** — Portfolio-level view for Shinhan: real-time NPL tracking, credit score distribution, and anomaly detection.
 
-- **Market size**: 200K+ sellers × 4M gig workers
-- **Revenue model**: Interest rate 18-24%/year + service fee
-- **NPL target**: <5% via AI scoring + flexible repayment
-- **Differentiator**: Revenue-based repayment, no competitor offers this in VN
+## Tech Stack
 
-## 5. Technical Stack (30 seconds)
+| Layer | Technology |
+|-------|------------|
+| AI Engine | Qwen Plus via DashScope API |
+| Backend | FastAPI + SQLAlchemy + SQLite |
+| Credit Engine | AI-first scoring + rule-based fallback (6 weighted factors) |
+| Frontend | React 19 + Vite + Tailwind CSS + Recharts |
+| Data | 50 sellers, 8 months, 500+ cashflow records |
 
-- **Qwen AI**: Alternative credit scoring engine
-- **Alibaba Cloud**: ECS hosting + OSS storage
-- **FastAPI + React**: Modern, fast development
-- **Mock data**: Shopee/Lazada/MoMo cash flow patterns
+## Scoring Factors
 
-## 6. Ask (15 seconds)
+| Factor | Weight |
+|--------|--------|
+| Revenue consistency | 25% |
+| Transaction volume trend | 20% |
+| Return/refund rate | 15% |
+| Platform diversity | 15% |
+| Growth trajectory | 15% |
+| Account activity | 10% |
 
-- PoC funding từ Shinhan InnoBoost 2026
-- API partnership với Shopee/MoMo
-- Pilot program với 100 sellers
+## Key Features
 
----
+- **Dual-mode scoring**: Qwen AI first, rule-based fallback with 6 weighted factors
+- **Explainable AI**: Every credit decision includes reason codes and weighted factor breakdowns
+- **Revenue-based repayment simulator**: Visual comparison of fixed vs dynamic payment plans
+- **Animated scoring visualization**: 6-step sequential analysis with progress bars
+- **Vietnamese-localized UI**: All labels and platform names in Vietnamese
 
-## Key Messages
+## Challenges Solved
 
-1. "Chúng tôi giải quyết vấn đề credit access cho digital economy workers"
-2. "AI scoring không cần CIC — dùng cash flow data thật"
-3. "Revenue-based repayment giảm NPL risk cho Shinhan Finance"
-4. "Demo hoạt động ngay — không chỉ là concept"
+- **Structured JSON reliability** from LLM — Solved with explicit output format requirements and robust rule-based fallback
+- **Scoring factor weighting** — Balanced 6 factors to produce realistic 300-850 scores with iterative calibration
+- **Revenue-based repayment math** — Built month-by-month projection showing compounding effect of dynamic deductions
+- **Demo data realism** — Multi-stage generator with configurable seeds for believable cash flow patterns
 
-## Judge Q&A Prep
+## What We Learned
 
-**Q: How is this different from Shopee SPayLater?**
-A: SPayLater là BNPL (buy now pay later), chỉ dùng trên Shopee. Chúng tôi là micro loan linh hoạt, multi-platform, với revenue-based repayment.
+- AI for credit scoring is viable but needs guardrails — LLMs analyze cash flow patterns effectively, but rule-based fallback is essential for production reliability
+- Revenue-based financing aligns incentives — When repayment scales with revenue, borrowers don't get crushed during dry spells, and lenders get paid faster during boom periods
+- Explainability beats raw accuracy — A 720 score with reason codes is more actionable than a 720 score with no explanation
+- Data quality determines everything — Realistic cash flow patterns (seasonality, growth curves, platform quirks) are essential for meaningful scoring
 
-**Q: How do you verify cash flow data?**
-A: Phase 1: API integration với Shopee/Lazada/MoMo. Phase 2: Bank statement OCR với Qwen AI.
+## NPL Target: <5%
 
-**Q: What if seller inflates revenue?**
-A: AI detects anomalies — cross-platform validation, transaction pattern analysis, return rate analysis.
-
-**Q: How do you ensure <5% NPL?**
-A: 3 layers: (1) AI scoring filter high-risk, (2) Revenue-based repayment auto-adjusts, (3) Conservative loan limits.
+Achieved through conservative scoring, dynamic deduction caps, and real-time portfolio monitoring.
