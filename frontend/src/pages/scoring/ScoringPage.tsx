@@ -201,7 +201,7 @@ function ScoringDemo({ sellerId }: { sellerId: string }) {
                 ))}
               </div>
               <div className="mt-4 p-3 bg-blue-50 rounded-lg">
-                <p className="text-sm text-blue-800 font-medium">Điểm tổng hợp (có trọng số): {Math.round(weightedScore)}/100 → Credit Score: {finalScore}</p>
+                <p className="text-sm text-blue-800 font-medium">Điểm tổng hợp (có trọng số): {localScore}/100 → Credit Score: {displayScore}</p>
               </div>
             </div>
 
