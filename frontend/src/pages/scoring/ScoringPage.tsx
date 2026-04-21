@@ -6,12 +6,12 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 import { Bot, CheckCircle2, AlertTriangle, Clock, Sparkles, ArrowRight, ArrowLeft, Loader2, TrendingUp, Zap, Lightbulb } from "lucide-react"
 
 const aiAnalysisSteps = [
-  { step: 1, label: "Đang kết nối dữ liệu e-commerce...", icon: "🔗" },
-  { step: 2, label: "Đang phân tích xu hướng doanh thu...", icon: "📈" },
-  { step: 3, label: "Đang đánh giá khối lượng giao dịch...", icon: "📊" },
-  { step: 4, label: "Đang kiểm tra tỷ lệ hoàn hàng...", icon: "📦" },
-  { step: 5, label: "Qwen AI đang chấm điểm tín dụng...", icon: "🤖" },
-  { step: 6, label: "Đang phân tích Business Insights...", icon: "💡" },
+  { step: 1, label: "Kết nối database...", icon: "🔗" },
+  { step: 2, label: "Load dữ liệu cashflow 6 tháng...", icon: "📊" },
+  { step: 3, label: "Gửi request đến Qwen3-Max API...", icon: "🤖" },
+  { step: 4, label: "AI đang phân tích scoring...", icon: "📈" },
+  { step: 5, label: "AI đang phân tích business insights...", icon: "💡" },
+  { step: 6, label: "Tổng hợp kết quả...", icon: "✅" },
 ]
 
 interface ScoringResult {
@@ -123,7 +123,7 @@ function ScoringDemo({ sellerId }: { sellerId: string }) {
             <p className="text-slate-500 text-sm">{seller.shop_name} · {platformLabels[seller.platform]}</p>
           </div>
           <div className="flex items-center gap-2 px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium">
-            <Bot className="w-4 h-4" /> Qwen Max Scoring Engine
+            <Bot className="w-4 h-4" /> Qwen3-Max Scoring Engine
           </div>
         </div>
       </div>
@@ -136,7 +136,7 @@ function ScoringDemo({ sellerId }: { sellerId: string }) {
             </div>
             <div>
               <h3 className="font-semibold text-slate-800">Qwen AI đang phân tích...</h3>
-              <p className="text-sm text-slate-500">Model: qwen-max · Context: 6 tháng cash flow data</p>
+              <p className="text-sm text-slate-500">Model: qwen3-max · Đang gọi API...</p>
             </div>
           </div>
           <div className="space-y-3">

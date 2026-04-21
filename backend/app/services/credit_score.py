@@ -113,6 +113,17 @@ async def calculate_credit_score(seller_data: dict, cash_flow_data: list[dict]) 
     try:
         scoring_result = await score_seller(seller_data, cash_flow_data)
         flow_analysis = await analyze_cash_flow(cash_flow_data)
+
+        key_factors = scoring_result.get("key_factors", [])
+        if key_factors and isinstance(key_factors[0], str):
+            key_factors = [{"code": f, "weight": 1.0 / len(key_factors), "impact": "high"} for f in key_factors[:3]]
+
+        scoring_result["key_factors"] = key_factors
+
+        reason_codes = scoring_result.get("reason_codes", [])
+        if reason_codes and isinstance(reason_codes[0], str):
+            reason_codes = reason_codes[:3]
+
     except Exception:
         scoring_result = _rule_based_score(seller_data, cash_flow_data)
         flow_analysis = {
