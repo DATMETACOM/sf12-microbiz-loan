@@ -341,7 +341,7 @@ export default function ScoringPage() {
           <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center"><Bot className="w-5 h-5 text-white" /></div>
           <div>
             <h2 className="text-xl font-bold text-slate-800">AI Alternative Credit Scoring</h2>
-            <p className="text-sm text-slate-500">Powered by Qwen AI (qwen-plus) — không cần CIC history</p>
+            <p className="text-sm text-slate-500">Powered by Qwen Max AI — không cần CIC history</p>
           </div>
         </div>
         <p className="text-slate-600 text-sm">Chọn seller để xem AI chấm điểm tín dụng theo 6 yếu tố. Hệ thống phân tích 6 tháng cash flow data từ e-commerce & e-wallet.</p>
