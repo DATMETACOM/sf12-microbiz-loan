@@ -1,26 +1,24 @@
 import os
 import asyncio
 import json
-from openai import OpenAI
+import httpx
 from dotenv import load_dotenv
 
 load_dotenv()
 
-_client = None
+QWEN_API_URL = "https://dashscope-intl.aliyuncs.com/compatible-mode/v1/chat/completions"
+QWEN_MODEL = "qwen3-max"
 
 
-def get_qwen_client() -> OpenAI:
-    global _client
-    if _client is None:
-        _client = OpenAI(
-            api_key=os.getenv("DASHSCOPE_API_KEY"),
-            base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
-        )
-    return _client
+def _get_headers() -> dict:
+    api_key = os.getenv("QWEN_API_KEY") or os.getenv("DASHSCOPE_API_KEY") or ""
+    return {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json",
+    }
 
 
 def _sync_analyze_cash_flow(cash_flow_data: list[dict]) -> dict:
-    client = get_qwen_client()
     prompt = f"""Analyze the following e-commerce/e-wallet cash flow data for a micro loan credit assessment.
 Data: {cash_flow_data}
 
@@ -33,18 +31,24 @@ Provide a JSON response with:
 - recommended_revenue_share_percent: suggested % of revenue for repayment (5-15%)
 - overall_assessment: brief summary"""
 
-    response = client.chat.completions.create(
-        model="qwen-max",
-        messages=[
+    payload = {
+        "model": QWEN_MODEL,
+        "messages": [
             {
                 "role": "system",
                 "content": "You are an AI credit analyst specializing in alternative credit scoring for digital economy sellers in Vietnam. Always respond with valid JSON.",
             },
             {"role": "user", "content": prompt},
         ],
-        response_format={"type": "json_object"},
-    )
-    return json.loads(response.choices[0].message.content)
+        "max_tokens": 1000,
+        "temperature": 0.2,
+    }
+
+    response = httpx.post(QWEN_API_URL, headers=_get_headers(), json=payload, timeout=30.0)
+    response.raise_for_status()
+    data = response.json()
+    content = data.get("choices", [{}])[0].get("message", {}).get("content", "{}")
+    return json.loads(content)
 
 
 async def analyze_cash_flow(cash_flow_data: list[dict]) -> dict:
@@ -52,7 +56,6 @@ async def analyze_cash_flow(cash_flow_data: list[dict]) -> dict:
 
 
 def _sync_score_seller(seller_data: dict, cash_flow_data: list[dict]) -> dict:
-    client = get_qwen_client()
     prompt = f"""Calculate an alternative credit score (300-850) for this digital economy seller.
 
 Seller Profile: {seller_data}
@@ -75,18 +78,24 @@ Respond with JSON:
 - recommended_loan_limit: max amount in VND
 - recommended_revenue_percent: repayment % of revenue"""
 
-    response = client.chat.completions.create(
-        model="qwen-max",
-        messages=[
+    payload = {
+        "model": QWEN_MODEL,
+        "messages": [
             {
                 "role": "system",
                 "content": "You are an AI credit scoring engine for micro lending to digital economy workers in Vietnam. Be conservative but fair. Always respond with valid JSON.",
             },
             {"role": "user", "content": prompt},
         ],
-        response_format={"type": "json_object"},
-    )
-    return json.loads(response.choices[0].message.content)
+        "max_tokens": 1000,
+        "temperature": 0.2,
+    }
+
+    response = httpx.post(QWEN_API_URL, headers=_get_headers(), json=payload, timeout=30.0)
+    response.raise_for_status()
+    data = response.json()
+    content = data.get("choices", [{}])[0].get("message", {}).get("content", "{}")
+    return json.loads(content)
 
 
 async def score_seller(seller_data: dict, cash_flow_data: list[dict]) -> dict:
@@ -94,7 +103,6 @@ async def score_seller(seller_data: dict, cash_flow_data: list[dict]) -> dict:
 
 
 def _sync_analyze_insights(cash_flow_data: list[dict], seller_data: dict) -> dict:
-    client = get_qwen_client()
     revenues = [row.get("revenue", 0) for row in cash_flow_data]
     transactions = [row.get("transactions", 0) for row in cash_flow_data]
 
@@ -127,18 +135,24 @@ Provide JSON with:
 - seasonality_tip: string - tip about seasonal patterns
 - business_tips: array of 3 actionable business improvement tips"""
 
-    response = client.chat.completions.create(
-        model="qwen-max",
-        messages=[
+    payload = {
+        "model": QWEN_MODEL,
+        "messages": [
             {
                 "role": "system",
                 "content": "You are an AI business intelligence advisor for digital economy sellers in Vietnam. Provide actionable insights. Always respond with valid JSON.",
             },
             {"role": "user", "content": prompt},
         ],
-        response_format={"type": "json_object"},
-    )
-    return json.loads(response.choices[0].message.content)
+        "max_tokens": 1000,
+        "temperature": 0.3,
+    }
+
+    response = httpx.post(QWEN_API_URL, headers=_get_headers(), json=payload, timeout=30.0)
+    response.raise_for_status()
+    data = response.json()
+    content = data.get("choices", [{}])[0].get("message", {}).get("content", "{}")
+    return json.loads(content)
 
 
 async def analyze_insights(cash_flow_data: list[dict], seller_data: dict) -> dict:
