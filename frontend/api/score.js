@@ -1,14 +1,12 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node'
-
 const QWEN_API_URL = 'https://dashscope-intl.aliyuncs.com/compatible-mode/v1/chat/completions'
 const QWEN_MODEL = 'qwen3-max'
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' })
   }
 
-  const { seller_id, seller_data, cashflow_data, mode } = req.body
+  const { seller_data, cashflow_data, mode } = req.body
 
   if (!seller_data || !cashflow_data) {
     return res.status(400).json({ error: 'Missing seller_data or cashflow_data' })
@@ -36,13 +34,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
     return res.status(200).json(result)
-  } catch (error: any) {
+  } catch (error) {
     console.error('Qwen API error:', error.message)
     return res.status(500).json({ error: 'Failed to call Qwen API', details: error.message })
   }
 }
 
-async function callQwenScoring(seller_data: any, cashflow_data: any[], apiKey: string) {
+async function callQwenScoring(seller_data, cashflow_data, apiKey) {
   const prompt = `Calculate an alternative credit score (300-850) for this digital economy seller.
 
 Seller Profile:
@@ -56,7 +54,7 @@ Seller Profile:
 - Loan Cycles: ${seller_data.loan_cycle_count}
 
 Cash Flow History (${cashflow_data.length} months):
-${cashflow_data.map((cf: any) => `- ${cf.month}: Revenue ${cf.revenue?.toLocaleString()} VND, Transactions: ${cf.transactions}, Return Rate: ${(cf.return_rate * 100).toFixed(1)}%, Growth: ${(cf.growth_rate * 100).toFixed(1)}%`).join('\n')}
+${cashflow_data.map(cf => `- ${cf.month}: Revenue ${cf.revenue?.toLocaleString()} VND, Transactions: ${cf.transactions}, Return Rate: ${(cf.return_rate * 100).toFixed(1)}%, Growth: ${(cf.growth_rate * 100).toFixed(1)}%`).join('\n')}
 
 Provide JSON with:
 - credit_score: integer 300-850
@@ -102,10 +100,10 @@ Provide JSON with:
   }
 }
 
-async function callQwenInsights(seller_data: any, cashflow_data: any[], apiKey: string) {
-  const revenues = cashflow_data.map((cf: any) => cf.revenue)
-  const transactions = cashflow_data.map((cf: any) => cf.transactions)
-  const avg_revenue = revenues.reduce((a: number, b: number) => a + b, 0) / revenues.length
+async function callQwenInsights(seller_data, cashflow_data, apiKey) {
+  const revenues = cashflow_data.map(cf => cf.revenue)
+  const transactions = cashflow_data.map(cf => cf.transactions)
+  const avg_revenue = revenues.reduce((a, b) => a + b, 0) / revenues.length
   const latest_revenue = revenues[revenues.length - 1]
   const growth_rate = revenues[0] > 0 ? ((latest_revenue - revenues[0]) / revenues[0] * 100) : 0
 
