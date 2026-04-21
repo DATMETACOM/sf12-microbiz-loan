@@ -12,16 +12,6 @@ Online sellers, freelancers, and gig workers are invisible to traditional credit
 
 SF12 is a "Mini-CFO" for digital economy sellers: AI-powered credit scoring without CIC, revenue-based repayment, and smart business insights.
 
-## Menu Structure
-
-```
-┌─────────────────────────────────────────────────────┐
-│ Seller:  [Tổng quan] [Sellers] [AI Scoring]  │  [Admin] │
-└─────────────────────────────────────────────────────┘
-```
-
----
-
 ## Seller Portal
 
 ### Features
