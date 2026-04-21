@@ -1,8 +1,13 @@
-import { sellers, loans, formatVNDFull, getRiskColor, getRiskBg, getRiskLabel } from "../../data/mockData"
+import { sellers, loans, formatVND, formatVNDFull, getRiskLabel, getPlatformLabel } from "../../data/mockData"
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend } from "recharts"
-import { BarChart3, TrendingUp, AlertTriangle, Users, Shield, Activity } from "lucide-react"
+import { BarChart3, TrendingUp, AlertTriangle, Shield, Activity, Bot, Loader2, RefreshCw } from "lucide-react"
+import { useState } from "react"
 
 export default function AdminDashboard() {
+  const [selectedSellerId, setSelectedSellerId] = useState<string | null>(null)
+  const [aiAnalysis, setAiAnalysis] = useState<any>(null)
+  const [aiLoading, setAiLoading] = useState(false)
+
   const totalLoans = loans.length
   const activeLoans = loans.filter((l) => l.status === "active").length
   const totalDisbursed = loans.reduce((s, l) => s + l.amount, 0)
@@ -31,6 +36,32 @@ export default function AdminDashboard() {
     { platform: "MoMo", revenue: Math.round(sellers.filter((s) => s.platform === "momo").reduce((s, x) => s + x.monthly_revenue_avg, 0) / 1e6) },
     { platform: "ZaloPay", revenue: Math.round(sellers.filter((s) => s.platform === "zalopay").reduce((s, x) => s + x.monthly_revenue_avg, 0) / 1e6) },
   ].filter((d) => d.revenue > 0)
+
+  const handleAIRefresh = async (sellerId: string) => {
+    setSelectedSellerId(sellerId)
+    setAiLoading(true)
+    try {
+      const seller = sellers.find(s => s.id === sellerId)
+      if (!seller) return
+
+      const response = await fetch('/api/score', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          seller_id: seller.id,
+          seller_data: seller,
+          cashflow_data: [],
+          mode: 'scoring'
+        })
+      })
+      const result = await response.json()
+      setAiAnalysis(result)
+    } catch (err) {
+      console.error(err)
+    } finally {
+      setAiLoading(false)
+    }
+  }
 
   return (
     <div className="space-y-6">
@@ -130,7 +161,12 @@ export default function AdminDashboard() {
                     <td className="px-4 py-2.5 text-right font-medium">{formatVNDFull(l.amount)}</td>
                     <td className="px-4 py-2.5 text-center">{l.interest_rate.toFixed(1)}%/năm</td>
                     <td className="px-4 py-2.5 text-center font-medium text-purple-600">{l.revenue_percent.toFixed(1)}%</td>
-                    <td className="px-4 py-2.5 text-center"><span className={`font-bold ${getRiskColor(l.ai_score)}`}>{l.ai_score}</span></td>
+                    <td className="px-4 py-2.5 text-center"><span className={`font-bold ${l.ai_score >= 700 ? 'text-green-600' : l.ai_score >= 600 ? 'text-yellow-600' : 'text-red-600'}`}>{l.ai_score}</span></td>
+                    <td className="px-4 py-2.5 text-center">
+                      <button onClick={() => handleAIRefresh(l.seller_id)} className="p-1 hover:bg-blue-50 rounded" title="Refresh AI Score">
+                        {aiLoading && selectedSellerId === l.seller_id ? <Loader2 className="w-4 h-4 animate-spin text-blue-600" /> : <RefreshCw className="w-4 h-4 text-blue-600" />}
+                      </button>
+                    </td>
                     <td className="px-4 py-2.5 text-center"><span className={`px-2 py-0.5 rounded text-xs font-medium ${st.cls}`}>{st.label}</span></td>
                   </tr>
                 )
