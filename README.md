@@ -1,5 +1,7 @@
 # SF12 - MicroBiz Loan
 
+**Live Demo:** https://sf12-microbiz-loan.vercel.app
+
 **SF12** connects digital economy sellers in Vietnam with working capital using AI-powered alternative credit scoring.
 
 ## Problem
@@ -35,7 +37,7 @@ SF12 is a "Mini-CFO" for digital economy sellers:
 
 | Layer | Technology |
 |-------|------------|
-| AI Engine | Qwen Plus via DashScope API |
+| AI Engine | Qwen3-Max via DashScope API |
 | Backend | FastAPI + SQLAlchemy + SQLite |
 | Credit Engine | AI-first scoring + rule-based fallback (6 weighted factors) |
 | Frontend | React 19 + Vite + Tailwind CSS + Recharts |
@@ -102,7 +104,7 @@ npm run dev
 
 | Variable | Purpose |
 |----------|---------|
-| `DASHSCOPE_API_KEY` | Qwen API key |
+| `QWEN_API_KEY` | Qwen API key |
 | `CORS_ORIGINS` | Frontend origins |
 | `DEMO_REBUILD_SCHEMA_ON_STARTUP` | Recreate schema (`true/false`) |
 | `DEMO_RESET_ON_STARTUP` | Reload seed data (`true/false`) |
