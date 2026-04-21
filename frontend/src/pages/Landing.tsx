@@ -16,8 +16,8 @@ export default function Landing() {
         </div>
         <div className="relative z-10">
           <div className="flex items-center gap-2 mb-2">
-            <span className="px-2 py-0.5 bg-white/20 rounded text-xs font-medium">Financial Services Track</span>
-            <span className="px-2 py-0.5 bg-white/20 rounded text-xs font-medium">Shinhan Future's Lab</span>
+            <span className="px-2 py-0.5 bg-white/20 rounded text-xs font-medium">[SF12]</span>
+            <span className="px-2 py-0.5 bg-white/20 rounded text-xs font-medium">Shinhan Finance x Qwen AI</span>
           </div>
           <h1 className="text-3xl font-bold mb-2">MicroBiz Loan cho Digital Economy Sellers</h1>
           <p className="text-blue-100 text-lg mb-6 max-w-2xl">
@@ -27,7 +27,7 @@ export default function Landing() {
           </p>
           <div className="flex gap-3">
             <button onClick={() => navigate("/scoring")} className="px-5 py-2.5 bg-white text-blue-700 rounded-lg font-semibold hover:bg-blue-50 transition-colors flex items-center gap-2">
-              <Bot className="w-4 h-4" /> Xem AI Scoring Demo
+              <Bot className="w-4 h-4" /> AI Scoring
             </button>
             <button onClick={() => navigate("/seller")} className="px-5 py-2.5 bg-white/15 text-white rounded-lg font-medium hover:bg-white/25 transition-colors flex items-center gap-2">
               <Store className="w-4 h-4" /> Seller Dashboard
